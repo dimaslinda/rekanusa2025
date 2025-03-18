@@ -1070,7 +1070,7 @@
             <div data-aos="fade-right" class="w-full lg:w-[60%] 2xl:w-1/2 p-10">
                 <div class="max-w-screen-xl">
                     <img src="{{ $item['featured_media_src_url'] ?? 'default-image.jpg' }}"
-                        loading="lazy" class="object-cover w-full h-full" alt="Artikel Rekanusa">
+                        loading="lazy" class="object-cover w-full h-full" alt="artikel rekanusa">
                     <div class="py-5 text-justify font-poppins 2xl:mb-5 2xl:text-base text-paragraph">
                         {!! $item['excerpt']['rendered'] ?? '<p>No excerpt available.</p>' !!}
                     </div>
@@ -1078,38 +1078,43 @@
                 <div class="text-end">
                     <a href="{{ $item['link'] ?? '#' }}" target="_blank"
                         class="px-10 py-4 font-bold uppercase rounded-xl shadow-2xl drop-shadow-2xl transition-all text-primary bg-tombol hover:scale-105 hover:bg-primary hover:text-tombol font-poppins">
-                        {{ app()->getLocale() == 'en' ? 'Show More' : 'Selengkapnya' }}
+                        @if (app()->getLocale() == 'en')
+                            show more
+                        @else
+                            selengkapnya
+                        @endif
                     </a>
                 </div>
             </div>
         @endforeach
 
+
         <div data-aos="fade-left" class="w-full lg:w-[40%] 2xl:w-1/2 py-10 px-5">
             <h4 class="mb-10 text-3xl font-bold uppercase font-inter text-primary">
                 @if (app()->getLocale() == 'en')
-                    <span class="px-1 text-white bg-secondary">Latest</span> Information
+                    <span class="px-1 text-white bg-secondary">latest</span> Information
                 @else
                     Informasi <span class="px-1 text-white bg-secondary">Terbaru</span>
                 @endif
             </h4>
             <div class="flex flex-col">
                 @forelse ($responselimit as $item)
-                    <a href="{{ $item['link'] ?? '#' }}" target="_blank">
+                    <a href="{{ $item['link'] }}" target="_blank">
                         <div
                             class="flex flex-col gap-4 justify-center items-center px-2 py-5 text-center transition-all cursor-pointer 2xl:items-start md:text-left md:flex-row md:justify-between group hover:bg-secondary">
                             <div class="w-full md:w-[40%]">
-                                <img src="{{ $item['featured_media_src_url'] ?? 'default-image.jpg' }}"
+                                <img src="{{ $item['featured_media_src_url'] }}"
                                     loading="lazy" class="object-cover w-full h-full rounded-xl"
-                                    alt="Artikel Rekanusa">
+                                    alt="artikel rekanusa">
                             </div>
                             <div class="w-full md:w-[60%]">
                                 <h5
                                     class="mb-2 font-semibold 2xl:text-xl font-inter text-primary group-hover:text-white">
-                                    {{ $item['title']['rendered'] ?? 'Untitled' }}
+                                    {{ $item['title']['rendered'] }}
                                 </h5>
                                 <div
                                     class="text-base text-justify line-clamp-3 lg:text-xs 2xl:text-base text-paragraph font-poppins group-hover:text-white">
-                                    {!! $item['excerpt']['rendered'] ?? '<p>No excerpt available.</p>' !!}
+                                    {!! $item['excerpt']['rendered'] !!}
                                 </div>
                             </div>
                         </div>
@@ -1117,11 +1122,11 @@
                 @empty
                     <p>Data artikel tidak ditemukan.</p>
                 @endforelse
+
             </div>
         </div>
     </div>
 </section>
-
 {{-- end informasi terbaru --}}
 
 {{-- section regazine --}}
@@ -1130,7 +1135,7 @@
         <div class="container pb-10 mx-auto mt-5 text-center md:mt-20" data-aos="fade-up" data-aos-offset="100">
             <h2 class="text-3xl font-bold uppercase text-primary md:text-4xl lg:text-5xl font-inter">Regazine</h2>
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-center sm:justify-between">
             @if ($regazine->count() > 0)
                 <div data-aos="fade-right" data-aos-offset="100"
                     class="max-w-[300px] sm:max-w-xs xl:max-w-md 2xl:max-w-2xl">
@@ -1145,8 +1150,18 @@
 
 
             <div data-aos="fade-down" data-aos-offset="100"
-                class="slider max-h-[400px] md:max-h-[500px] lg:max-h-[600px] 2xl:max-h-[900px]">
+                class="slider max-h-[400px] md:max-h-[500px] lg:max-h-[600px] 2xl:max-h-[900px] hidden sm:block">
                 <div class="space-y-5 slide-track">
+                    @forelse ($regazine as $item)
+                        <div class="slide">
+                            <div class="max-w-60 xl:max-w-xs">
+                                <img loading="lazy" src="{{ $item->getFirstMediaUrl('regazine') }}"
+                                    class="object-cover w-full h-full" alt="regazine">
+                            </div>
+                        </div>
+                    @empty
+                    @endforelse
+
                     @forelse ($regazine as $item)
                         <div class="slide">
                             <div class="max-w-60 xl:max-w-xs">

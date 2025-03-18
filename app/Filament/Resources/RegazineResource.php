@@ -64,20 +64,20 @@ class RegazineResource extends Resource
                     ->required(),
 
                 // PDF Upload Field
-                // SpatieMediaLibraryFileUpload::make('pdf')
-                //     ->collection('regazinepdf') // Collection name for PDFs
-                //     ->disk('gcs') // Specify Google Cloud Storage disk
-                //     ->label('PDF')
-                //     ->hint('Max Size File 10 MB')
-                //     ->hintIcon('heroicon-o-information-circle')
-                //     ->acceptedFileTypes(['application/pdf'])
-                //     ->validationMessages([
-                //         'pdf' => 'Max Size File 10 MB',
-                //         'acceptedFileTypes' => 'File Harus Berupa PDF',
-                //         'max_file_size' => 'Max Size File 10 MB',
-                //         'required' => 'File Harus Diisi',
-                //     ])
-                //     ->required(),
+                SpatieMediaLibraryFileUpload::make('pdf')
+                    ->collection('regazinepdf') // Collection name for PDFs
+                    ->disk('gcs') // Specify Google Cloud Storage disk
+                    ->label('PDF')
+                    ->hint('Max Size File 10 MB')
+                    ->hintIcon('heroicon-o-information-circle')
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->validationMessages([
+                        'pdf' => 'Max Size File 10 MB',
+                        'acceptedFileTypes' => 'File Harus Berupa PDF',
+                        'max_file_size' => 'Max Size File 10 MB',
+                        'required' => 'File Harus Diisi',
+                    ])
+                    ->required(),
             ]);
     }
 
