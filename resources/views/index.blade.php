@@ -604,7 +604,7 @@
 <section id="portofolio" class="py-24 h-auto">
     <div class="container p-6 mx-auto">
         <div class="flex flex-col xl:flex-row">
-            <div data-aos="fade-right" class="w-full">
+            <div data-aos="fade-down" class="w-full">
                 <svg baseprofile="tiny" class="w-full" fill="#6f9c76" stroke="#ffffff" stroke-linecap="round"
                     stroke-linejoin="round" stroke-width=".5" version="1.2" viewbox="0 0 1000 368"
                     xmlns="http://www.w3.org/2000/svg">
@@ -1031,7 +1031,7 @@
                     </g>
                 </svg>
             </div>
-            <div data-aos="fade-left" class="text-center w-full xl:text-left xl:max-w-lg">
+            <div data-aos="fade-down" class="text-center w-full xl:text-left xl:max-w-lg">
                 @if (App::getLocale() == 'id')
                     <h2 class="text-secondary lg:text-lg font-poppins">
                         Portofolio kami
