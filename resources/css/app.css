@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+@source "../../node_modules/flowbite";
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-monserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --color-primary: #262262;
+    --color-secondary: #39b54a;
+    --color-tombol: #ffc736;
+    --color-paragraph: #515151;
+}
+
+@layer components {
+    .skeleton {
+        background-color: #e0e0e0; /* Light grey color for the skeleton */
+        animation: shimmer 1.5s infinite linear;
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: -200px 0;
+        }
+        100% {
+            background-position: calc(200px + 100%) 0;
+        }
+    }
+
+    .skeleton-img {
+        height: 200px; /* Match the height of the image */
+        width: 100%; /* Match the width of the image container */
+        background: linear-gradient(
+            90deg,
+            #e0e0e0 25%,
+            #f0f0f0 50%,
+            #e0e0e0 75%
+        );
+        background-size: 200px 100%;
+    }
+}
