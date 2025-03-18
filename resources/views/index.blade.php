@@ -347,11 +347,11 @@
                 Suatu kehormatan bagi kami tentunya dalam memberikan pelayanan terbaik untuk berkontribusi melejitkan bisnis Anda dengan berbagai layanan yang kami berikan.
             @endif
         </p>
-        <div class="flex justify-center items-center p-6 font-poppins">
-            <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div class="flex justify-center items-center p-2 mt-2 md:mt-0 md:p-6 font-poppins">
+            <div class="grid grid-cols-2 gap-2 md:gap-4 md:grid-cols-3">
                 <a href="/jasaslf">
                     <div
-                        class="relative p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
+                        class="relative p-2 lg:p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
                         <div class="mb-5 max-w-xs rounded-xl shadow-lg">
                             <img src="{{ asset('img/general/service-slf.webp') }}"
                                 loading="lazy" class="object-cover w-full h-full rounded-xl" alt="jasa slf">
@@ -386,7 +386,7 @@
                 </a>
                 <a href="/audit">
                     <div
-                        class="relative p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
+                        class="relative p-2 lg:p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
                         <div class="mb-5 max-w-xs rounded-xl shadow-lg">
                             <img src="{{ asset('img/general/service-audit.webp') }}"
                                 loading="lazy" class="object-cover w-full h-full rounded-xl" alt="jasa audit">
@@ -421,7 +421,7 @@
                 </a>
                 <a href="/auditenergi">
                     <div
-                        class="relative p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
+                        class="relative p-2 lg:p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
                         <div class="mb-5 max-w-xs rounded-xl shadow-lg">
                             <img src="{{ asset('img/general/service-energi.webp') }}"
                                 loading="lazy" class="object-cover w-full h-full rounded-xl" alt="jasa audit energi">
@@ -456,7 +456,7 @@
                 </a>
                 <a href="/pbg">
                     <div
-                        class="relative p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
+                        class="relative p-2 lg:p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
                         <div class="mb-5 max-w-xs rounded-xl shadow-lg">
                             <img src="{{ asset('img/general/service-pbg.webp') }}"
                                 loading="lazy" class="object-cover w-full h-full rounded-xl" alt="jasa pbg">
@@ -491,7 +491,7 @@
                 </a>
                 <a href="/bangunan">
                     <div
-                        class="relative p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
+                        class="relative p-2 lg:p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
                         <div class="mb-5 max-w-xs rounded-xl shadow-lg">
                             <img src="{{ asset('img/general/service-bangunan.webp') }}"
                                 loading="lazy" class="object-cover w-full h-full rounded-xl" alt="jasa bangunan">
@@ -526,7 +526,7 @@
                 </a>
                 <a href="/konstruksi">
                     <div
-                        class="relative p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
+                        class="relative p-2 lg:p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
                         <div class="mb-5 max-w-xs rounded-xl shadow-lg">
                             <img src="{{ asset('img/general/service-konstruksi.webp') }}"
                                 loading="lazy" class="object-cover w-full h-full rounded-xl" alt="jasa konstruksi">
@@ -561,7 +561,7 @@
                 </a>
                 <a href="/ded">
                     <div
-                        class="relative p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
+                        class="relative p-2 lg:p-5 max-w-80 rounded-xl border-2 border-[#D9D9D9] bg-white hover:cursor-pointer hover:scale-105 hover:bg-secondary hover:shadow-2xl transition-all group">
                         <div class="mb-5 max-w-xs rounded-xl shadow-lg">
                             <img src="{{ asset('img/general/service-konstruksi.webp') }}"
                                 loading="lazy" class="object-cover w-full h-full rounded-xl" alt="jasa ded">
