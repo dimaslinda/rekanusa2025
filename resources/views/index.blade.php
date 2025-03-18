@@ -39,7 +39,7 @@
 
 {{-- mitra kami --}}
 <section id="mitra">
-    <div class="container p-6 mx-auto mt-5 text-center md:mt-20" data-aos="fade-up">
+    <div class="container p-6 mx-auto mt-5 text-center md:mt-20">
         <h2 class="pt-10 text-2xl font-bold uppercase text-primary md:text-4xl font-inter">
             @if (app()->getLocale() == 'en')
                 our partners
@@ -51,17 +51,17 @@
     {{-- logo utama --}}
     <div class="container p-6 mx-auto">
         <div class="flex justify-center p-5 mb-10 w-full md:mb-32">
-            <img data-aos="fade-left"
+            <img
                 src="{{ asset('img/logo/telkom.webp') }}"
                 class="w-[40%] lg:w-[30%] aspect-4/3 object-contain" loading="lazy" alt="logo telkom indonesia">
-            <img data-aos="fade-up"
+            <img
                 src="{{ asset('img/logo/mercedez.webp') }}" loading="lazy"
                 class="w-[40%] lg:w-[30%] aspect-4/3 object-contain" alt="logo benz">
-            <img data-aos="fade-right"
+            <img
                 src="{{ asset('img/logo/bca.webp') }}" loading="lazy"
                 class="w-[40%] lg:w-[30%] aspect-4/3 object-contain" alt="logo bank bca">
         </div>
-        <div class="flex flex-wrap gap-4 justify-center p-0 w-full md:p-5" data-aos="fade-down">
+        <div class="flex flex-wrap gap-4 justify-center p-0 w-full md:p-5">
             <img src="{{ asset('img/logo/superindo.webp') }}" loading="lazy"
                 class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo superindo">
             <img src="{{ asset('img/logo/olx.webp') }}"
@@ -115,11 +115,11 @@
         <div class="flex">
             @if (App::getLocale() == 'id')
             <div class="flex flex-col max-w-lg xl:max-w-3xl">
-                <h2 data-aos="fade-right"
+                <h2
                     class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed uppercase font-inter text-primary md:text-2xl md:leading-relaxed 2xl:text-4xl 2xl:leading-relaxed">
                     Profil Perusahaan <span class="font-extrabold text-white bg-secondary"> PT. Kinarya <br> kompegriti rekanusa</span>
                 </h2>
-                <div data-aos="fade-right" class="text-paragraph font-poppins 2xl:text-xl">
+                <div class="text-paragraph font-poppins 2xl:text-xl">
                     <p class="mb-5 font-poppins">
                         PT. Kinarya Kompegriti Rekanusa adalah Perusahaan jasa Konsultan teknik yang melingkupi :
                     </p>
@@ -147,11 +147,11 @@
             </div>
             @else
             <div class="flex flex-col max-w-lg xl:max-w-3xl">
-                <h2 data-aos="fade-right"
+                <h2
                     class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed uppercase font-inter text-primary md:text-2xl md:leading-relaxed 2xl:text-4xl 2xl:leading-relaxed">
                     Company Profile <span class="font-extrabold text-white bg-secondary">PT. Kinarya <br> kompegriti rekanusa</span>
                 </h2>
-                <div data-aos="fade-right" class="text-paragraph font-poppins 2xl:text-xl">
+                <div class="text-paragraph font-poppins 2xl:text-xl">
                     <p class="mb-5 font-poppins">
                         PT. Kinarya Kompegriti Rekanusa is an engineering consulting services company that covers :
                     </p>
@@ -179,7 +179,7 @@
             @endif
         </div>
     </div>
-    <div data-aos="fade-left" class="absolute bottom-0 -right-52 xl:-right-32 2xl:-right-0">
+    <div class="absolute bottom-0 -right-52 xl:-right-32 2xl:-right-0">
         <img src="{{ asset('img/general/person.webp') }}" class="w-[70%] 2xl:w-full" loading="lazy" alt="person">
     </div>
 </section>
@@ -187,7 +187,7 @@
     <div class="flex flex-col">
         <div class="relative flex flex-col min-h-52">
             <div class="overflow-hidden bg-[url('../../public/img/general/bg-portofolio.webp')] bg-cover bg-no-repeat bg-center">
-                <img src="{{ asset('img/general/person.webp') }}" data-aos="fade-up" class="w-full h-full object-contain" loading="lazy" alt="profile rekanusa">
+                <img src="{{ asset('img/general/person.webp') }}" class="w-full h-full object-contain" loading="lazy" alt="profile rekanusa">
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" class="absolute -bottom-1" viewBox="0 0 1440 320">
                 <path fill="#ffff" fill-opacity="1" d="M0,192L1440,0L1440,320L0,320Z"></path>
@@ -195,64 +195,64 @@
         </div>
         <div class="relative pb-24 bg-white">
             @if (app()->getLocale() == 'en')
-                <h2 data-aos="fade-down"
+                <h2
                     class="mb-4 text-2xl font-extrabold tracking-normal leading-relaxed text-center uppercase sm:text-3xl sm:tracking-normal sm:leading-relaxed font-inter text-primary">
                     Company Profile <span class="font-extrabold text-secondary">PT. Kinarya <br> kompegriti
                         rekanusa</span>
                 </h2>
                 <div class="flex-col justify-center items-center p-6 text-paragraph font-poppins">
-                    <div data-aos="fade-right" class="mb-5 font-poppins">
+                    <div class="mb-5 font-poppins">
                         PT. Kinarya Kompegriti Rekanusa is an engineering consulting services company that covers :
                     </div>
                     <ul class="list-image-[url('../../public/img/general/polygon.png')] list-outside pl-4 mb-5">
-                        <li data-aos="fade-down">
+                        <li>
                             Engineering consulting work for Civil Structural, Architectural, Mechanical, Electrical, Plumbing planners.                        </li>
                         </li>
-                        <li data-aos="fade-down">
+                        <li>
                             Structure Audit and Energy Audit Work
                         </li>
-                        <li data-aos="fade-down">
+                        <li>
                             Building Certificate of Functioning (SLF) Licensing Work
                         </li>
-                        <li data-aos="fade-down">
+                        <li>
                             Licensing Work Supporting Documents for SLF (KRK, PBG, SLO, RKK Damkar, Environmental Documents, etc.)
                         </li>
                     </ul>
-                    <p data-aos="fade-down" class="mb-5 text-justify">
+                    <p class="mb-5 text-justify">
                         We are committed to getting the best results the right way, carrying out and executing tasks with full responsibility that emphasizes excellence in the application of innovative technology and being able to adapt to new opportunities for profitable growth.
                     </p>
-                    <p data-aos="fade-down" class="text-justify">
+                    <p class="text-justify">
                         Professional, optimistic, thorough and solutive services are our dedication to customer satisfaction, as well as good work values and a healthy working environment, influencing us to provide satisfactory services.
                     </p>
                 </div>
             @else
-                <h2 data-aos="fade-down"
+                <h2
                     class="mb-4 text-2xl font-extrabold tracking-normal leading-relaxed text-center uppercase sm:text-3xl sm:tracking-normal sm:leading-relaxed font-inter text-primary">
                     {{ __('Profil Perusahaan') }} <span class="font-extrabold text-secondary">PT. Kinarya <br> kompegriti
                         rekanusa</span>
                 </h2>
                 <div class="flex-col justify-center items-center p-6 text-paragraph font-poppins">
-                    <div data-aos="fade-right" class="mb-5 font-poppins">
+                    <div class="mb-5 font-poppins">
                         {{ __('PT. Kinarya Kompegriti Rekanusa adalah Perusahaan jasa Konsultan teknik yang melingkupi :') }}
                     </div>
                     <ul class="list-image-[url('../../public/img/general/polygon.png')] list-outside pl-4 mb-5">
-                        <li data-aos="fade-down">
+                        <li>
                             {{ __('Pekerjaan konsultasi enjiniring untuk perencana Struktur Sipil, Arsitektural, Mekanikal, Elektrikal, Plumbing.') }}
                         </li>
-                        <li data-aos="fade-down">
+                        <li>
                             {{ __('Pekerjaan Audit Struktur dan Audit Energy') }}
                         </li>
-                        <li data-aos="fade-down">
+                        <li>
                             {{ __('Pekerjaan Perizinan Sertifikat Laik Fungsi ( SLF ) Bangunan Gedung') }}
                         </li>
-                        <li data-aos="fade-down">
+                        <li>
                             {{ __('Pekerjaan Perizinan Dokumen Pendukung Pengurusan SLF (KRK, PBG, SLO, RKK Damkar, Dokumen Lingkungan, dll)') }}
                         </li>
                     </ul>
-                    <p data-aos="fade-down" class="mb-5 text-justify">
+                    <p class="mb-5 text-justify">
                         {{ __('Komitmen kami untuk mendapatkan hasil terbaik dengan cara yang benar, menjalankan dan melaksanakan tugas dengan penuh tanggung jawab yang mengedepankan keunggulan penerapan teknologi yang inovatif serta mampu beradaptasi dalam mendapatkan peluang baru untuk pertumbuhan yang menguntungkan.') }}
                     </p>
-                    <p data-aos="fade-down" class="text-justify">
+                    <p class="text-justify">
                         {{ __('Layanan yang profesional, optimis, tuntas dan solutif adalah dedikasi kami untuk kepuasan pelanggan, serta nilai kerja yang baik dan lingkungan kerja yang sehat, mempengaruhi kami untuk memberikan layanan yang memuaskan.') }}
                     </p>
                 </div>
@@ -267,7 +267,7 @@
     <div class="container mx-auto p-6 z-10 relative">
         <div class="flex flex-col max-w-lg 2xl:max-w-3xl float-right">
             <div class="flex flex-col py-10">
-                <h2 data-aos="fade-left"
+                <h2
                     class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed uppercase font-inter text-primary md:text-2xl md:leading-relaxed 2xl:text-4xl 2xl:leading-relaxed">
                     @if (app()->getLocale() == 'en')
                         we are here as a leading <br> multinational <span class="text-white bg-secondary">technical
@@ -277,7 +277,7 @@
                             class="text-white bg-secondary">konsultan teknis</span> <br> multinasional terkemuka
                     @endif
                 </h2>
-                <div data-aos="fade-left"
+                <div
                     class="text-justify font-poppins text-paragraph 2xl:text-xl">
                    @if (app()->getLocale() == 'en')
                    We dedicate all the best works and solutions we have, supported by experienced and certified human resources in their fields, as well as complete calibrated equipment to provide a commitment of support to our partners in the vision of achieving progress & success together.
@@ -296,14 +296,14 @@
     <div class="flex flex-col">
         <div class="relative flex flex-col min-h-52">
             <div class="overflow-hidden bg-[url('../../public/img/general/bg-tech.webp')] bg-cover bg-no-repeat bg-center">
-                <img src="{{ asset('img/general/person-2.webp') }}" data-aos="fade-up" class="w-full h-full object-contain pt-32" loading="lazy" alt="profile rekanusa">
+                <img src="{{ asset('img/general/person-2.webp') }}" class="w-full h-full object-contain pt-32" loading="lazy" alt="profile rekanusa">
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" class="absolute -bottom-1" viewBox="0 0 1440 320">
                 <path fill="#ffff" fill-opacity="1" d="M0,192L1440,0L1440,320L0,320Z"></path>
             </svg>
         </div>
         <div class="relative pb-24 bg-white">
-            <h2 data-aos="fade-down"
+            <h2
                 class="mb-4 text-2xl font-extrabold tracking-normal leading-relaxed text-center uppercase sm:text-3xl sm:tracking-normal sm:leading-relaxed font-inter text-primary">
                 @if (app()->getLocale() == 'en')
                     we are here as a leading multinational <span class="text-white bg-secondary">technical
@@ -315,7 +315,7 @@
                 @endif
 
             </h2>
-            <div data-aos="fade-down" class="flex-col justify-center items-center px-6 text-paragraph font-poppins">
+            <div class="flex-col justify-center items-center px-6 text-paragraph font-poppins">
                 <div class="text-justify font-poppins">
                     @if (app()->getLocale() == 'en')
                    We dedicate all the best works and solutions we have, supported by experienced and certified human resources in their fields, as well as complete calibrated equipment to provide a commitment of support to our partners in the vision of achieving progress & success together.
@@ -330,9 +330,9 @@
 {{-- end kami hadir --}}
 
 {{-- layanan dan jasa --}}
-<section id="layanan" class="bg-[url('https://ik.imagekit.io/bguwdu46a/Rekanusa/bg-layanan.png?updatedAt=1711591484207')] bg-cover md:py-20">
+<section id="layanan" class="bg-[url('../../public/img/general/bg-layanan.webp')] bg-cover md:py-20">
     <div class="container p-6 mx-auto text-center">
-        <h2 data-aos="fade-down"
+        <h2
             class="pt-10 mb-5 text-2xl font-bold uppercase text-primary md:text-4xl lg:text-5xl font-inter lg:mb-10">
             @if (app()->getLocale() == 'en')
                 <span class="px-1 text-white bg-secondary">Rekanusa</span> services
@@ -340,14 +340,14 @@
                 Layanan dan Jasa <span class="px-1 text-white bg-secondary">Rekanusa</span>
             @endif
         </h2>
-        <p data-aos="fade-down" class="text-sm text-paragraph font-poppin md:text-base lg:px-24 2xl:text-xl">
+        <p class="text-sm text-paragraph font-poppin md:text-base lg:px-24 2xl:text-xl">
             @if (app()->getLocale() == 'en')
                 It is certainly an honor for us to provide the best service to contribute to boosting your business with the various services we provide.
             @else
                 Suatu kehormatan bagi kami tentunya dalam memberikan pelayanan terbaik untuk berkontribusi melejitkan bisnis Anda dengan berbagai layanan yang kami berikan.
             @endif
         </p>
-        <div data-aos="fade-in" class="flex justify-center items-center p-6 font-poppins">
+        <div class="flex justify-center items-center p-6 font-poppins">
             <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
                 <a href="/jasaslf">
                     <div
@@ -604,7 +604,7 @@
 <section id="portofolio" class="py-24 h-auto">
     <div class="container p-6 mx-auto">
         <div class="flex flex-col xl:flex-row">
-            <div data-aos="fade-down" class="w-full">
+            <div class="w-full">
                 <svg baseprofile="tiny" class="w-full" fill="#6f9c76" stroke="#ffffff" stroke-linecap="round"
                     stroke-linejoin="round" stroke-width=".5" version="1.2" viewbox="0 0 1000 368"
                     xmlns="http://www.w3.org/2000/svg">
@@ -1031,7 +1031,7 @@
                     </g>
                 </svg>
             </div>
-            <div data-aos="fade-down" class="text-center w-full xl:text-left xl:max-w-lg">
+            <div class="text-center w-full xl:text-left xl:max-w-lg">
                 @if (App::getLocale() == 'id')
                     <h2 class="text-secondary lg:text-lg font-poppins">
                         Portofolio kami
@@ -1067,7 +1067,7 @@
 <section id="informasi" class="h-auto bg-white">
     <div class="flex flex-col lg:flex-row">
         @foreach ($responselates as $item)
-            <div data-aos="fade-right" class="w-full lg:w-[60%] 2xl:w-1/2 p-10">
+            <div class="w-full lg:w-[60%] 2xl:w-1/2 p-10">
                 <div class="max-w-screen-xl">
                     <img src="{{ $item['featured_media_src_url'] ?? 'default-image.jpg' }}"
                         loading="lazy" class="object-cover w-full h-full" alt="artikel rekanusa">
@@ -1089,7 +1089,7 @@
         @endforeach
 
 
-        <div data-aos="fade-left" class="w-full lg:w-[40%] 2xl:w-1/2 py-10 px-5">
+        <div class="w-full lg:w-[40%] 2xl:w-1/2 py-10 px-5">
             <h4 class="mb-10 text-3xl font-bold uppercase font-inter text-primary">
                 @if (app()->getLocale() == 'en')
                     <span class="px-1 text-white bg-secondary">latest</span> Information
@@ -1132,12 +1132,12 @@
 {{-- section regazine --}}
 <section id="regazine" class="overflow-hidden h-auto bg-white">
     <div class="container p-6 mx-auto">
-        <div class="container pb-10 mx-auto mt-5 text-center md:mt-20" data-aos="fade-up" data-aos-offset="100">
+        <div class="container pb-10 mx-auto mt-5 text-center md:mt-20">
             <h2 class="text-3xl font-bold uppercase text-primary md:text-4xl lg:text-5xl font-inter">Regazine</h2>
         </div>
         <div class="flex justify-center sm:justify-between">
             @if ($regazine->count() > 0)
-                <div data-aos="fade-right" data-aos-offset="100"
+                <div
                     class="max-w-[300px] sm:max-w-xs xl:max-w-md 2xl:max-w-2xl">
                     <img loading="lazy" src="{{ $regazinelast->getFirstMediaUrl('regazine') }}"
                         class="object-contain w-full h-full" alt="regazine">
@@ -1149,7 +1149,7 @@
             @endif
 
 
-            <div data-aos="fade-down" data-aos-offset="100"
+            <div
                 class="slider max-h-[400px] md:max-h-[500px] lg:max-h-[600px] 2xl:max-h-[900px] hidden sm:block">
                 <div class="space-y-5 slide-track">
                     @forelse ($regazine as $item)
@@ -1176,7 +1176,7 @@
                 </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-offset="100"
+            <div
                 class="slider2 max-h-[400px] md:max-h-[500px] lg:max-h-[600px] 2xl:max-h-[900px] hidden lg:block">
                 <div class="space-y-5 slide-track2">
                     @forelse ($regazine as $item)
@@ -1191,7 +1191,7 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-down" data-aos-offset="100" class="flex justify-center p-6">
+        <div class="flex justify-center p-6">
             <a href="/regazine"
                 class="px-10 py-4 font-bold uppercase rounded-xl shadow-2xl drop-shadow-2xl transition-all text-primary bg-tombol hover:scale-105 hover:bg-primary hover:text-tombol font-poppins">
                 {{ __('selengkapnya') }}
