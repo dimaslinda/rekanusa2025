@@ -60,6 +60,15 @@ return [
             'report' => false,
         ],
 
+        'gcs' => [
+        'driver' => 'gcs',
+        'key_file_path' => env('GOOGLE_CLOUD_KEY_FILE', null), // Path to your service account JSON file
+        'project_id' => env('GOOGLE_CLOUD_PROJECT_ID', 'your-project-id'),
+        'bucket' => env('GOOGLE_CLOUD_STORAGE_BUCKET', 'your-bucket-name'),
+        'visibility' => 'public', // Set to 'private' if needed
+        ],
+
+
     ],
 
     /*

@@ -18,11 +18,11 @@ class GeneralControllers extends Controller
         FetchPostsJob::dispatch($apiUrl, $authCredentials, 'responselimit', 3);
 
         // Fetch local data (cached or DB)
-        $regazine = Cache::remember('regazine', 120, function () {
-            return Regazine::with('media')->get();
+        $regazine = Cache::remember('regazine', 3700, function () {
+            return Regazine::with('media')->orderBy('id', 'desc')->get();
         });
 
-        $regazinelast = Cache::remember('regazinelast', 120, function () {
+        $regazinelast = Cache::remember('regazinelast', 3700, function () {
             return Regazine::latest()->first();
         });
 

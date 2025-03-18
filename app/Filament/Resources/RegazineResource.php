@@ -16,6 +16,7 @@ use App\Filament\Resources\RegazineResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\RegazineResource\RelationManagers;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 
 class RegazineResource extends Resource
 {
@@ -29,46 +30,54 @@ class RegazineResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')
-                ->placeholder('Judul Regazine')
-                ->live('bounce')
-                ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state)))
-                ->required(),
-                TextInput::make('slug')
-                ->placeholder('input slug')
-                ->unique(ignoreRecord: true)
-                ->readOnly()
-                ->required(),
-                SpatieMediaLibraryFileUpload::make('image')
-                ->collection('regazine')
-                ->maxFiles(1)
-                ->label('Image Regazine')
-                ->image()
-                ->imageEditor()
-                ->hint('Max Size File 10 MB')
-                ->hintIcon('heroicon-o-information-circle')
-                ->acceptedFileTypes(['image/png', 'image/jpg', 'image/jpeg'])
-                ->validationMessages([
-                            'image' => 'Max Size File 10 MB',
-                            'acceptedFileTypes' => 'File Harus Berupa Gambar',
-                            'max_file_size' => 'Max Size File 10 MB',
-                            'required' => 'File Harus Diisi',
-                        ])
-                ->required(),
-                SpatieMediaLibraryFileUpload::make('pdf')
-                        ->collection('kaigazinepdf')
-                        ->label('PDF')
-                        ->hint('Max Size File 10 MB')
-                        ->hintIcon('heroicon-o-information-circle')
-                        ->acceptedFileTypes(['application/pdf'])
-                        ->validationMessages([
-                            'pdf' => 'Max Size File 10 MB',
-                            'acceptedFileTypes' => 'File Harus Berupa PDF',
-                            'max_file_size' => 'Max Size File 10 MB',
-                            'required' => 'File Harus Diisi',
-                        ])
-                        ->required(),
+                // Title Field
+                TextInput::make('judul')
+                    ->placeholder('Judul Regazine')
+                    ->live('bounce')
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state)))
+                    ->required(),
 
+                // Slug Field
+                TextInput::make('slug')
+                    ->placeholder('input slug')
+                    ->unique(ignoreRecord: true)
+                    ->readOnly()
+                    ->required(),
+
+                // Image Upload Field
+                SpatieMediaLibraryFileUpload::make('image')
+                    ->collection('regazine') // Collection name in Media Library
+                    ->maxFiles(1)
+                    ->disk('gcs')
+                    ->label('Image Regazine')
+                    ->image() // Restrict to images
+                    ->imageEditor()
+                    ->hint('Max Size File 10 MB')
+                    ->hintIcon('heroicon-o-information-circle')
+                    ->acceptedFileTypes(['image/png', 'image/jpg', 'image/jpeg', 'image/webp'])
+                    ->validationMessages([
+                        'image' => 'Max Size File 10 MB',
+                        'acceptedFileTypes' => 'File Harus Berupa Gambar',
+                        'max_file_size' => 'Max Size File 10 MB',
+                        'required' => 'File Harus Diisi',
+                    ])
+                    ->required(),
+
+                // PDF Upload Field
+                // SpatieMediaLibraryFileUpload::make('pdf')
+                //     ->collection('regazinepdf') // Collection name for PDFs
+                //     ->disk('gcs') // Specify Google Cloud Storage disk
+                //     ->label('PDF')
+                //     ->hint('Max Size File 10 MB')
+                //     ->hintIcon('heroicon-o-information-circle')
+                //     ->acceptedFileTypes(['application/pdf'])
+                //     ->validationMessages([
+                //         'pdf' => 'Max Size File 10 MB',
+                //         'acceptedFileTypes' => 'File Harus Berupa PDF',
+                //         'max_file_size' => 'Max Size File 10 MB',
+                //         'required' => 'File Harus Diisi',
+                //     ])
+                //     ->required(),
             ]);
     }
 
@@ -76,10 +85,24 @@ class RegazineResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('judul')
+                    ->label('Title')
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\TextColumn::make('slug')
+                    ->label('Slug')
+                    ->sortable()
+                    ->searchable(),
+
+                SpatieMediaLibraryImageColumn::make('image')
+                    ->collection('regazine')
+                    ->disk('gcs')
+                    ->label('Image')
+                    ->height(100),
             ])
             ->filters([
-                //
+                // Add filters here if necessary
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
