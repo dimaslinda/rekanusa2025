@@ -18,6 +18,8 @@ Route::get('/audit-struktur', [GeneralControllers::class, 'audit'])->name('audit
 Route::get('/audit-energy', [GeneralControllers::class, 'auditenergy'])->name('auditenergy');
 Route::get('/pbg', [GeneralControllers::class, 'pbg'])->name('pbg');
 Route::get('/bangunan', [GeneralControllers::class, 'bangunan'])->name('bangunan');
+Route::get('/konstruksi', [GeneralControllers::class, 'konstruksi'])->name('konstruksi');
+Route::get('/ded', [GeneralControllers::class, 'ded'])->name('ded');
 
 // Route::get('/test-gcs', function () {
 //     try {
