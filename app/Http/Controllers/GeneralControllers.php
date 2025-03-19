@@ -128,6 +128,34 @@ class GeneralControllers extends Controller
     }
 
     /**
+     * Halaman Konstruksi
+     *
+     * Menampilkan halaman konstruksi yang berisi informasi tentang jasa konstruksi
+     * yang diberikan oleh PT. Kinarya Kompegriti Rekanusa.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
+    public function konstruksi()
+    {
+        $testimoni = $this->getTestimoniByKategori(6);
+        return view('konstruksi', compact('testimoni'));
+    }
+
+    /**
+     * Halaman DED
+     *
+     * Menampilkan halaman DED yang berisi informasi tentang jasa DED
+     * yang diberikan oleh PT. Kinarya Kompegriti Rekanusa.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
+    public function ded()
+    {
+        $testimoni = $this->getTestimoniByKategori(7);
+        return view('ded', compact('testimoni'));
+    }
+
+    /**
      * Helper Method: Get Cached Regazine
      *
      * Retrieves the cached regazine data from the cache store.
