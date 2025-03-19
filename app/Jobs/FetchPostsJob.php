@@ -2,9 +2,9 @@
 
 namespace App\Jobs;
 
-use Log;
 use GuzzleHttp\Client;
 use Illuminate\Bus\Queueable;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
@@ -57,4 +57,3 @@ class FetchPostsJob implements ShouldQueue
         }
     }
 }
-

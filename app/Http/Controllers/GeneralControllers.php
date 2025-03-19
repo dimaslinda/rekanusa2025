@@ -72,56 +72,45 @@ class GeneralControllers extends Controller
     /**
      * Halaman Jasa SLF
      *
-     * Menampilkan data-data testimonial yang berelasi dengan kategori_id = 1
-     * serta mengirimkannya ke view jasaslf
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\View
      */
     public function jasaslf()
     {
-        $testimoni = Testimoni::whereHas('kategoris', function ($query) {
-            $query->where('kategori_id', 1);
-        })
-            ->with(['media', 'kategoris'])
-            ->get();
-
+        $testimoni = $this->getTestimoniByKategori(1);
         return view('jasaslf', compact('testimoni'));
     }
 
     /**
-     * Display the audit view.
-     *
-     * This method returns the audit view, which contains information
-     * about the company's audit services.
+     * Halaman Audit
      *
      * @return \Illuminate\Contracts\View\View
      */
     public function audit()
     {
-        $testimoni = Testimoni::whereHas('kategoris', function ($query) {
-            $query->where('kategori_id', 2);
-        })
-            ->with(['media', 'kategoris'])
-            ->get();
+        $testimoni = $this->getTestimoniByKategori(2);
         return view('audit', compact('testimoni'));
     }
 
     /**
-     * Halaman Jasa Energy Audit
+     * Halaman Audit Energi
      *
-     * Menampilkan data-data testimonial yang berelasi dengan kategori_id = 3
-     * serta mengirimkannya ke view energy
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\View
      */
     public function auditenergy()
     {
-        $testimoni = Testimoni::whereHas('kategoris', function ($query) {
-            $query->where('kategori_id', 3);
-        })
-            ->with(['media', 'kategoris'])
-            ->get();
+        $testimoni = $this->getTestimoniByKategori(3);
         return view('energy', compact('testimoni'));
+    }
+
+    /**
+     * Halaman PBG
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
+    public function pbg()
+    {
+        $testimoni = $this->getTestimoniByKategori(4);
+        return view('pbg', compact('testimoni'));
     }
 
     /**
@@ -148,5 +137,20 @@ class GeneralControllers extends Controller
         return Cache::remember('regazinelast', 3700, function () {
             return Regazine::with('media')->latest()->first();
         });
+    }
+
+    /**
+     * Helper Method untuk Mengambil Testimoni berdasarkan Kategori ID
+     *
+     * @param  int  $kategoriId
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    private function getTestimoniByKategori($kategoriId)
+    {
+        return Testimoni::whereHas('kategoris', function ($query) use ($kategoriId) {
+            $query->where('kategori_id', $kategoriId);
+        })
+            ->with(['media', 'kategoris'])
+            ->get();
     }
 }

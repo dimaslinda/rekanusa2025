@@ -9,7 +9,7 @@
         <div>
             <div class="object-cover absolute inset-0 w-full h-full">
                 <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                    src="{{ asset('img/general/banner-slf.webp') }}" alt="banner rekanusa">
+                    src="{{ asset('img/general/banner-pbg.webp') }}" alt="banner rekanusa">
             </div>
             <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
                 src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
@@ -18,11 +18,15 @@
             <h1
                 class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed text-white md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    get a <span class="p-2 bg-primary">Function-worthy Certificate</span> <br class="hidden lg:block">
-                    to improve the safety <br class="hidden lg:block"> and legality of your business
+                    Bisnis yang lancar, izin bangunan<br class="hidden lg:block">
+                    permit: trusted <span class="p-2 bg-primary">building</span> <br class="hidden lg:block">
+                    <span class="p-2 bg-primary">approval</span> solutions to realize <br class="hidden lg:block">
+                    your dreams!
                 @else
-                    dapatkan <span class="p-2 bg-primary">sertifikat laik fungsi</span> <br class="hidden lg:block">
-                    untuk meningkatkan keamanan <br class="hidden lg:block"> dan legalitas bisnis anda
+                    smooth business, easy building <br class="hidden lg:block">
+                    yang mudah: solusi <span class="p-2 bg-primary">perizinan</span> <br class="hidden lg:block">
+                    <span class="p-2 bg-primary">gedung</span> yang terpercaya untuk <br class="hidden lg:block">
+                    mewujudkan impian anda!
                 @endif
 
             </h1>
@@ -42,39 +46,47 @@
 
     {{-- tentang slf --}}
     <section id="tentang"
-        class="relative hidden min-h-[70vh] lg:block bg-[url('../../public/img/general/bg-tentang-profile.webp')] bg-no-repeat bg-cover bg-center">
+        class="relative hidden min-h-[70vh] lg:block bg-[url('../../public/img/general/bg-tentang-pbg.webp')] bg-no-repeat bg-cover bg-center">
         <div class="container mx-auto p-6">
             <div class="flex justify-end items-center self-center pt-25">
                 <div class="max-w-xl">
                     @if (app()->getLocale() == 'en')
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            about Function-worthy Certificate
+                            About PBG
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            What is Function-worthy Certificate (SLF)?
+                            What is a Building Approval
                         </h2>
+                        <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                            The explanation of PBG is as follows, please note that currently IMB (Building Permit) has been
+                            abolished and replaced with a new term, namely PBG (Building Approval).
+                        </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            SLF is a Certificate of Functioning. An official document issued by the government or relevant
-                            authority to show that a building or property has met the requirements and standards set for use
-                            in accordance with its function.
+                            PBG is a license intended for building owners to change buildings, build new buildings, reduce,
+                            and / or maintain according to building technical standards, this is in accordance with PP
+                            Number 16 of 2021 article 1 point 17.
                         </div>
                     @else
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            Tentang SLF
+                            Tentang PBG
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            Apa itu Sertifikat Laik Fungsi (SLF)?
+                            Apa itu Persetujuan Bangunan Gedung
                         </h2>
+                        <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                            Penjelasan PBG adalah sebagai berikut perlu diketahui saat ini IMB ( Izin Mendirikan Bangunan )
+                            telah di hapus dan digantikan dengan istilah baru yaitu PBG (Persetujuan Bangunan Gedung).
+                        </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            SLF adalah Sertifikat Laik Fungsi. Dokumen resmi yang dikeluarkan oleh pemerintah atau otoritas
-                            terkait untuk menunjukkan bahwa suatu bangunan atau properti telah memenuhi persyaratan dan
-                            standar yang ditetapkan untuk digunakan sesuai dengan fungsinya.
+                            PBG adalah sebagai perizinan yang diperuntukan kepada pemilik bangunan gedung untuk mengubah
+                            bangunan, membangun baru bangunan, mengurangi, dan/atau merawat sesuai standar teknis bangunan
+                            gedung,Hal tersebut sesuai dengan PP Nomor 16 Tahun 2021 pasal 1 poin 17.
                         </div>
                     @endif
                 </div>
@@ -83,33 +95,41 @@
     </section>
     {{-- mobile --}}
     <section id="tentang"
-        class="relative block lg:hidden bg-[url('../../public/img/general/bg-tentang-profile-mobile.webp')] bg-no-repeat bg-cover bg-blend-overlay bg-white/60 h-auto">
+        class="relative block lg:hidden bg-[url('../../public/img/general/service-pbg.webp')] bg-no-repeat bg-cover bg-blend-overlay bg-white/60 h-auto">
         <div class="px-6 py-10 md:py-32 md:px-20">
             @if (app()->getLocale() == 'en')
                 <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    about Function-worthy Certificate
+                    About PBG
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
                 <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    What is Function-worthy Certificate (SLF)?
+                    What is a Building Approval
                 </h2>
+                <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                    The explanation of PBG is as follows, please note that currently IMB (Building Permit) has been
+                    abolished and replaced with a new term, namely PBG (Building Approval).
+                </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    SLF is a Certificate of Functioning. An official document issued by the government or relevant authority
-                    to show that a building or property has met the requirements and standards set for use in accordance
-                    with its function.
+                    PBG is a license intended for building owners to change buildings, build new buildings, reduce,
+                    and / or maintain according to building technical standards, this is in accordance with PP
+                    Number 16 of 2021 article 1 point 17.
                 </div>
             @else
                 <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    Tentang SLF
+                    Tentang PBG
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
                 <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    Apa itu Sertifikat Laik Fungsi (SLF)?
+                    Apa itu Persetujuan Bangunan Gedung
                 </h2>
+                <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                    Penjelasan PBG adalah sebagai berikut perlu diketahui saat ini IMB ( Izin Mendirikan Bangunan )
+                    telah di hapus dan digantikan dengan istilah baru yaitu PBG (Persetujuan Bangunan Gedung).
+                </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    SLF adalah Sertifikat Laik Fungsi. Dokumen resmi yang dikeluarkan oleh pemerintah atau otoritas terkait
-                    untuk menunjukkan bahwa suatu bangunan atau properti telah memenuhi persyaratan dan standar yang
-                    ditetapkan untuk digunakan sesuai dengan fungsinya.
+                    PBG adalah sebagai perizinan yang diperuntukan kepada pemilik bangunan gedung untuk mengubah
+                    bangunan, membangun baru bangunan, mengurangi, dan/atau merawat sesuai standar teknis bangunan
+                    gedung,Hal tersebut sesuai dengan PP Nomor 16 Tahun 2021 pasal 1 poin 17.
                 </div>
             @endif
         </div>
@@ -118,61 +138,65 @@
 
     {{-- section alasan --}}
     <section id="alasan"
-        class="relative bg-[url('../../public/img/general/bg-alasan.webp')] bg-no-repeat bg-cover h-auto">
+        class="relative bg-[url('../../public/img/general/bg-alasan-pbg.webp')] bg-no-repeat bg-cover h-auto">
         <div class="container px-6 py-20 mx-auto lg:px-60 2xl:py-32 2xl:px-96">
             <div class="flex flex-col justify-center">
                 @if (app()->getLocale() == 'en')
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Reasons</span>
-                        why slf services are important for
+                        WHY PBG SERVICES ARE IMPORTANT FOR
                         <span class="px-1 text-white bg-secondary">your business</span> or <span
                             class="px-1 text-white bg-secondary">property</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                for legality and compliance
+                                legal certainty
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Having an SLF is proof that the business or property is operating legally and complies with
-                                applicable regulations
+                                PBG provides legal certainty to the building owner that the construction was carried out
+                                legally and in accordance with applicable regulations.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                customer trust
+                                safety and security
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Customers will feel more comfortable and confident using services or occupying properties
-                                that have passed the audit process and received official certification.
+                                PBG ensures that the buildings it erects meet established safety and security standards.
+                                This is important to protect occupants and building users from the risk of accidents or
+                                natural disasters.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                safety and comfort
+                                consumer protection
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                A Certificate of Occupancy ensures that a building or property has undergone rigorous
-                                inspection to ensure safety and comfort for its occupants.
+                                PBG protects consumers from irresponsible building practices. With PBG, consumers can be
+                                assured that the buildings they buy or rent are constructed with good quality and in
+                                accordance with applicable standards.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                property value
+                                Development Control
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                This certificate shows that the building or property has met high standards in terms of
-                                quality, safety and reliability.
+                                PBG assists the government in controlling development in its area. With PBG, the government
+                                can ensure that development is carried out in a planned manner and in accordance with the
+                                established spatial layout.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Legal and licensing requirements
+                                Change of Building Function
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Without a valid SLF, a business or property can face serious legal and administrative
-                                consequences, including sanctions or use bans.
+                                PBG is required when changing the function of a building. This is important to ensure that
+                                changes to the function of the building do not jeopardize the safety and security of the
+                                occupants and users of the building.
                             </p>
                         </li>
                     </ul>
@@ -180,54 +204,58 @@
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Alasan</span>
-                        Mengapa Jasa SLF penting untuk
+                        Mengapa jasa pbg penting untuk
                         <span class="px-1 text-white bg-secondary">bisnis</span> atau <span
                             class="px-1 text-white bg-secondary">properti anda</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                untuk legalitas dan kepatuhan
+                                Kepastian Hukum
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Memiliki SLF merupakan bukti bahwa bisnis atau properti tersebut beroperasi secara sah dan
-                                mematuhi peraturan yang berlaku
+                                PBG memberikan kepastian hukum kepada pemilik bangunan bahwa pembangunannya dilakukan secara
+                                sah dan sesuai dengan peraturan yang berlaku.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                kepercayaan pelanggan
+                                Keamanan dan Keselamatan
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Pelanggan akan merasa lebih nyaman dan yakin menggunakan layanan atau menghuni properti yang
-                                telah melewati proses audit dan mendapatkan sertifikasi resmi
+                                PBG memastikan bahwa bangunan yang didirikan memenuhi standar keamanan dan keselamatan yang
+                                ditetapkan. Hal ini penting untuk melindungi penghuni dan pengguna bangunan dari risiko
+                                kecelakaan atau bencana alam.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                keamanan dan kenyamanan
+                                Perlindungan Konsumen
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Sertifikat Laik Fungsi memastikan bahwa bangunan atau properti telah melalui pemeriksaan
-                                yang ketat untuk memastikan keamanan dan kenyamanan bagi penghuninya.
+                                PBG melindungi konsumen dari praktik pembangunan yang tidak bertanggung jawab. Dengan PBG,
+                                konsumen dapat memastikan bahwa bangunan yang mereka beli atau sewa didirikan dengan
+                                kualitas yang baik dan sesuai dengan standar yang berlaku.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Nilai properti
+                                Pengendalian Pembangunan
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Sertifikat ini menunjukkan bahwa bangunan atau properti telah memenuhi standar yang tinggi
-                                dalam hal kualitas, keamanan, dan keandalan.
+                                PBG membantu pemerintah dalam mengendalikan pembangunan di wilayahnya. Dengan PBG,
+                                pemerintah dapat memastikan bahwa pembangunan dilakukan dengan terencana dan sesuai dengan
+                                tata ruang yang telah ditetapkan.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                persyaratan hukum dan perizinan
+                                Perubahan Fungsi Bangunan
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Tanpa SLF yang valid, bisnis atau properti dapat menghadapi konsekuensi hukum dan
-                                administratif yang serius, termasuk sanksi atau larangan penggunaan.
+                                PBG diperlukan jika ingin mengubah fungsi bangunan. Hal ini penting untuk memastikan bahwa
+                                perubahan fungsi bangunan tidak membahayakan keselamatan dan keamanan penghuni dan pengguna
+                                bangunan.
                             </p>
                         </li>
                     </ul>
@@ -243,9 +271,9 @@
             <div class="text-center">
                 <h2 class="mb-10 text-2xl font-bold uppercase text-primary md:text-4xl font-poppins">
                     @if (app()->getLocale() == 'en')
-                        SLF Submission Requirements
+                        PBG Submission Requirements
                     @else
-                        Syarat Pengajuan SLF
+                        Syarat Pengajuan PBG
                     @endif
                 </h2>
             </div>
@@ -265,47 +293,46 @@
                         <ul class="space-y-2 list-disc text-paragraph font-poppins">
                             @if (app()->getLocale() == 'en')
                                 <li>
-                                    Copy of applicant's KTP and KK
+                                    Application letter addressed to the regional head
                                 </li>
                                 <li>
-                                    Copy of the latest Land and Building Tax Notification Letter (SPPT PBB)
+                                    Photocopy of Electronic KTP and NPWP Applicant Power of Attorney (if ruled)
                                 </li>
                                 <li>
-                                    Copy of physical land tenure statement (SHM, SHGB, AJB, etc.)
+                                    Land Ownership Proof Document (SHM, HGB, etc.) Statement of Mastery of Land Field
+                                    (if not the owner)
                                 </li>
                                 <li>
-                                    Copy of Building Construction Permit (IMB)
+                                    Statement Letter of Dispute
                                 </li>
                                 <li>
-                                    Copy of statement letter of completion of construction
+                                    Documents of the results of observation and/or technical recommendations from
+                                    ministries/institutions (if
+                                    required)
                                 </li>
                                 <li>
-                                    A statement of ability to comply with the requirements of functional feasibility
-                                </li>
-                                <li>
-                                    Copy of NPWP (optional)
+                                    Neighbor approval document (if needed)
                                 </li>
                             @else
                                 <li>
-                                    Fotokopi KTP dan KK pemohon
+                                    Surat permohonan yang ditujukan kepada kepala daerah
                                 </li>
                                 <li>
-                                    Fotokopi Surat Pemberitahuan Pajak Terhutang Pajak Bumi dan Bangunan (SPPT PBB) terbaru
+                                    Fotokopi KTP elektronik dan NPWP pemohonSurat kuasa (jika dikuasakan)
                                 </li>
                                 <li>
-                                    Fotokopi Surat pernyataan penguasaan fisik bidang tanah (SHM, SHGB, AJB, dll.)
+                                    Dokumen bukti kepemilikan tanah (SHM, HGB, dll.)Surat pernyataan penguasaan bidang tanah
+                                    (jika bukan pemilik)
                                 </li>
                                 <li>
-                                    Fotokopi Izin Mendirikan Bangunan (IMB)
+                                    Surat pernyataan tidak sengketa
                                 </li>
                                 <li>
-                                    Fotokopi Surat pernyataan telah menyelesaikan pembangunan
+                                    Dokumen hasil pencermatan dan/atau rekomendasi teknis dari Kementerian/Lembaga (jika
+                                    diperlukan)
                                 </li>
                                 <li>
-                                    Surat pernyataan kesanggupan untuk mentaati persyaratan laik fungsi
-                                </li>
-                                <li>
-                                    Fotokopi NPWP (opsional)
+                                    Dokumen persetujuan tetangga (jika diperlukan)
                                 </li>
                             @endif
                         </ul>
@@ -325,36 +352,36 @@
                         <ul class="space-y-2 list-disc text-paragraph font-poppins">
                             @if (app()->getLocale() == 'en')
                                 <li>
-                                    Building technical plan drawings
+                                    Picture of the Technical Plan that has been approved by the architect/technical expert
                                 </li>
                                 <li>
-                                    Results of testing the feasibility of building functions from a team of experts
+                                    Analysis of Environmental Impacts (AMDAL) or Environmental Management Efforts and
+                                    Efforts
                                 </li>
                                 <li>
-                                    Technical recommendtaion from the Fire Department
+                                    Environmental Monitoring (UKL-UPL) (if needed)
                                 </li>
                                 <li>
-                                    Technical recommendation from the Health Office
+                                    Statement of ability to fulfill technical requirements
                                 </li>
                                 <li>
-                                    Certificate of operation (SLO) for certain buildings (e.g. elevator, generator set,
-                                    etc.)
+                                    Estimated Document for Construction Implementation Costs
                                 </li>
                             @else
                                 <li>
-                                    Gambar rencana teknis bangunan
+                                    Gambar rencana teknis yang telah disahkan oleh arsitek/ahli teknik
                                 </li>
                                 <li>
-                                    Hasil pengujian kelaikan fungsi bangunan dari tim ahli
+                                    Analisis Mengenai Dampak Lingkungan (AMDAL) atau Upaya Pengelolaan Lingkungan dan Upaya
                                 </li>
                                 <li>
-                                    Rekomendasi teknis dari Dinas Pemadam Kebakaran
+                                    Pemantauan Lingkungan (UKL-UPL) (jika diperlukan)
                                 </li>
                                 <li>
-                                    Rekomendasi teknis dari Dinas Kesehatan
+                                    Surat pernyataan kesanggupan pemenuhan persyaratan teknis
                                 </li>
                                 <li>
-                                    Sertifikat laik operasi (SLO) untuk bangunan tertentu (misalnya, lift, genset, dll.)
+                                    Dokumen perkiraan biaya pelaksanaan konstruksi
                                 </li>
                             @endif
                         </ul>
@@ -373,19 +400,18 @@
                     @if (app()->getLocale() == 'en')
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            Consult your business to get a functional certificate now!
+                            Immediately consult your building licensing now!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Find publishing solutions with our professional, optimistic, thorough and solutive services.
+                            Get the best offer service from us, don't miss this opportunity!
                         </div>
                     @else
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            segera konsultasikan bisnis anda untuk mendapatkan sertifikat laik fungsi sekarang!
+                            SEGERA KONSULTASIKAN PERIZINAN GEDUNG ANDA SEKARANG!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Temukan solusi penerbitan dengan layanan yang profesional, optimis, tuntas dan solutif dari
-                            kami.
+                            Dapatkan pelayanan penawaran terbaik dari kami, Jangan lewatkan kesempatan ini!
                         </div>
                     @endif
                     <div class="flex w-full">
@@ -423,16 +449,16 @@
 
     {{-- section perolehan --}}
     <section id="profil"
-        class="relative lg:min-h-[90vh] bg-white lg:bg-[url('../../public/img/general/bg-perolehan-slf.webp')] bg-no-repeat bg-cover bg-center">
+        class="relative lg:min-h-[90vh] bg-white lg:bg-[url('../../public/img/general/bg-perolehan-pbg.webp')] bg-no-repeat bg-cover bg-center">
 
         <div
             class="relative h-full lg:max-w-screen-lg 2xl:max-w-screen-xl lg:min-h-[90vh] px-4 py-24 text-left lg:pl-20 2xl:py-32">
             <h2
                 class="mb-4 text-xl font-extrabold leading-relaxed tracking-normal text-center lg:text-left font-poppins text-primary md:text-2xl md:leading-relaxed 2xl:pl-32 2xl:text-4xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    SLF Acquisition Process
+                    PBG acquisition process
                 @else
-                    Proses Perolehan SLF
+                    Proses Perolehan PBG
                 @endif
             </h2>
             <div class="w-full lg:w-1/2 text-paragraph font-poppins 2xl:pl-32 2xl:w-3/4 2xl:text-xl">
@@ -445,7 +471,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. application submission</span>
+                                <span class="capitalize">1. Application Registration</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -455,14 +481,11 @@
                         </h2>
                         <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        The applicant submits the SLF application to the local Public Works Office (PU) or
-                                        Building and Spatial Planning Office (PRB).
-                                    </li>
-                                    <li>
-                                        The application is submitted in writing and completed with the specified
-                                        requirements.
+                                        The applicant registered the PBG application through the OSS (Online Single
+                                        Submission) system
+                                        or SIMBG (Building Management Information System).
                                     </li>
                                 </ul>
                             </div>
@@ -473,7 +496,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. Application Examination</span>
+                                <span class="capitalize">2. Application Verification</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -483,14 +506,11 @@
                         </h2>
                         <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Officers from the PU/PRB Office will check the completeness and validity of the
-                                        requirements.
-                                    </li>
-                                    <li>
-                                        The officer will also conduct a field inspection to ensure that the building meets
-                                        the requirements.
+                                        Technical officers from the PUPR Office (Public Works and Public Housing Office)
+                                        will
+                                        Conduct an inspection of the application document and building site.
                                     </li>
                                 </ul>
                             </div>
@@ -501,7 +521,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. Verification and inspection</span>
+                                <span class="capitalize">3. PBG Publication</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -511,14 +531,11 @@
                         </h2>
                         <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Officers from the PUPR Office will verify the completeness and validity of the
-                                        requirements submitted.
-                                    </li>
-                                    <li>
-                                        The Technical Team from the PUPR Office will conduct a field inspection to ensure
-                                        the building has met the requirements for a proper function.
+                                        The Head of the PUPR Office issued PBG based on the results of the examination and
+                                        recommendations
+                                        technical.
                                     </li>
                                 </ul>
                             </div>
@@ -529,7 +546,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. technical team session</span>
+                                <span class="capitalize">4. levy payment</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -539,64 +556,9 @@
                         </h2>
                         <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Hasil pemeriksaan lapangan dan dokumen permohonan akan dibahas dalam sidang Tim
-                                        Teknis.
-                                    </li>
-                                    <li>
-                                        The Technical Team will provide a recommendation whether the building is fit for
-                                        function or not.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-                        <h2 id="accordion-color-heading-5">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-5" aria-expanded="false"
-                                aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. SLF Issuance</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
-                                    <li>
-                                        If the building is declared fit for function, the PUPR Office will issue the SLF.
-                                    </li>
-                                    <li>
-                                        The SLF can be printed and signed by an authorized official.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-
-                        <h2 id="accordion-color-heading-6">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-6" aria-expanded="false"
-                                aria-controls="accordion-color-body-6">
-                                <span class="capitalize">6. Retribution Payment</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
-                                    <li>
-                                        The applicant pays the SLF issuance retribution.
+                                        The applicant pays PBG levies in accordance with applicable regulations.
                                     </li>
                                 </ul>
                             </div>
@@ -611,7 +573,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. Pengajuan Permohonan</span>
+                                <span class="capitalize">1. pendaftaran permohonan</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -621,14 +583,10 @@
                         </h2>
                         <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Pemohon mengajukan permohonan SLF ke Dinas Pekerjaan Umum (PU) atau Dinas Penataan
-                                        Ruang dan Bangunan (PRB) setempat.
-                                    </li>
-                                    <li>
-                                        Permohonan diajukan secara tertulis dan dilengkapi dengan persyaratan yang telah
-                                        ditentukan.
+                                        Pemohon mendaftarkan permohonan PBG melalui sistem OSS (Online Single Submission)
+                                        atau SIMBG (Sistem Informasi Manajemen Bangunan Gedung).
                                     </li>
                                 </ul>
                             </div>
@@ -639,7 +597,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. Pemeriksaan Permohonan</span>
+                                <span class="capitalize">2. pemeriksaan permohonan</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -649,13 +607,10 @@
                         </h2>
                         <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Petugas dari Dinas PU/PRB akan memeriksa kelengkapan dan keabsahan persyaratan.
-                                    </li>
-                                    <li>
-                                        Petugas juga akan melakukan pemeriksaan lapangan untuk memastikan bangunan telah
-                                        memenuhi persyaratan laik fungsi.
+                                        Petugas teknis dari Dinas PUPR (Dinas Pekerjaan Umum dan Perumahan Rakyat) akan
+                                        melakukan pemeriksaan terhadap dokumen permohonan dan tapak bangunan.
                                     </li>
                                 </ul>
                             </div>
@@ -666,7 +621,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. Verifikasi dan Pemeriksaan</span>
+                                <span class="capitalize">3. penerbitan PBG</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -676,14 +631,10 @@
                         </h2>
                         <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Petugas Dinas PUPR akan melakukan verifikasi terhadap kelengkapan dan keabsahan
-                                        persyaratan yang diajukan.
-                                    </li>
-                                    <li>
-                                        Tim Teknis dari Dinas PUPR akan melakukan pemeriksaan lapangan untuk memastikan
-                                        bangunan telah memenuhi persyaratan laik fungsi.
+                                        Kepala Dinas PUPR menerbitkan PBG berdasarkan hasil pemeriksaan dan rekomendasi
+                                        teknis.
                                     </li>
                                 </ul>
                             </div>
@@ -694,7 +645,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. Sidang Tim Teknis</span>
+                                <span class="capitalize">4. pembayaran retribusi</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -704,63 +655,9 @@
                         </h2>
                         <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Hasil pemeriksaan lapangan dan dokumen permohonan akan dibahas dalam sidang Tim
-                                        Teknis.
-                                    </li>
-                                    <li>
-                                        Tim Teknis akan memberikan rekomendasi apakah bangunan layak fungsi atau tidak.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-                        <h2 id="accordion-color-heading-5">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-5" aria-expanded="false"
-                                aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. Penerbitan SLF</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
-                                    <li>
-                                        Jika bangunan dinyatakan laik fungsi, Dinas PUPR akan menerbitkan SLF.
-                                    </li>
-                                    <li>
-                                        SLF dapat dicetak dan ditandatangani oleh pejabat berwenang.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-
-                        <h2 id="accordion-color-heading-6">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-6" aria-expanded="false"
-                                aria-controls="accordion-color-body-6">
-                                <span class="capitalize">6. Pembayaran Retribusi</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
-                                    <li>
-                                        Pemohon membayar retribusi penerbitan SLF.
+                                        Pemohon membayar retribusi PBG sesuai dengan ketentuan yang berlaku.
                                     </li>
                                 </ul>
                             </div>
