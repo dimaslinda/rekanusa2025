@@ -16,6 +16,7 @@ Route::get('/direksi', [GeneralControllers::class, 'direksi'])->name('direksi');
 Route::get('/jasaslf', [GeneralControllers::class, 'jasaslf'])->name('jasaslf');
 Route::get('/audit-struktur', [GeneralControllers::class, 'audit'])->name('audit');
 Route::get('/audit-energy', [GeneralControllers::class, 'auditenergy'])->name('auditenergy');
+Route::get('/pbg', [GeneralControllers::class, 'pbg'])->name('pbg');
 
 // Route::get('/test-gcs', function () {
 //     try {
