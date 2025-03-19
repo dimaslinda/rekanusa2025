@@ -18,15 +18,9 @@ class GeneralControllers extends Controller
         FetchPostsJob::dispatch($apiUrl, $authCredentials, 'responselates', 1);
         FetchPostsJob::dispatch($apiUrl, $authCredentials, 'responselimit', 3);
 
-        // Fetch local data (cached or DB)
-        $regazine = Cache::remember('regazine', 3700, function () {
-            return Regazine::with('media')->orderBy('id', 'desc')->get();
-        });
-
-        $regazinelast = Cache::remember('regazinelast', 3700, function () {
-            return Regazine::with('nama_relasi')->latest()->first();
-        });
-
+        // Ambil data dari cache atau database
+        $regazine = $this->getCachedRegazine();
+        $regazinelast = $this->getCachedRegazineLast();
         $testimoni = $this->getCachedTestimoni();
 
         // Retrieve the cached data (if available, otherwise return empty arrays)
@@ -34,13 +28,6 @@ class GeneralControllers extends Controller
         $responselimit = Cache::get('responselimit', []);
 
         return view('index', compact('responselates', 'responselimit', 'regazine', 'regazinelast', 'testimoni'));
-    }
-
-    private function getCachedTestimoni()
-    {
-        return Cache::remember('testimoni', 120, function () {
-            return Testimoni::with('media')->get();
-        });
     }
 
     public function profile()
@@ -51,6 +38,45 @@ class GeneralControllers extends Controller
     public function direksi()
     {
         return view('direksi');
+    }
+
+    public function jasaslf()
+    {
+        $testimoni = Cache::remember('testimoni', 120, function () {
+            return Testimoni::whereHas('kategoris', function ($query) {
+                $query->where('kategori_id', 1);
+            })
+            ->with(['media', 'kategoris'])
+            ->get();
+        });
+        return view('jasaslf', compact('testimoni'));
+    }
+
+    private function getCachedRegazine()
+    {
+        return Cache::remember('regazine', 3700, function () {
+            return Regazine::with('media')->orderBy('id', 'desc')->get();
+        });
+    }
+
+    /**
+     * Helper Method: Get Cached Regazine Last
+     */
+    private function getCachedRegazineLast()
+    {
+        return Cache::remember('regazinelast', 3700, function () {
+            return Regazine::with('media')->latest()->first();
+        });
+    }
+
+    /**
+     * Helper Method: Get Cached Testimoni
+     */
+    private function getCachedTestimoni()
+    {
+        return Cache::remember('testimoni', 120, function () {
+            return Testimoni::with('media')->get();
+        });
     }
 }
 

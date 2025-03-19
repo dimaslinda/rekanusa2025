@@ -1209,7 +1209,7 @@
 <section class="relative">
 
     <!-- Slider main container -->
-    <div class="relative w-full swiper h-[50vh] lg:h-[80vh]">
+    <div class="relative w-full swiper h-[50vh] lg:h-[80vh] overflow-hidden">
         <div class="absolute top-0 right-0 z-10">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-[150px] lg:w-[250px] 2xl:w-[350px]"
                 viewBox="0 0 293 246" fill="none">
@@ -1235,19 +1235,19 @@
 
                     <div
                         class="absolute top-0 left-0 z-10 w-full h-full font-poppins bg-gradient-to-r from-white to-[rgba(3,15,39,0)]">
-                        <div class="container px-6 pt-20 mx-auto md:pt-32 md:pl-20 2xl:pt-40">
+                        <div class="container px-6 pt-30 mx-auto md:pt-32 md:pl-20 2xl:pt-40">
                             <div
-                                class="text-2xl font-bold leading-relaxed uppercase text-primary lg:text-4xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed font-inter">
+                                class="text-base md:text-2xl font-bold line-clamp-2 leading-relaxed uppercase text-primary lg:text-4xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed font-inter">
                                 {{ $item->nama_project }}
                             </div>
                             <div class="lg:pr-52 lg:w-3/5">
-                                <div class="text-lg font-poppins 2xl:text-xl">
+                                <div class="text-sm sm:text-lg font-poppins 2xl:text-xl">
                                     {!! $item->testimoni !!}
                                 </div>
                                 <div class="mt-5 font-bold uppercase text-primary font-poppins 2xl:text-lg">
                                     -{{ $item->nama }}
                                 </div>
-                                <div class="text-lg font-poppins 2xl:text-xl">
+                                <div class="text-sm sm:text-lg font-poppins 2xl:text-xl">
                                     {{ $item->jabatan }}
                                 </div>
                             </div>
