@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Cache;
 
 class GeneralControllers extends Controller
 {
+    /**
+     * Handle the HTTP request to show the home page.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
     public function index()
     {
         $apiUrl = "https://rekanusa.co.id/artikel/wp-json/wp/v2/posts";
@@ -30,29 +35,86 @@ class GeneralControllers extends Controller
         return view('index', compact('responselates', 'responselimit', 'regazine', 'regazinelast', 'testimoni'));
     }
 
+    /**
+     * Display the profile view.
+     *
+     * This method returns the profile view, which contains information
+     * about the company, its mission, and its services.
+     */
+
+    /**
+     * Display the profile view.
+     *
+     * This method returns the profile view, which contains information
+     * about the company, its mission, and its services.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
     public function profile()
     {
         return view('profile');
     }
 
+    /**
+     * Halaman Direksi
+     *
+     * Menampilkan halaman direksi yang berisi informasi tentang direktur
+     * utama PT. Kinarya Kompegriti Rekanusa beserta riwayat hidup dan pengalaman
+     * kerja.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function direksi()
     {
         return view('direksi');
     }
 
+    /**
+     * Halaman Jasa SLF
+     *
+     * Menampilkan data-data testimonial yang berelasi dengan kategori_id = 1
+     * serta mengirimkannya ke view jasaslf
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function jasaslf()
     {
         $testimoni = Testimoni::whereHas('kategoris', function ($query) {
             $query->where('kategori_id', 1);
         })
-        ->with(['media', 'kategoris'])
-        ->get();
+            ->with(['media', 'kategoris'])
+            ->get();
 
-
-        // dd($testimoni);
         return view('jasaslf', compact('testimoni'));
     }
 
+    /**
+     * Display the audit view.
+     *
+     * This method returns the audit view, which contains information
+     * about the company's audit services.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
+    public function audit()
+    {
+        $testimoni = Testimoni::whereHas('kategoris', function ($query) {
+            $query->where('kategori_id', 2);
+        })
+            ->with(['media', 'kategoris'])
+            ->get();
+        return view('audit', compact('testimoni'));
+    }
+
+    /**
+     * Helper Method: Get Cached Regazine
+     *
+     * Retrieves the cached regazine data from the cache store.
+     * If the cache does not exist, it will query the database
+     * and store the result in the cache for 3700 seconds (1 hour and 5 minutes).
+     *
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
     private function getCachedRegazine()
     {
         return Cache::remember('regazine', 3700, function () {
@@ -69,9 +131,4 @@ class GeneralControllers extends Controller
             return Regazine::with('media')->latest()->first();
         });
     }
-
-    /**
-     * Helper Method: Get Cached Testimoni
-     */
 }
-

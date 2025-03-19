@@ -151,7 +151,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/audit"
+                                            <a href="/audit-struktur"
                                                 class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
                                                 Structure Audit
                                             </a>
