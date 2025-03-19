@@ -114,6 +114,20 @@ class GeneralControllers extends Controller
     }
 
     /**
+     * Halaman Bangunan
+     *
+     * Menampilkan halaman bangunan yang berisi informasi tentang jasa bangunan
+     * yang diberikan oleh PT. Kinarya Kompegriti Rekanusa.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
+    public function bangunan()
+    {
+        $testimoni = $this->getTestimoniByKategori(5);
+        return view('bangunan', compact('testimoni'));
+    }
+
+    /**
      * Helper Method: Get Cached Regazine
      *
      * Retrieves the cached regazine data from the cache store.
