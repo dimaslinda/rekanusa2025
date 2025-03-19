@@ -13,7 +13,12 @@ class ManageRegazines extends ManageRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+                ->label('Tambah Regazine'),
         ];
+    }
+    public function getTitle(): string
+    {
+        return 'Data Regazine';
     }
 }

@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\RegazineResource\RelationManagers;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Notifications\Notification;
 
 class RegazineResource extends Resource
 {
@@ -25,6 +26,13 @@ class RegazineResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-book-open';
 
     protected static ?string $navigationGroup = 'Magazine';
+
+    protected static ?string $navigationLabel = 'Data Regazine';
+
+    public static function shouldRegisterNavigation(): bool
+{
+    return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
+}
 
     public static function form(Form $form): Form
     {
@@ -105,12 +113,39 @@ class RegazineResource extends Resource
                 // Add filters here if necessary
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\EditAction::make()
+                    ->successNotification(null)
+                    ->after(function ($record) {
+                        Notification::make()
+                            ->title('Berhasil')
+                            ->body("Data Regazine '{$record->judul}' berhasil diubah!")
+                            ->success()
+                            ->duration(3000)
+                            ->send();
+                    }),
+                Tables\Actions\DeleteAction::make()
+                    ->successNotification(null)
+                    ->after(function ($record) {
+                        Notification::make()
+                            ->title('Berhasil')
+                            ->body("Data Regazine '{$record->judul}' berhasil dihapus!")
+                            ->success()
+                            ->duration(3000)
+                            ->send();
+                    }),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\DeleteBulkAction::make()
+                        ->successNotification(null)
+                        ->after(function () {
+                            Notification::make()
+                                ->title('Berhasil')
+                                ->body('Data Regazine berhasil dihapus secara massal!')
+                                ->success()
+                                ->duration(3000)
+                                ->send();
+                        }),
                 ]),
             ]);
     }
@@ -119,6 +154,19 @@ class RegazineResource extends Resource
     {
         return [
             'index' => Pages\ManageRegazines::route('/'),
+        ];
+    }
+
+    public static function getPermissions(): array
+    {
+        return [
+            'viewAny',
+            'view',
+            'create',
+            'update',
+            'delete',
+            'restore',
+            'forceDelete',
         ];
     }
 }

@@ -20,9 +20,11 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-users';
 
     protected static ?string $navigationGroup = 'User Management'; // Optional grouping for better organization
+
+    protected static ?int $navigationSort = 4;
 
     /**
      * Add required permissions to the resource.
@@ -39,10 +41,12 @@ class UserResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
+                    ->placeholder('input name')
                     ->maxLength(255),
 
                 Forms\Components\TextInput::make('email')
                     ->email()
+                    ->placeholder('input email')
                     ->required()
                     ->maxLength(255),
 
@@ -57,6 +61,7 @@ class UserResource extends Resource
 
                 Forms\Components\Select::make('roles')
                     ->relationship('roles', 'name')
+                    ->placeholder('input roles')
                     ->multiple() // Allows assigning multiple roles
                     ->required()
                     ->preload(),
@@ -84,12 +89,39 @@ class UserResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\EditAction::make()
+                    ->successNotification(null)
+                    ->after(function ($record) {
+                        Notification::make()
+                            ->title('Berhasil')
+                            ->body("Data User {$record->name} berhasil diubah!")
+                            ->success()
+                            ->duration(3000)
+                            ->send();
+                    }),
+                Tables\Actions\DeleteAction::make()
+                    ->successNotification(null)
+                    ->after(function ($record) {
+                        Notification::make()
+                            ->title('Berhasil')
+                            ->body("Data User {$record->name} berhasil dihapus!")
+                            ->success()
+                            ->duration(3000)
+                            ->send();
+                    }),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\DeleteBulkAction::make()
+                        ->successNotification(null)
+                        ->after(function () {
+                            Notification::make()
+                                ->title('Berhasil')
+                                ->body('Data User berhasil dihapus secara massal!')
+                                ->success()
+                                ->duration(3000)
+                                ->send();
+                        }),
                 ]),
             ]);
     }
