@@ -21,7 +21,7 @@ class GeneralControllers extends Controller
         // Ambil data dari cache atau database
         $regazine = $this->getCachedRegazine();
         $regazinelast = $this->getCachedRegazineLast();
-        $testimoni = $this->getCachedTestimoni();
+        $testimoni = Testimoni::with(['media', 'kategoris'])->get();
 
         // Retrieve the cached data (if available, otherwise return empty arrays)
         $responselates = Cache::get('responselates', []);
@@ -42,13 +42,14 @@ class GeneralControllers extends Controller
 
     public function jasaslf()
     {
-        $testimoni = Cache::remember('testimoni', 120, function () {
-            return Testimoni::whereHas('kategoris', function ($query) {
-                $query->where('kategori_id', 1);
-            })
-            ->with(['media', 'kategoris'])
-            ->get();
-        });
+        $testimoni = Testimoni::whereHas('kategoris', function ($query) {
+            $query->where('kategori_id', 1);
+        })
+        ->with(['media', 'kategoris'])
+        ->get();
+
+
+        // dd($testimoni);
         return view('jasaslf', compact('testimoni'));
     }
 
@@ -72,11 +73,5 @@ class GeneralControllers extends Controller
     /**
      * Helper Method: Get Cached Testimoni
      */
-    private function getCachedTestimoni()
-    {
-        return Cache::remember('testimoni', 120, function () {
-            return Testimoni::with('media')->get();
-        });
-    }
 }
 
