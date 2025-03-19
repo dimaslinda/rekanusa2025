@@ -26,6 +26,9 @@
     --color-secondary: #39b54a;
     --color-tombol: #ffc736;
     --color-paragraph: #515151;
+    --breakpoint-ez: 425px;
+    --breakpoint-ez2: 500px;
+    --breakpoint-ez3: 600px;
 }
 
 @layer components {

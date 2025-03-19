@@ -12,6 +12,7 @@ Route::get('locale/{locale}', function ($locale) {
 
 Route::get('/', [GeneralControllers::class, 'index'])->name('index');
 Route::get('/profile', [GeneralControllers::class, 'profile'])->name('profile');
+Route::get('/direksi', [GeneralControllers::class, 'direksi'])->name('direksi');
 
 // Route::get('/test-gcs', function () {
 //     try {
