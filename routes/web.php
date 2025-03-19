@@ -14,6 +14,7 @@ Route::get('/', [GeneralControllers::class, 'index'])->name('index');
 Route::get('/profile', [GeneralControllers::class, 'profile'])->name('profile');
 Route::get('/direksi', [GeneralControllers::class, 'direksi'])->name('direksi');
 Route::get('/jasaslf', [GeneralControllers::class, 'jasaslf'])->name('jasaslf');
+Route::get('/audit-struktur', [GeneralControllers::class, 'audit'])->name('audit');
 
 // Route::get('/test-gcs', function () {
 //     try {
