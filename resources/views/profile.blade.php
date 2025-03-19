@@ -290,4 +290,135 @@
     </div>
 </section>
 {{-- end visi misi --}}
+
+{{-- legal --}}
+<section id="legal" class="relative">
+    <div class="container p-6 mx-auto">
+        <h2
+            class="pt-10 text-2xl font-bold text-center uppercase text-primary md:text-4xl font-inter">
+            @if (App::getLocale() == 'id')
+                legal
+            @else
+                legality
+            @endif
+        </h2>
+        <p
+            class="my-5 text-sm text-center text-paragraph font-poppin md:text-base lg:px-24 2xl:text-xl">
+            {{ __('Perizinan kami lengkap dan telah memenuhi semua persyaratan yang diperlukan.') }}
+        </p>
+
+    </div>
+    <div class="flex flex-wrap justify-center w-full gap-5">
+        <div class="max-w-sm 2xl:max-w-xs">
+            <img loading="lazy" src="{{ asset('img/legal/1.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-sm 2xl:max-w-xs">
+            <img loading="lazy" src="{{ asset('img/legal/2.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-sm 2xl:max-w-xs">
+            <img loading="lazy" src="{{ asset('img/legal/3.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-sm 2xl:max-w-xs">
+            <img loading="lazy" src="{{ asset('img/legal/4.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-sm 2xl:max-w-xs">
+            <img loading="lazy" src="{{ asset('img/legal/5.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+    </div>
+</section>
+{{-- end legal --}}
+
+{{-- section sertifikasi --}}
+<section id="sertifikasi" class="relative">
+    <div class="container p-6 mx-auto">
+        @if (App::getLocale() == 'id')
+            <h2
+                class="pt-10 text-2xl font-bold text-center uppercase text-primary md:text-4xl font-inter">
+                sertifikasi
+            </h2>
+            <p
+                class="my-5 text-sm text-center text-paragraph font-poppin md:text-base lg:px-24 2xl:text-xl">
+                Tim kami telah memiliki pengalaman dan sertifikasi yang dibutuhkan untuk menyelesaikan pekerjaan sesuai dengan kebutuhan Anda.}
+            </p>
+        @else
+            <h2
+                class="pt-10 text-2xl font-bold text-center uppercase text-primary md:text-4xl font-inter">
+                Certification
+            </h2>
+            <p
+                class="my-5 text-sm text-center text-paragraph font-poppin md:text-base lg:px-24 2xl:text-xl">
+                Our team has the experience and certifications needed to get the job done according to your needs.
+            </p>
+        @endif
+
+    </div>
+
+    <div class="flex flex-wrap justify-center w-full gap-5 mb-10">
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/1.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/2.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/3.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+
+    </div>
+    <div class="flex flex-wrap justify-center w-full gap-5 mb-10">
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/4.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/5.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/6.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center w-full gap-5 mb-10">
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/7.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/8.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/9.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/10.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center w-full gap-5 mb-10">
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/11.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+        <div class="max-w-xs">
+            <img loading="lazy" src="{{ asset('img/certificate/12.webp') }}"
+                class="object-cover w-full h-full" alt="Legal">
+        </div>
+    </div>
+
+
+</section>
+{{-- end sertifikasi --}}
 @endsection
