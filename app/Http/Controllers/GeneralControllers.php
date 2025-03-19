@@ -47,5 +47,10 @@ class GeneralControllers extends Controller
     {
         return view('profile');
     }
+
+    public function direksi()
+    {
+        return view('direksi');
+    }
 }
 
