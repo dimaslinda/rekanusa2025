@@ -24,7 +24,7 @@ class GeneralControllers extends Controller
         });
 
         $regazinelast = Cache::remember('regazinelast', 3700, function () {
-            return Regazine::latest()->first();
+            return Regazine::with('nama_relasi')->latest()->first();
         });
 
         $testimoni = $this->getCachedTestimoni();
@@ -41,6 +41,11 @@ class GeneralControllers extends Controller
         return Cache::remember('testimoni', 120, function () {
             return Testimoni::with('media')->get();
         });
+    }
+
+    public function profile()
+    {
+        return view('profile');
     }
 }
 
