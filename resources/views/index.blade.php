@@ -1,4 +1,8 @@
 @extends('layouts.main')
+@section('kepala')
+    {{-- swiper --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+@endsection
 @section('content')
 {{-- banner --}}
 <section id="banner" class="overflow-hidden relative uppercase font-monserrat">
@@ -1200,4 +1204,98 @@
     </div>
 </section>
 {{-- end section regazine --}}
+
+{{-- section ksp --}}
+<section class="relative">
+
+    <!-- Slider main container -->
+    <div class="relative w-full swiper h-[50vh] lg:h-[80vh]">
+        <div class="absolute top-0 right-0 z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[150px] lg:w-[250px] 2xl:w-[350px]"
+                viewBox="0 0 293 246" fill="none">
+                <path d="M0 0H370.5L302.5 246L0 0Z" fill="url(#paint0_linear_275_4514)" />
+                <defs>
+                    <linearGradient id="paint0_linear_275_4514" x1="397" y1="112" x2="177.5"
+                        y2="69.5001" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#272660" />
+                        <stop offset="1" stop-color="#1EB185" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            @forelse ($testimoni as $item)
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="w-full h-full">
+                        <img loading="lazy" src="{{ $item->getFirstMediaUrl('testimoni') }}"
+                            class="object-cover w-full h-full" alt="testimoni">
+                    </div>
+
+                    <div
+                        class="absolute top-0 left-0 z-10 w-full h-full font-poppins bg-gradient-to-r from-white to-[rgba(3,15,39,0)]">
+                        <div class="container px-6 pt-20 mx-auto md:pt-32 md:pl-20 2xl:pt-40">
+                            <div
+                                class="text-2xl font-bold leading-relaxed uppercase text-primary lg:text-4xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed font-inter">
+                                {{ $item->nama_project }}
+                            </div>
+                            <div class="lg:pr-52 lg:w-3/5">
+                                <div class="text-lg font-poppins 2xl:text-xl">
+                                    {!! $item->testimoni !!}
+                                </div>
+                                <div class="mt-5 font-bold uppercase text-primary font-poppins 2xl:text-lg">
+                                    -{{ $item->nama }}
+                                </div>
+                                <div class="text-lg font-poppins 2xl:text-xl">
+                                    {{ $item->jabatan }}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        class="absolute z-10 lg:w-1/4 h-full italic transform left-6 md:left-10 lg:left-20 2xl:left-56 top-1/4 md:top-[35%] 2xl:top-[23%] font-poppins">
+
+                    </div>
+                </div>
+            @empty
+                <div class="container flex justify-center items-center p-6 mx-auto text-4xl">
+                    <p class="text-center text-primary font-poppins">Tidak ada data</p>
+                </div>
+            @endforelse
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class=".swiper-button-prev"></div>
+        <div class=".swiper-button-next"></div>
+    </div>
+</section>
+{{-- end ksp --}}
+@endsection
+
+@section('kaki')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 1,
+            GrabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 @endsection

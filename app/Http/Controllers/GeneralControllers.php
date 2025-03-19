@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Jobs\FetchPostsJob;
 use App\Models\Regazine;
+use App\Models\Testimoni;
+use App\Jobs\FetchPostsJob;
 use Illuminate\Support\Facades\Cache;
 
 class GeneralControllers extends Controller
@@ -26,11 +27,20 @@ class GeneralControllers extends Controller
             return Regazine::latest()->first();
         });
 
+        $testimoni = $this->getCachedTestimoni();
+
         // Retrieve the cached data (if available, otherwise return empty arrays)
         $responselates = Cache::get('responselates', []);
         $responselimit = Cache::get('responselimit', []);
 
-        return view('index', compact('responselates', 'responselimit', 'regazine', 'regazinelast'));
+        return view('index', compact('responselates', 'responselimit', 'regazine', 'regazinelast', 'testimoni'));
+    }
+
+    private function getCachedTestimoni()
+    {
+        return Cache::remember('testimoni', 120, function () {
+            return Testimoni::with('media')->get();
+        });
     }
 }
 
