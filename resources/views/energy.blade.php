@@ -9,7 +9,7 @@
         <div>
             <div class="object-cover absolute inset-0 w-full h-full">
                 <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                    src="{{ asset('img/general/banner-struktur.webp') }}" alt="banner rekanusa">
+                    src="{{ asset('img/general/banner-energy.webp') }}" alt="banner rekanusa">
             </div>
             <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
                 src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
@@ -18,14 +18,14 @@
             <h1
                 class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed text-white md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    optimize the safety and <br class="hidden lg:block"> performance of your building with <br
-                        class="hidden lg:block"> a <span class="p-2 bg-primary">structure audit</span> <br
-                        class="hidden lg:block">
+                    increase efficiency, save <br class="hidden lg:block">
+                    energy: precision audit <br class="hidden lg:block">
+                    solutions for<span class="p-2 bg-primary">your energy future!</span>
                 @else
-                    Optimalkan keamanan dan kinerja <br class="hidden lg:block">
-                    bangunan anda dengan <br class="hidden lg:block">
-                    <span class="p-2 bg-primary">audit struktur</span>
-                    berkualitas
+                    Tingkatkan Efisiensi, Hemat Energi: <br class="hidden lg:block">
+                    solusi audit yang presisi untuk <br class="hidden lg:block">
+                    <span class="p-2 bg-primary">Masa Depan Energi</span>
+                    Anda!
                 @endif
 
             </h1>
@@ -45,49 +45,53 @@
 
     {{-- tentang audit --}}
     <section id="tentang"
-        class="relative hidden min-h-[70vh] lg:block bg-[url('../../public/img/general/bg-tentang-audit.webp')] bg-no-repeat bg-cover bg-center">
+        class="relative hidden min-h-[70vh] lg:block bg-[url('../../public/img/general/bg-tentang-energy.webp')] bg-no-repeat bg-cover bg-center">
         <div class="container mx-auto p-6">
             <div class="flex justify-end items-center self-center pt-25">
                 <div class="max-w-xl">
                     @if (app()->getLocale() == 'en')
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            About Structure Audit
+                            About Energy Audit
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            What is Structure Audit
+                            What is Energy Audit
                         </h2>
                         <div class="text-base mb-5 text-justify lg:text-lg text-paragraph font-poppins">
-                            A structural audit or what is commonly called a structural feasibility test is a health check as
-                            well as the overall performance of the building like a doctor to his patient.This is done to
-                            ensure that the building and all existing supports are safe and have no risks.
+                            A building energy audit is a comprehensive evaluation process of energy use and energy
+                            efficiency in a
+                            building or buildings. The purpose of a building energy audit is to identify energy saving
+                            opportunities, improve energy efficiency, and reduce operational costs.
                         </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            Next is to analyze and then suggest appropriate repairs and carry out the necessary
-                            reinforcement measures so that the building has good performance throughout its service life.
+                            During a building energy audit, data is collected on energy consumption, heating systems, air
+                            conditioning, lighting, ventilation, thermal insulation, and other energy components. This data
+                            is then
+                            analyzed to identify energy consumption trends and areas in need of improvement.
                         </div>
                     @else
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            Tentang Audit Struktur
+                            Tentang Audit Energi
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            Apa itu Audit Struktur
+                            Apa itu Audit Energi
                         </h2>
                         <div class="text-base mb-5 text-justify lg:text-lg text-paragraph font-poppins">
-                            Audit Struktur atau yang biasa disebut uji kelayakan struktur merupakan sebuah pemeriksaan
-                            kesehatan juga kinerja bangunan secara keseluruhan layaknya seorang dokter pada pada
-                            pasiennya.Hal ini dilakukan untuk memastikan bangunan serta segala pendukung yang ada aman dan
-                            tidak memiliki resiko.
+                            Audit energi gedung adalah proses evaluasi menyeluruh terhadap penggunaan energi dan efisiensi
+                            energi dalam suatu gedung atau bangunan. Tujuan dari audit energi gedung adalah untuk
+                            mengidentifikasi peluang penghematan energi, meningkatkan efisiensi energi, dan mengurangi biaya
+                            operasional.
                         </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            Selanjutnya yaitu melakukan analisa lalu menyarankan perbaikan yang tepat serta menjalankan
-                            langkah-langkah perkuatan yang diperlukan supaya bangunan tersebut memiliki performa yang baik
-                            sepanjang masa layanannya.
+                            Selama audit energi gedung, dilakukan pengumpulan data terkait konsumsi energi, sistem pemanas,
+                            pendingin udara, pencahayaan, ventilasi, isolasi termal, dan komponen energi lainnya. Data ini
+                            kemudian dianalisis untuk mengidentifikasi tren konsumsi energi dan area-area yang membutuhkan
+                            perbaikan.
                         </div>
                     @endif
                 </div>
@@ -96,42 +100,43 @@
     </section>
     {{-- mobile --}}
     <section id="tentang"
-        class="relative block lg:hidden bg-[url('../../public/img/general/service-audit.webp')] bg-no-repeat bg-cover bg-center bg-blend-overlay bg-white/60 h-auto">
+        class="relative block lg:hidden bg-[url('../../public/img/general/bg-tentang-energy-mobile.webp')] bg-no-repeat bg-cover bg-center bg-blend-overlay bg-white/60 h-auto">
         <div class="px-6 py-10 md:py-32 md:px-20">
             @if (app()->getLocale() == 'en')
                 <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    About Structure Audit
+                    About Energy Audit
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
                 <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    What is Structure Audit
+                    What is Energy Audit
                 </h2>
                 <div class="text-base mb-5 text-justify lg:text-lg text-paragraph font-poppins">
-                    A structural audit or what is commonly called a structural feasibility test is a health check as well as
-                    the overall performance of the building like a doctor to his patient.This is done to ensure that the
-                    building and all existing supports are safe and have no risks.
+                    A building energy audit is a comprehensive evaluation process of energy use and energy efficiency in a
+                    building or buildings. The purpose of a building energy audit is to identify energy saving
+                    opportunities, improve energy efficiency, and reduce operational costs.
                 </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    Next is to analyze and then suggest appropriate repairs and carry out the necessary reinforcement
-                    measures so that the building has good performance throughout its service life.
+                    During a building energy audit, data is collected on energy consumption, heating systems, air
+                    conditioning, lighting, ventilation, thermal insulation, and other energy components. This data is then
+                    analyzed to identify energy consumption trends and areas in need of improvement.
                 </div>
             @else
                 <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    Tentang Audit Struktur
+                    Tentang Audit Energi
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
                 <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    Apa itu Audit Struktur
+                    Apa itu Audit Energi
                 </h2>
                 <div class="text-base mb-5 text-justify lg:text-lg text-paragraph font-poppins">
-                    Audit Struktur atau yang biasa disebut uji kelayakan struktur merupakan sebuah pemeriksaan kesehatan
-                    juga kinerja bangunan secara keseluruhan layaknya seorang dokter pada pada pasiennya.Hal ini dilakukan
-                    untuk memastikan bangunan serta segala pendukung yang ada aman dan tidak memiliki resiko.
+                    Audit energi gedung adalah proses evaluasi menyeluruh terhadap penggunaan energi dan efisiensi energi
+                    dalam suatu gedung atau bangunan. Tujuan dari audit energi gedung adalah untuk mengidentifikasi peluang
+                    penghematan energi, meningkatkan efisiensi energi, dan mengurangi biaya operasional.
                 </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    Selanjutnya yaitu melakukan analisa lalu menyarankan perbaikan yang tepat serta menjalankan
-                    langkah-langkah perkuatan yang diperlukan supaya bangunan tersebut memiliki performa yang baik sepanjang
-                    masa layanannya.
+                    Selama audit energi gedung, dilakukan pengumpulan data terkait konsumsi energi, sistem pemanas,
+                    pendingin udara, pencahayaan, ventilasi, isolasi termal, dan komponen energi lainnya. Data ini kemudian
+                    dianalisis untuk mengidentifikasi tren konsumsi energi dan area-area yang membutuhkan perbaikan.
                 </div>
             @endif
         </div>
@@ -140,63 +145,63 @@
 
     {{-- section alasan --}}
     <section id="alasan"
-        class="relative bg-[url('../../public/img/general/bg-alasan-audit.webp')] bg-no-repeat bg-cover h-auto">
+        class="relative bg-[url('../../public/img/general/bg-alasan-energy.webp')] bg-no-repeat bg-cover h-auto">
         <div class="container px-6 py-20 mx-auto lg:px-60 2xl:py-32 2xl:px-96">
             <div class="flex flex-col justify-center">
                 @if (app()->getLocale() == 'en')
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Reasons</span>
-                        WHY STRUCTURE AUDIT ARE IMPORTANT FOR
+                        WHY AN ENERGY AUDIT IS IMPORTANT FOR
                         <span class="px-1 text-white bg-secondary">your business</span> or <span
                             class="px-1 text-white bg-secondary">property</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Occupant and User Safety
+                                Save on Costs
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                A structural audit ensures that buildings are safe to occupy and use. This can help prevent
-                                fatal accidents due to building collapse.
+                                An energy audit can help you identify energy-intensive areas and provide recommendations to
+                                reduce them. Energy savings can result in significant reductions in operating costs.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Maintaining Asset Value
+                                Improving Sustainability
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Structurally sound buildings have a higher asset value. A structural audit can help you
-                                maintain the value of your assets and increase the chances of selling or renting the
-                                property at a higher price.
+                                Excessive energy use contributes to climate change and air pollution. An energy audit can
+                                help you reduce carbon emissions and improve the sustainability of your business.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Prevent breakdowns and costly repairs
+                                Improving Operational Efficiency
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                A structural audit can help you identify potential structural problems as early as possible.
-                                This allows you to make repairs at a lower cost and prevent more severe damage in the
-                                future.
+                                An energy audit can help you identify inefficiencies in your energy usage. This can help you
+                                improve your processes and operations, which can result in increased productivity and
+                                profits.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                meet legal and regulatory requirements
+                                Meets Regulatory Requirements
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                In some regions, structure audits are required by law or regulation. By conducting a
-                                structural audit, you can ensure that you are compliant with the applicable regulations.
+                                Many countries have regulations that require companies to conduct regular energy audits.
+                                Conducting an energy audit can help you ensure that you meet these regulatory requirements.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Improving Resident and User Satisfaction
+                                Improving Comfort and Safety
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Occupants and users will feel safer and more comfortable in a structurally sound building.
-                                This can increase their satisfaction level and help you retain customers or employees.
+                                An energy audit can help you identify problems with your heating, ventilation and air
+                                conditioning (HVAC) system. This can help you improve comfort and safety within your
+                                building.
                             </p>
                         </li>
                     </ul>
@@ -204,58 +209,59 @@
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Alasan</span>
-                        Mengapa Audit Struktur penting untuk
+                        Mengapa Audit Energi penting untuk
                         <span class="px-1 text-white bg-secondary">bisnis</span> atau <span
                             class="px-1 text-white bg-secondary">properti anda</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Keselamatan Penghuni dan Pengguna
+                                Menghemat Biaya
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Audit struktur memastikan bahwa bangunan aman untuk ditempati dan digunakan. Hal ini dapat
-                                membantu mencegah terjadinya kecelakaan fatal akibat runtuhnya bangunan.
+                                Audit energi dapat membantu Anda mengidentifikasi area yang boros energi dan memberikan
+                                rekomendasi untuk menguranginya. Penghematan energi dapat menghasilkan pengurangan biaya
+                                operasi yang signifikan.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Menjaga Nilai Aset
+                                Meningkatkan Keberlanjutan
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Bangunan dengan struktur yang baik memiliki nilai aset yang lebih tinggi. Audit struktur
-                                dapat membantu Anda menjaga nilai aset Anda dan meningkatkan peluang untuk menjual atau
-                                menyewakan properti dengan harga yang lebih tinggi.
+                                Penggunaan energi yang berlebihan berkontribusi terhadap perubahan iklim dan polusi udara.
+                                Audit energi dapat membantu Anda mengurangi emisi karbon dan meningkatkan keberlanjutan
+                                bisnis Anda.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Mencegah Kerusakan dan Biaya Perbaikan yang Mahal
+                                Meningkatkan Efisiensi Operasional
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Audit struktur dapat membantu Anda mengidentifikasi potensi masalah struktur sedini mungkin.
-                                Hal ini memungkinkan Anda untuk melakukan perbaikan dengan biaya yang lebih rendah dan
-                                mencegah kerusakan yang lebih parah di masa depan.
+                                Audit energi dapat membantu Anda mengidentifikasi inefisiensi dalam penggunaan energi Anda.
+                                Hal ini dapat membantu Anda meningkatkan proses dan operasi Anda, yang dapat menghasilkan
+                                peningkatan produktivitas dan keuntungan.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Memenuhi Persyaratan Hukum dan Regulasi
+                                Memenuhi Persyaratan Peraturan
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Di beberapa daerah, audit struktur diwajibkan oleh undang-undang atau regulasi. Dengan
-                                melakukan audit struktur, Anda dapat memastikan bahwa Anda patuh terhadap peraturan yang
-                                berlaku
+                                Banyak negara memiliki peraturan yang mewajibkan perusahaan untuk melakukan audit energi
+                                secara berkala. Melakukan audit energi dapat membantu Anda memastikan bahwa Anda memenuhi
+                                persyaratan peraturan ini.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Meningkatkan Kepuasan Penghuni dan Pengguna
+                                Meningkatkan Kenyamanan dan Keamanan
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Penghuni dan pengguna akan merasa lebih aman dan nyaman berada di bangunan dengan struktur
-                                yang baik. Hal ini dapat meningkatkan tingkat kepuasan mereka dan membantu Anda
-                                mempertahankan pelanggan atau karyawan
+                                Audit energi dapat membantu Anda mengidentifikasi masalah dengan sistem pemanas, ventilasi,
+                                dan pendingin udara (HVAC) Anda. Hal ini dapat membantu Anda meningkatkan kenyamanan dan
+                                keamanan di dalam bangunan Anda.
                             </p>
                         </li>
                     </ul>
@@ -265,113 +271,6 @@
     </section>
     {{-- end alasan --}}
 
-    {{-- section syarat --}}
-    <section id="syarat" class="relative">
-        <div class="container py-32 mx-auto">
-            <div class="text-center">
-                <h2 class="mb-10 text-2xl font-bold uppercase text-primary md:text-4xl font-poppins">
-                    @if (app()->getLocale() == 'en')
-                        Some signs of a building that needs a <br class="hidden lg:block"> structural audit:
-                    @else
-                        Beberapa tanda bangunan yang perlu <br class="hidden lg:block"> di audit struktur :
-                    @endif
-                </h2>
-            </div>
-
-            <div class="flex flex-col gap-5 px-10 lg:px-32 lg:flex-row">
-                <div class="flex flex-col w-full gap-5 lg:w-1/2">
-                    <div class="w-full p-10 text-center rounded-lg shadow-2xl drop-shadow-2xl">
-                        <h3 class="text-[#1E1E1E] font-semibold font-poppins text-2xl">
-                            @if (app()->getLocale() == 'en')
-                                Visual signs
-                            @else
-                                Tanda-tanda visual
-                            @endif
-                        </h3>
-                    </div>
-                    <div class="w-full h-full px-10 py-10 rounded-lg shadow-2xl md:px-20 drop-shadow-2xl">
-                        <ul class="space-y-2 list-disc text-paragraph font-poppins">
-                            @if (app()->getLocale() == 'en')
-                                <li>
-                                    Cracks in the building walls
-                                </li>
-                                <li>
-                                    Deformation or changes in the building structure
-                                </li>
-                                <li>
-                                    Damage to structural elements
-                                </li>
-                                <li>
-                                    Old buildings that have fallen into disrepair
-                                </li>
-                            @else
-                                <li>
-                                    Adanya retakan pada dinding bangunan
-                                </li>
-                                <li>
-                                    Deformasi atau adanya perubahan pada struktur bangunan
-                                </li>
-                                <li>
-                                    Adanya kerusakan pada elemen struktur
-                                </li>
-                                <li>
-                                    Bangunan lama yang sudah beropresi
-                                </li>
-                            @endif
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex flex-col w-full gap-5 lg:w-1/2">
-                    <div class="w-full p-10 text-center rounded-lg shadow-2xl drop-shadow-2xl">
-                        <h3 class="text-[#1E1E1E] font-semibold font-poppins text-2xl">
-                            @if (app()->getLocale() == 'en')
-                                Functional signs
-                            @else
-                                Tanda-tanda fungsional
-                            @endif
-                        </h3>
-                    </div>
-                    <div class="w-full h-full px-10 py-10 shadow-2xl md:px-20 drop-shadow-2xl">
-                        <ul class="space-y-2 list-disc text-paragraph font-poppins">
-                            @if (app()->getLocale() == 'en')
-                                <li>
-                                    Excessive vibration of the building when there are strong winds or earthquakes
-                                </li>
-                                <li>
-                                    Decline of the building as a whole or in certain parts
-                                </li>
-                                <li>
-                                    Doors and windows that are jammed or difficult to open/close may indicate deformation of
-                                    the building structure
-                                </li>
-                                <li>
-                                    Excessive noise from the building structure, such as creaking or rubbing, may indicate a
-                                    problem with the building structure
-                                </li>
-                            @else
-                                <li>
-                                    Getaran yang berlebihan pada bangunan ketika ada angin kencang atau gempa bumi
-                                </li>
-                                <li>
-                                    Penurunan bangunan secara keseluruhan atau pada bagian tertentu
-                                </li>
-                                <li>
-                                    Pintu dan jendela yang macet atau sulit dibuka/ditutup dapat menandakan adanya deformasi
-                                    pada struktur bangunan
-                                </li>
-                                <li>
-                                    Kebisingan yang berlebihan dari struktur bangunan, seperti derit atau gesekan, dapat
-                                    menandakan adanya masalah pada struktur bangunan
-                                </li>
-                            @endif
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{-- end syarat --}}
-
     {{-- section konsultasi --}}
     <section id="konsultasi" class="relative">
         <div class="container mx-auto">
@@ -380,19 +279,18 @@
                     @if (app()->getLocale() == 'en')
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            Consult your STRUCTURE audit now!
+                            Consult your energy audit now!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Find the best way to inspect your building and get the best deal. Don't miss this opportunity!
+                            Discover efficient ways to manage energy and save costs. Don't miss this opportunity!
                         </div>
                     @else
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            segera konsultasikan audit struktur anda sekarang!
+                            Segera konsultasikan audit energi Anda sekarang!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Temukan cara terbaik untuk memeriksa bangunan anda dan dapatkan penawaran terbaik. Jangan
-                            lewatkan kesempatan ini!
+                            Temukan cara efisien untuk mengelola energi dan hemat biaya. Jangan lewatkan kesempatan ini!
                         </div>
                     @endif
                     <div class="flex w-full">
@@ -430,14 +328,14 @@
 
     {{-- section perolehan --}}
     <section id="profil"
-        class="relative lg:min-h-[90vh] bg-white lg:bg-[url('../../public/img/general/bg-perolehan-audit.webp')] bg-no-repeat bg-cover bg-center">
+        class="relative lg:min-h-[90vh] bg-white lg:bg-[url('../../public/img/general/bg-perolehan-energy.webp')] bg-no-repeat bg-cover bg-center">
 
         <div
             class="relative h-full lg:max-w-screen-lg 2xl:max-w-screen-xl lg:min-h-[90vh] px-4 py-24 text-left lg:pl-20 2xl:py-32">
             <h2
                 class="mb-4 text-xl font-extrabold leading-relaxed tracking-normal text-center lg:text-left font-poppins text-primary md:text-2xl md:leading-relaxed 2xl:pl-32 2xl:text-4xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    Building Structure Audit Process
+                    Building Energy Audit Process
                 @else
                     Proses Audit Struktur Bangunan
                 @endif
@@ -452,7 +350,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. preliminary preparation</span>
+                                <span class="capitalize">1. data collection</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -464,9 +362,9 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        The building owner or manager applies for a structural audit and will conduct an
-                                        initial survey to review the condition of the building and determine the scope of
-                                        the audit.
+                                        First, relevant information and data should be collected. This includes energy
+                                        consumption data (electricity, gas, and other fuels), information on heating
+                                        systems, air conditioning, ventilation, lighting, thermal insulation, and others.
                                     </li>
                                 </ul>
                             </div>
@@ -477,7 +375,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. Data collection</span>
+                                <span class="capitalize">2. data analysis</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -489,7 +387,9 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Next will enter the data collection stage about the building to be audited.
+                                        The data collected is then analyzed to identify trends in energy consumption and
+                                        identify areas that may need improvement. This analysis may involve the use of
+                                        specialized software that helps in processing the data.
                                     </li>
                                 </ul>
                             </div>
@@ -500,7 +400,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. visual inspection</span>
+                                <span class="capitalize">3. physical inspection</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -512,8 +412,10 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        After data collection is complete, the next process is to conduct a visual
-                                        inspection of the building structure
+                                        A physical inspection is conducted to directly inspect building systems and
+                                        components. This includes checking the building's heating, air conditioning,
+                                        ventilation, lighting and insulation systems. This inspection helps identify any
+                                        problems or leaks that may have occurred.
                                     </li>
                                 </ul>
                             </div>
@@ -524,7 +426,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. non-destructive testing</span>
+                                <span class="capitalize">4. energy effuciency evaluation</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -536,10 +438,9 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        What is meant by conducting a non-destructive test is a testing method where it aims
-                                        to evaluate the structure of the building, the method must be carried out without
-                                        making damage to the object being tested, the test is usually called the UPV Test
-                                        (Ultrasonic Pulse Velocity).
+                                        During the audit, the energy efficiency of the building systems and components is
+                                        evaluated. This involves comparing actual energy usage with relevant energy
+                                        efficiency standards.
                                     </li>
                                 </ul>
                             </div>
@@ -550,7 +451,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                                 aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. data analysis</span>
+                                <span class="capitalize">5. identeification of energy saving opportunities</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -562,9 +463,10 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Next, analyze the data collected to determine the condition of the building
-                                        structure, calculate the capacity of the building structure and predict the
-                                        possibility of structural damage.
+                                        Once the analysis is complete, the next step is to identify energy saving
+                                        opportunities. This could include replacing obsolete heating or cooling systems,
+                                        improving building insulation, installing energy-efficient lighting, or adopting
+                                        renewable energy solutions.
                                     </li>
                                 </ul>
                             </div>
@@ -588,33 +490,9 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Create a report that contains the results of the structural audit, conclusions and
-                                        recommendations for repairs and estimated repair costs.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-
-                        <h2 id="accordion-color-heading-7">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-7" aria-expanded="false"
-                                aria-controls="accordion-color-body-7">
-                                <span class="capitalize">7. Follow-up</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
-                                    <li>
-                                        The building owner or manager will follow up the recommendations given in the
-                                        structural audit report.
+                                        The results of the building energy audit are then summarized in a report. This
+                                        report includes the findings, improvement recommendations, estimated cost of energy
+                                        saving, and the cost of energy savings.
                                     </li>
                                 </ul>
                             </div>
@@ -629,7 +507,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. persiapan awal</span>
+                                <span class="capitalize">1. pengumpulan data</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -641,9 +519,9 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Pemilik bangunan atau pengelola gedung mengajukan permohonan audit struktur serta
-                                        akan akan melakukan survei awal untuk meninjau kondisi bangunan dan menentukan
-                                        lingkup audit.
+                                        Pertama, informasi dan data yang relevan harus dikumpulkan. Ini termasuk data
+                                        konsumsi energi (listrik, gas, dan bahan bakar lainnya), informasi tentang sistem
+                                        pemanas, pendingin udara, ventilasi, pencahayaan, isolasi termal, dan lain-lain.
                                     </li>
                                 </ul>
                             </div>
@@ -654,7 +532,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. pengumpulan data</span>
+                                <span class="capitalize">2. analisis data</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -666,7 +544,10 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Selanjutnya akan masuk ke tahap pengumpulan data tentang bangunan yang akan di audit
+                                        Data yang dikumpulkan kemudian dianalisis untuk mengidentifikasi tren konsumsi
+                                        energi dan mengidentifikasi area-area yang mungkin membutuhkan perbaikan. Analisis
+                                        ini dapat melibatkan penggunaan perangkat lunak khusus yang membantu dalam mengolah
+                                        data.
                                     </li>
                                 </ul>
                             </div>
@@ -677,7 +558,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. pemeriksaan visual</span>
+                                <span class="capitalize">3. pemeriksaan fisik</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -689,8 +570,10 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Setelah pengumpulan data selesai, proses selanjutnya melakukan pemeriksaan visual
-                                        terhadap struktur bangunan
+                                        Pemeriksaan fisik dilakukan untuk memeriksa sistem dan komponen gedung secara
+                                        langsung. Ini mencakup pemeriksaan sistem pemanas, pendingin udara, ventilasi,
+                                        pencahayaan, dan isolasi gedung. Pemeriksaan ini membantu mengidentifikasi masalah
+                                        atau kebocoran yang mungkin terjadi.
                                     </li>
                                 </ul>
                             </div>
@@ -701,7 +584,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. pengujian non-destruktif</span>
+                                <span class="capitalize">4. evaluasi efisiensi energi</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -713,10 +596,9 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Yang dimaksud dengan melakukan non-destructive test adalah sebuah metode pengujian
-                                        dimana hal ini bertujuan untuk melakukan evaluasi struktur bangunan, metode tersebut
-                                        harus dilakukan tanpa membuat kerusakan object yang sedang diuji, pengujian tersebut
-                                        biasanya disebut dengan UPV Test (Ultrasonic Pulse Velocity).
+                                        Selama audit, efisiensi energi dari sistem dan komponen gedung dievaluasi. Ini
+                                        melibatkan membandingkan penggunaan energi aktual dengan standar efisiensi energi
+                                        yang relevan.
                                     </li>
                                 </ul>
                             </div>
@@ -727,7 +609,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                                 aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. analisis data</span>
+                                <span class="capitalize">5. identifikasi peluang penghematan energi</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -739,9 +621,10 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Selanjutnya menganalisis data yang dikumpulkan untuk Menentukan kondisi struktur
-                                        bangunan, Menghitung kapasitas struktur bangunan serta Memprediksi kemungkinan
-                                        terjadinya kerusakan struktur
+                                        Setelah analisis selesai, langkah selanjutnya adalah mengidentifikasi peluang
+                                        penghematan energi. Ini bisa termasuk mengganti sistem pemanas atau pendingin yang
+                                        usang, memperbaiki isolasi gedung, menginstal pencahayaan hemat energi, atau
+                                        mengadopsi solusi energi terbarukan.
                                     </li>
                                 </ul>
                             </div>
@@ -753,7 +636,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-6" aria-expanded="false"
                                 aria-controls="accordion-color-body-6">
-                                <span class="capitalize">6. pembuatan laporan</span>
+                                <span class="capitalize">6. penyusunan laporan</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -765,33 +648,8 @@
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
                                 <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        membuat laporan yang berisi Hasil audit struktur, Kesimpulan dan rekomendasi untuk
-                                        perbaikan dan Perkiraan biaya perbaikan
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-
-                        <h2 id="accordion-color-heading-7">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-7" aria-expanded="false"
-                                aria-controls="accordion-color-body-7">
-                                <span class="capitalize">7. tindak lanjut</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
-                                    <li>
-                                        Pemilik bangunan atau pengelola gedung akan menindaklanjuti rekomendasi yang
-                                        diberikan dalam laporan audit struktur.
+                                        Hasil audit energi gedung kemudian dirangkum dalam laporan. Laporan ini mencakup
+                                        temuan, rekomendasi perbaikan, estimasi biaya, dan potensi penghematan energi.
                                     </li>
                                 </ul>
                             </div>

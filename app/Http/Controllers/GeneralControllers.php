@@ -107,6 +107,24 @@ class GeneralControllers extends Controller
     }
 
     /**
+     * Halaman Jasa Energy Audit
+     *
+     * Menampilkan data-data testimonial yang berelasi dengan kategori_id = 3
+     * serta mengirimkannya ke view energy
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function auditenergy()
+    {
+        $testimoni = Testimoni::whereHas('kategoris', function ($query) {
+            $query->where('kategori_id', 3);
+        })
+            ->with(['media', 'kategoris'])
+            ->get();
+        return view('energy', compact('testimoni'));
+    }
+
+    /**
      * Helper Method: Get Cached Regazine
      *
      * Retrieves the cached regazine data from the cache store.

@@ -94,261 +94,261 @@
                         <ul
                             class="flex flex-col p-4 mt-4 font-medium font-monserrat uppercase border border-gray-100 rounded-lg xl:p-0 bg-gray-50 xl:flex-row xl:space-x-8 rtl:space-x-reverse xl:mt-0 xl:border-0 xl:bg-white">
                             @if (app()->getLocale() == 'en')
-                            <li>
-                                <a href="/"
-                                    class="block py-2 px-3 text-white bg-secondary font-semibold rounded xl:bg-transparent xl:text-secondary xl:p-0
+                                <li>
+                                    <a href="/"
+                                        class="block py-2 px-3 text-white bg-secondary font-semibold rounded xl:bg-transparent xl:text-secondary xl:p-0
                                     aria-current="page">
-                                    home
-                                </a>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    About Us
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
-                                </button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-52">
-                                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="/profile"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Company Profile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/direksi"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Board of Directors
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
-                                    class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    Our Services
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
-                                </button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar2"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
-                                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="/jasaslf"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Function-worthy Certificate
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/audit-struktur"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Structure Audit
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/auditenergi"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Energy Audit
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/pbg"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Building Approval                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/bangunan"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Building Planning                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/konstruksi"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                Construction Management
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/ded"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                DED Service
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="/portofolio"
-                                    class="block px-3 py-2 font-semibold rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
-                                    class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    Media
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
-                                </button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar3"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
-                                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="/regazine"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">Regazine</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://rekanusa.co.id/artikel/" target="_blank"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                article
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                                        home
+                                    </a>
+                                </li>
+                                <li>
+                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        About Us
+                                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar"
+                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-52">
+                                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="/profile"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Company Profile
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/direksi"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Board of Directors
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        Our Services
+                                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar2"
+                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
+                                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="/jasaslf"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Function-worthy Certificate
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/audit-struktur"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Structure Audit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/audit-energy"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Energy Audit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/pbg"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Building Approval </a>
+                                            </li>
+                                            <li>
+                                                <a href="/bangunan"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Building Planning </a>
+                                            </li>
+                                            <li>
+                                                <a href="/konstruksi"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Construction Management
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/ded"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    DED Service
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/portofolio"
+                                        class="block px-3 py-2 font-semibold rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        Media
+                                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar3"
+                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
+                                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="/regazine"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">Regazine</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://rekanusa.co.id/artikel/" target="_blank"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    article
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             @else
-                            <li>
-                                <a href="/"
-                                    class="block py-2 px-3 text-white bg-secondary font-semibold rounded xl:bg-transparent xl:text-secondary xl:p-0
+                                <li>
+                                    <a href="/"
+                                        class="block py-2 px-3 text-white bg-secondary font-semibold rounded xl:bg-transparent xl:text-secondary xl:p-0
                                     aria-current="page">
-                                   beranda
-                                </a>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    tentang kami
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
-                                </button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-52">
-                                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="/profile"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                profil perusahaan
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/direksi"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                jajaran direksi
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
-                                    class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    layanan kami
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
-                                </button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar2"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
-                                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="/jasaslf"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                jasa slf
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/audit"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                audit struktur
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/auditenergi"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                audit energi
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/pbg"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                jasa pbg
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/bangunan"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                perencanaan bangunan
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/konstruksi"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                manajemen konstruksi
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/ded"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                jasa ded
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="/portofolio"
-                                    class="block px-3 py-2 font-semibold rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    Portofolio
-                                </a>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
-                                    class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
-                                    Media
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
-                                </button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar3"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
-                                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="/regazine"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">Regazine</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://rekanusa.co.id/artikel/" target="_blank"
-                                                class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
-                                                artikel
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                                        beranda
+                                    </a>
+                                </li>
+                                <li>
+                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        tentang kami
+                                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar"
+                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-52">
+                                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="/profile"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    profil perusahaan
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/direksi"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    jajaran direksi
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        layanan kami
+                                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar2"
+                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
+                                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="/jasaslf"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    jasa slf
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/audit-struktur"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    audit struktur
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/audit-energy"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    audit energi
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/pbg"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    jasa pbg
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/bangunan"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    perencanaan bangunan
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/konstruksi"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    manajemen konstruksi
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/ded"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    jasa ded
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/portofolio"
+                                        class="block px-3 py-2 font-semibold rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        Portofolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        Media
+                                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar3"
+                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
+                                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="/regazine"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">Regazine</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://rekanusa.co.id/artikel/" target="_blank"
+                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    artikel
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             @endif
                             <li>
                                 <button type="button" aria-label="translate"
