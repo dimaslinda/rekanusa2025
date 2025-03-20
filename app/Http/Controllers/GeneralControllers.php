@@ -164,6 +164,13 @@ class GeneralControllers extends Controller
         return view('portofolio', compact('portofolio', 'kategori'));
     }
 
+    public function regazine()
+    {
+        $regazine = Regazine::with('media')->paginate(8);
+        $regazineLast = $this->getCachedRegazineLast();
+        return view('regazine', compact('regazine', 'regazineLast'));
+    }
+
     /**
      * Helper Method: Get Cached Regazine
      *
