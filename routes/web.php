@@ -21,6 +21,7 @@ Route::get('/bangunan', [GeneralControllers::class, 'bangunan'])->name('bangunan
 Route::get('/konstruksi', [GeneralControllers::class, 'konstruksi'])->name('konstruksi');
 Route::get('/ded', [GeneralControllers::class, 'ded'])->name('ded');
 Route::get('/portofolio', [GeneralControllers::class, 'portofolio'])->name('portofolio');
+Route::get('/regazine', [GeneralControllers::class, 'regazine'])->name('regazine');
 
 // Route::get('/test-gcs', function () {
 //     try {
