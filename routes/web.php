@@ -20,6 +20,7 @@ Route::get('/pbg', [GeneralControllers::class, 'pbg'])->name('pbg');
 Route::get('/bangunan', [GeneralControllers::class, 'bangunan'])->name('bangunan');
 Route::get('/konstruksi', [GeneralControllers::class, 'konstruksi'])->name('konstruksi');
 Route::get('/ded', [GeneralControllers::class, 'ded'])->name('ded');
+Route::get('/portofolio', [GeneralControllers::class, 'portofolio'])->name('portofolio');
 
 // Route::get('/test-gcs', function () {
 //     try {

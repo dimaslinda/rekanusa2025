@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kategori;
 use App\Models\Regazine;
 use App\Models\Testimoni;
+use App\Models\Portofolio;
 use App\Jobs\FetchPostsJob;
 use Illuminate\Support\Facades\Cache;
 
@@ -153,6 +155,13 @@ class GeneralControllers extends Controller
     {
         $testimoni = $this->getTestimoniByKategori(7);
         return view('ded', compact('testimoni'));
+    }
+
+    public function portofolio()
+    {
+        $portofolio = Portofolio::with(['media', 'kategoris'])->paginate(8);
+        $kategori = Kategori::all();
+        return view('portofolio', compact('portofolio', 'kategori'));
     }
 
     /**

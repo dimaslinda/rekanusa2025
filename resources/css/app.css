@@ -192,4 +192,36 @@
             transform: translateY(calc(0));
         }
     }
+
+    .btn.active {
+        background-color: #262262;
+        color: white;
+        border: #262262;
+    }
+    .kolom {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+
+    .mySwipers .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .mySwipers .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .mySwipers2 .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .mySwipers2 .swiper-slide-thumb-active {
+        opacity: 1;
+    }
 }

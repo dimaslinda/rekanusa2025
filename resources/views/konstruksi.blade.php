@@ -18,11 +18,14 @@
             <h1
                 class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed text-white md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    get a <span class="p-2 bg-primary">Function-worthy Certificate</span> <br class="hidden lg:block">
-                    to improve the safety <br class="hidden lg:block"> and legality of your business
+                    build together, manage <br class="hidden lg:block">
+                    professionally: we are the <span class="p-2 bg-primary">trusted</span> <br class="hidden lg:block">
+                    <span class="p-2 bg-primary">solution</span> for your construction
                 @else
-                    dapatkan <span class="p-2 bg-primary">sertifikat laik fungsi</span> <br class="hidden lg:block">
-                    untuk meningkatkan keamanan <br class="hidden lg:block"> dan legalitas bisnis anda
+                    Membangun Bersama, Mengelola <br class="hidden lg:block">
+                    dengan Profesional: Kami Adalah <br class="hidden lg:block">
+                    Solusi Terpercaya untuk <br class="hidden lg:block">
+                    <span class="p-2 bg-primary">konstruksi</span> anda
                 @endif
 
             </h1>
@@ -49,32 +52,46 @@
                     @if (app()->getLocale() == 'en')
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            about Function-worthy Certificate
+                            About MK
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            What is Function-worthy Certificate (SLF)?
+                            What is construction management
                         </h2>
+                        <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                            Imagine a magnificent development project, such as skyscrapers or toll roads.
+                            Behind the splendor, there is a complex process that involves many people and various sources
+                            Power.This is where the role of construction management, a discipline that ensures smooth and
+                            the success of the project.
+                        </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            SLF is a Certificate of Functioning. An official document issued by the government or relevant
-                            authority to show that a building or property has met the requirements and standards set for use
-                            in accordance with its function.
+                            Construction management is a complex and dynamic scientific discipline.Expertise is needed
+                            and experience to manage various aspects of construction projects.With management
+                            right, the construction project can run smoothly and produce quality buildings
+                            tall.
                         </div>
                     @else
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            Tentang SLF
+                            Tentang MK
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            Apa itu Sertifikat Laik Fungsi (SLF)?
+                            Apa itu Manajemen Konstruksi
                         </h2>
+                        <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                            Bayangkan sebuah proyek pembangunan yang megah, seperti gedung pencakar langit atau jalan tol.
+                            Di balik kemegahan itu, ada proses kompleks yang melibatkan banyak orang dan berbagai sumber
+                            daya. Di sinilah peran manajemen konstruksi, sebuah disiplin ilmu yang memastikan kelancaran dan
+                            keberhasilan proyek tersebut.
+                        </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            SLF adalah Sertifikat Laik Fungsi. Dokumen resmi yang dikeluarkan oleh pemerintah atau otoritas
-                            terkait untuk menunjukkan bahwa suatu bangunan atau properti telah memenuhi persyaratan dan
-                            standar yang ditetapkan untuk digunakan sesuai dengan fungsinya.
+                            Manajemen konstruksi adalah sebuah disiplin ilmu yang kompleks dan dinamis. Diperlukan keahlian
+                            dan pengalaman untuk mengelola berbagai aspek dalam proyek konstruksi. Dengan manajemen yang
+                            tepat, proyek konstruksi dapat berjalan lancar dan menghasilkan bangunan yang berkualitas
+                            tinggi.
                         </div>
                     @endif
                 </div>
@@ -86,30 +103,47 @@
         class="relative block lg:hidden bg-[url('../../public/img/general/service-konstruksi.webp')] bg-no-repeat bg-cover bg-blend-overlay bg-white/60 h-auto">
         <div class="px-6 py-10 md:py-32 md:px-20">
             @if (app()->getLocale() == 'en')
-                <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    about Function-worthy Certificate
+                <div
+                    class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
+                    About MK
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
-                <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    What is Function-worthy Certificate (SLF)?
+                <h2
+                    class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
+                    What is construction management
                 </h2>
+                <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                    Imagine a magnificent development project, such as skyscrapers or toll roads.
+                    Behind the splendor, there is a complex process that involves many people and various sources
+                    Power.This is where the role of construction management, a discipline that ensures smooth and
+                    the success of the project.
+                </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    SLF is a Certificate of Functioning. An official document issued by the government or relevant authority
-                    to show that a building or property has met the requirements and standards set for use in accordance
-                    with its function.
+                    Construction management is a complex and dynamic scientific discipline.Expertise is needed
+                    and experience to manage various aspects of construction projects.With management
+                    right, the construction project can run smoothly and produce quality buildings
+                    tall.
                 </div>
             @else
-                <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    Tentang SLF
+                <div
+                    class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
+                    Tentang MK
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
-                <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    Apa itu Sertifikat Laik Fungsi (SLF)?
+                <h2
+                    class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
+                    Apa itu Manajemen Konstruksi
                 </h2>
+                <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                    Bayangkan sebuah proyek pembangunan yang megah, seperti gedung pencakar langit atau jalan tol. Di balik
+                    kemegahan itu, ada proses kompleks yang melibatkan banyak orang dan berbagai sumber daya. Di sinilah
+                    peran manajemen konstruksi, sebuah disiplin ilmu yang memastikan kelancaran dan keberhasilan proyek
+                    tersebut.
+                </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    SLF adalah Sertifikat Laik Fungsi. Dokumen resmi yang dikeluarkan oleh pemerintah atau otoritas terkait
-                    untuk menunjukkan bahwa suatu bangunan atau properti telah memenuhi persyaratan dan standar yang
-                    ditetapkan untuk digunakan sesuai dengan fungsinya.
+                    Manajemen konstruksi adalah sebuah disiplin ilmu yang kompleks dan dinamis. Diperlukan keahlian dan
+                    pengalaman untuk mengelola berbagai aspek dalam proyek konstruksi. Dengan manajemen yang tepat, proyek
+                    konstruksi dapat berjalan lancar dan menghasilkan bangunan yang berkualitas tinggi.
                 </div>
             @endif
         </div>
@@ -125,54 +159,55 @@
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Reasons</span>
-                        why slf services are important for
+                        Why Construction Management is Important for
                         <span class="px-1 text-white bg-secondary">your business</span> or <span
                             class="px-1 text-white bg-secondary">property</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                for legality and compliance
+                                Save the cost and time of careful planning
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Having an SLF is proof that the business or property is operating legally and complies with
-                                applicable regulations
+                                Avoid mistakes and waste in the future.Efficient procurement, get
+                                material and labor at the best price.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                customer trust
+                                Improve the quality and safety of strict monitoring
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Customers will feel more comfortable and confident using services or occupying properties
-                                that have passed the audit process and received official certification.
+                                Ensure construction work according to specifications and standards.Control
+                                quality, conduct tests and inspections to ensure material and work quality.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                safety and comfort
+                                Reducing risk of identification and risk mitigation
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                A Certificate of Occupancy ensures that a building or property has undergone rigorous
-                                inspection to ensure safety and comfort for its occupants.
+                                Identify potential risk and take steps to prevent it.Management
+                                Effective contracts, ensure that all parties understand their rights and obligations.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                property value
+                                Increase client satisfaction clear communication
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                This certificate shows that the building or property has met high standards in terms of
-                                quality, safety and reliability.
+                                Keep clients informed about project progress.Solution on time,
+                                Complete the project according to the schedule and budget.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Legal and licensing requirements
+                                Improve business reputation to complete the project successfully
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Without a valid SLF, a business or property can face serious legal and administrative
-                                consequences, including sanctions or use bans.
+                                Build trust and credibility with clients and partners.Maintain high standards,
+                                Being known as a professional and trusted company.Increase asset value,
+                                Increase your property value.
                             </p>
                         </li>
                     </ul>
@@ -180,54 +215,55 @@
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Alasan</span>
-                        Mengapa Jasa SLF penting untuk
+                        Mengapa Manajemen Konstruksi penting untuk
                         <span class="px-1 text-white bg-secondary">bisnis</span> atau <span
                             class="px-1 text-white bg-secondary">properti anda</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                untuk legalitas dan kepatuhan
+                                Menghemat Biaya dan Waktu Perencanaan yang matang
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Memiliki SLF merupakan bukti bahwa bisnis atau properti tersebut beroperasi secara sah dan
-                                mematuhi peraturan yang berlaku
+                                Menghindari kesalahan dan pemborosan di kemudian hari. Pengadaan yang efisien, Mendapatkan
+                                material dan tenaga kerja dengan harga terbaik.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                kepercayaan pelanggan
+                                Meningkatkan Kualitas dan Keamanan Pemantauan yang ketat
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Pelanggan akan merasa lebih nyaman dan yakin menggunakan layanan atau menghuni properti yang
-                                telah melewati proses audit dan mendapatkan sertifikasi resmi
+                                Memastikan pekerjaan konstruksi sesuai dengan spesifikasi dan standar. Pengendalian
+                                kualitas, Melakukan tes dan inspeksi untuk memastikan kualitas material dan pekerjaan.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                keamanan dan kenyamanan
+                                Mengurangi RisikoIdentifikasi dan mitigasi risiko
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Sertifikat Laik Fungsi memastikan bahwa bangunan atau properti telah melalui pemeriksaan
-                                yang ketat untuk memastikan keamanan dan kenyamanan bagi penghuninya.
+                                Mengidentifikasi potensi risiko dan mengambil langkah-langkah untuk mencegahnya. Manajemen
+                                kontrak yang efektif, Memastikan semua pihak memahami hak dan kewajiban mereka.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Nilai properti
+                                Meningkatkan Kepuasan Klien Komunikasi yang jelas
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Sertifikat ini menunjukkan bahwa bangunan atau properti telah memenuhi standar yang tinggi
-                                dalam hal kualitas, keamanan, dan keandalan.
+                                Menjaga klien tetap terinformasi tentang kemajuan proyek. Penyelesaian tepat waktu,
+                                Menyelesaikan proyek sesuai dengan jadwal dan anggaran.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                persyaratan hukum dan perizinan
+                                Meningkatkan Reputasi Bisnis Menyelesaikan proyek dengan sukses
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Tanpa SLF yang valid, bisnis atau properti dapat menghadapi konsekuensi hukum dan
-                                administratif yang serius, termasuk sanksi atau larangan penggunaan.
+                                Membangun kepercayaan dan kredibilitas dengan klien dan mitra. Menjaga standar yang tinggi,
+                                Menjadi dikenal sebagai perusahaan yang profesional dan terpercaya. Meningkatkan nilai aset,
+                                Meningkatkan nilai properti Anda.
                             </p>
                         </li>
                     </ul>
@@ -243,9 +279,9 @@
             <div class="text-center">
                 <h2 class="mb-10 text-2xl font-bold uppercase text-primary md:text-4xl font-poppins">
                     @if (app()->getLocale() == 'en')
-                        SLF Submission Requirements
+                        Requirements for submitting construction management
                     @else
-                        Syarat Pengajuan SLF
+                        Syarat Pengajuan Manajemen Kontruksi
                     @endif
                 </h2>
             </div>
@@ -255,9 +291,9 @@
                     <div class="w-full p-10 text-center rounded-lg shadow-2xl drop-shadow-2xl">
                         <h3 class="text-[#1E1E1E] font-semibold font-poppins text-2xl">
                             @if (app()->getLocale() == 'en')
-                                Administrative Requirements
+                                Qualification Requirements:
                             @else
-                                Persyaratan Administratif
+                                Syarat Kualifikasi:
                             @endif
                         </h3>
                     </div>
@@ -265,47 +301,35 @@
                         <ul class="space-y-2 list-disc text-paragraph font-poppins">
                             @if (app()->getLocale() == 'en')
                                 <li>
-                                    Copy of applicant's KTP and KK
+                                    Have a valid and registered business entity.
                                 </li>
                                 <li>
-                                    Copy of the latest Land and Building Tax Notification Letter (SPPT PBB)
+                                    Have experience in the field of construction management.
                                 </li>
                                 <li>
-                                    Copy of physical land tenure statement (SHM, SHGB, AJB, etc.)
+                                    Have a professional and experienced team.
                                 </li>
                                 <li>
-                                    Copy of Building Construction Permit (IMB)
+                                    Have the required certificates and permits.
                                 </li>
                                 <li>
-                                    Copy of statement letter of completion of construction
-                                </li>
-                                <li>
-                                    A statement of ability to comply with the requirements of functional feasibility
-                                </li>
-                                <li>
-                                    Copy of NPWP (optional)
+                                    Has a good reputation and a positive track record.
                                 </li>
                             @else
                                 <li>
-                                    Fotokopi KTP dan KK pemohon
+                                    Memiliki badan usaha yang sah dan terdaftar.
                                 </li>
                                 <li>
-                                    Fotokopi Surat Pemberitahuan Pajak Terhutang Pajak Bumi dan Bangunan (SPPT PBB) terbaru
+                                    Memiliki pengalaman dalam bidang manajemen konstruksi.
                                 </li>
                                 <li>
-                                    Fotokopi Surat pernyataan penguasaan fisik bidang tanah (SHM, SHGB, AJB, dll.)
+                                    Memiliki tim yang profesional dan berpengalaman.
                                 </li>
                                 <li>
-                                    Fotokopi Izin Mendirikan Bangunan (IMB)
+                                    Memiliki sertifikat dan izin yang diperlukan.
                                 </li>
                                 <li>
-                                    Fotokopi Surat pernyataan telah menyelesaikan pembangunan
-                                </li>
-                                <li>
-                                    Surat pernyataan kesanggupan untuk mentaati persyaratan laik fungsi
-                                </li>
-                                <li>
-                                    Fotokopi NPWP (opsional)
+                                    Memiliki reputasi yang baik dan track record yang positif.
                                 </li>
                             @endif
                         </ul>
@@ -315,9 +339,9 @@
                     <div class="w-full p-10 text-center rounded-lg shadow-2xl drop-shadow-2xl">
                         <h3 class="text-[#1E1E1E] font-semibold font-poppins text-2xl">
                             @if (app()->getLocale() == 'en')
-                                Technical Requirements
+                                Technical Requirements:
                             @else
-                                Persyaratan Teknis
+                                Syarat Teknis:
                             @endif
                         </h3>
                     </div>
@@ -325,36 +349,29 @@
                         <ul class="space-y-2 list-disc text-paragraph font-poppins">
                             @if (app()->getLocale() == 'en')
                                 <li>
-                                    Building technical plan drawings
+                                    Has standard construction management methodology and procedures.
                                 </li>
                                 <li>
-                                    Results of testing the feasibility of building functions from a team of experts
+                                    Has an effective cost control system and time.
                                 </li>
                                 <li>
-                                    Technical recommendtaion from the Fire Department
+                                    Have a good communication and reporting system.
                                 </li>
                                 <li>
-                                    Technical recommendation from the Health Office
-                                </li>
-                                <li>
-                                    Certificate of operation (SLO) for certain buildings (e.g. elevator, generator set,
-                                    etc.)
+                                    Have the ability to solve problems and overcome risk.
                                 </li>
                             @else
                                 <li>
-                                    Gambar rencana teknis bangunan
+                                    Memiliki metodologi dan prosedur manajemen konstruksi yang baku.
                                 </li>
                                 <li>
-                                    Hasil pengujian kelaikan fungsi bangunan dari tim ahli
+                                    Memiliki sistem pengendalian biaya dan waktu yang efektif.
                                 </li>
                                 <li>
-                                    Rekomendasi teknis dari Dinas Pemadam Kebakaran
+                                    Memiliki sistem komunikasi dan pelaporan yang baik.
                                 </li>
                                 <li>
-                                    Rekomendasi teknis dari Dinas Kesehatan
-                                </li>
-                                <li>
-                                    Sertifikat laik operasi (SLO) untuk bangunan tertentu (misalnya, lift, genset, dll.)
+                                    Memiliki kemampuan untuk menyelesaikan masalah dan mengatasi risiko.
                                 </li>
                             @endif
                         </ul>
@@ -373,19 +390,18 @@
                     @if (app()->getLocale() == 'en')
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            Consult your business to get a functional certificate now!
+                            Immediately consult your construction management now!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Find publishing solutions with our professional, optimistic, thorough and solutive services.
+                            Find the best way to adjust your construction now.Don't miss this opportunity!
                         </div>
                     @else
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            segera konsultasikan bisnis anda untuk mendapatkan sertifikat laik fungsi sekarang!
+                            Segera konsultasikan Manajemen Kontruksi Anda sekarang!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Temukan solusi penerbitan dengan layanan yang profesional, optimis, tuntas dan solutif dari
-                            kami.
+                            Temukan cara terbaik untuk mengatur kontruksi Anda sekarang. Jangan lewatkan kesempatan ini!
                         </div>
                     @endif
                     <div class="flex w-full">
@@ -430,9 +446,9 @@
             <h2
                 class="mb-4 text-xl font-extrabold leading-relaxed tracking-normal text-center lg:text-left font-poppins text-primary md:text-2xl md:leading-relaxed 2xl:pl-32 2xl:text-4xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    SLF Acquisition Process
+                    Construction management process
                 @else
-                    Proses Perolehan SLF
+                    Proses Perolehan Manajemen Kontruksi
                 @endif
             </h2>
             <div class="w-full lg:w-1/2 text-paragraph font-poppins 2xl:pl-32 2xl:w-3/4 2xl:text-xl">
@@ -445,7 +461,8 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. application submission</span>
+                                <span class="capitalize">1. planning and preparation determine the scope
+                                    project</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -455,14 +472,9 @@
                         </h2>
                         <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        The applicant submits the SLF application to the local Public Works Office (PU) or
-                                        Building and Spatial Planning Office (PRB).
-                                    </li>
-                                    <li>
-                                        The application is submitted in writing and completed with the specified
-                                        requirements.
+                                        Set the objectives, requirements, and project restrictions.
                                     </li>
                                 </ul>
                             </div>
@@ -473,7 +485,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. Application Examination</span>
+                                <span class="capitalize">2. Contractor selection receives and evaluates proposals</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -483,14 +495,10 @@
                         </h2>
                         <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Officers from the PU/PRB Office will check the completeness and validity of the
-                                        requirements.
-                                    </li>
-                                    <li>
-                                        The officer will also conduct a field inspection to ensure that the building meets
-                                        the requirements.
+                                        Receive proposals from prospective contractors and evaluate them based on criteria
+                                        which has been set.
                                     </li>
                                 </ul>
                             </div>
@@ -501,7 +509,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. Verification and inspection</span>
+                                <span class="capitalize">3. the signing of the contract to make a contract</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -511,14 +519,11 @@
                         </h2>
                         <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Officers from the PUPR Office will verify the completeness and validity of the
-                                        requirements submitted.
-                                    </li>
-                                    <li>
-                                        The Technical Team from the PUPR Office will conduct a field inspection to ensure
-                                        the building has met the requirements for a proper function.
+                                        Prepare a contract containing all the requirements and agreement between the project
+                                        owner
+                                        and contractors.
                                     </li>
                                 </ul>
                             </div>
@@ -529,7 +534,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. technical team session</span>
+                                <span class="capitalize">4. the contractor mobilization held an initial meeting</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -539,14 +544,10 @@
                         </h2>
                         <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Hasil pemeriksaan lapangan dan dokumen permohonan akan dibahas dalam sidang Tim
-                                        Teknis.
-                                    </li>
-                                    <li>
-                                        The Technical Team will provide a recommendation whether the building is fit for
-                                        function or not.
+                                        Conduct an initial meeting with a contractor to discuss work plans and schedules
+                                        project.
                                     </li>
                                 </ul>
                             </div>
@@ -557,7 +558,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                                 aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. SLF Issuance</span>
+                                <span class="capitalize">5. supervision and control conduct supervision</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -567,12 +568,9 @@
                         </h2>
                         <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        If the building is declared fit for function, the PUPR Office will issue the SLF.
-                                    </li>
-                                    <li>
-                                        The SLF can be printed and signed by an authorized official.
+                                        Monitor the progress of the project and ensure compliance with the contract.
                                     </li>
                                 </ul>
                             </div>
@@ -584,7 +582,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-6" aria-expanded="false"
                                 aria-controls="accordion-color-body-6">
-                                <span class="capitalize">6. Retribution Payment</span>
+                                <span class="capitalize">6. closure of project receipt projects</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -594,9 +592,9 @@
                         </h2>
                         <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        The applicant pays the SLF issuance retribution.
+                                        Conduct final inspection and receive projects from the contractor.
                                     </li>
                                 </ul>
                             </div>
@@ -611,7 +609,8 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. Pengajuan Permohonan</span>
+                                <span class="capitalize">1. perencanaan dan persiapan menentukan ruang lingkup
+                                    proyek</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -621,14 +620,9 @@
                         </h2>
                         <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Pemohon mengajukan permohonan SLF ke Dinas Pekerjaan Umum (PU) atau Dinas Penataan
-                                        Ruang dan Bangunan (PRB) setempat.
-                                    </li>
-                                    <li>
-                                        Permohonan diajukan secara tertulis dan dilengkapi dengan persyaratan yang telah
-                                        ditentukan.
+                                        Menetapkan tujuan, persyaratan, dan batasan proyek.
                                     </li>
                                 </ul>
                             </div>
@@ -639,7 +633,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. Pemeriksaan Permohonan</span>
+                                <span class="capitalize">2. Seleksi kontraktor menerima dan mengevaluasi proposal</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -649,13 +643,10 @@
                         </h2>
                         <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Petugas dari Dinas PU/PRB akan memeriksa kelengkapan dan keabsahan persyaratan.
-                                    </li>
-                                    <li>
-                                        Petugas juga akan melakukan pemeriksaan lapangan untuk memastikan bangunan telah
-                                        memenuhi persyaratan laik fungsi.
+                                        Menerima proposal dari calon kontraktor dan mengevaluasinya berdasarkan kriteria
+                                        yang telah ditetapkan.
                                     </li>
                                 </ul>
                             </div>
@@ -666,7 +657,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. Verifikasi dan Pemeriksaan</span>
+                                <span class="capitalize">3. penandatanganan kontrak membuat kontrak</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -676,14 +667,10 @@
                         </h2>
                         <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Petugas Dinas PUPR akan melakukan verifikasi terhadap kelengkapan dan keabsahan
-                                        persyaratan yang diajukan.
-                                    </li>
-                                    <li>
-                                        Tim Teknis dari Dinas PUPR akan melakukan pemeriksaan lapangan untuk memastikan
-                                        bangunan telah memenuhi persyaratan laik fungsi.
+                                        Menyusun kontrak yang berisi semua persyaratan dan kesepakatan antara pemilik proyek
+                                        dan kontraktor.
                                     </li>
                                 </ul>
                             </div>
@@ -694,7 +681,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. Sidang Tim Teknis</span>
+                                <span class="capitalize">4. mobilisasi kontraktor melakukan rapat awal</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -704,13 +691,10 @@
                         </h2>
                         <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Hasil pemeriksaan lapangan dan dokumen permohonan akan dibahas dalam sidang Tim
-                                        Teknis.
-                                    </li>
-                                    <li>
-                                        Tim Teknis akan memberikan rekomendasi apakah bangunan layak fungsi atau tidak.
+                                        Melakukan rapat awal dengan kontraktor untuk membahas rencana kerja dan jadwal
+                                        proyek.
                                     </li>
                                 </ul>
                             </div>
@@ -721,7 +705,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                                 aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. Penerbitan SLF</span>
+                                <span class="capitalize">5. pengawasan dan pengendalian melakukan pengawasan</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -731,12 +715,9 @@
                         </h2>
                         <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Jika bangunan dinyatakan laik fungsi, Dinas PUPR akan menerbitkan SLF.
-                                    </li>
-                                    <li>
-                                        SLF dapat dicetak dan ditandatangani oleh pejabat berwenang.
+                                        Memantau kemajuan proyek dan memastikan kepatuhan terhadap kontrak.
                                     </li>
                                 </ul>
                             </div>
@@ -748,7 +729,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-6" aria-expanded="false"
                                 aria-controls="accordion-color-body-6">
-                                <span class="capitalize">6. Pembayaran Retribusi</span>
+                                <span class="capitalize">6. penutupan proyek penerimaan proyek</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -758,9 +739,9 @@
                         </h2>
                         <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Pemohon membayar retribusi penerbitan SLF.
+                                        Melakukan inspeksi akhir dan menerima proyek dari kontraktor.
                                     </li>
                                 </ul>
                             </div>
