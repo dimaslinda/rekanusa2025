@@ -18,11 +18,13 @@
             <h1
                 class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed text-white md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    get a <span class="p-2 bg-primary">Function-worthy Certificate</span> <br class="hidden lg:block">
-                    to improve the safety <br class="hidden lg:block"> and legality of your business
+                    design your <span class="p-2 bg-primary">building design</span> <br class="hidden lg:block">
+                    concept, with professional <br class="hidden lg:block">
+                    experts
                 @else
-                    dapatkan <span class="p-2 bg-primary">sertifikat laik fungsi</span> <br class="hidden lg:block">
-                    untuk meningkatkan keamanan <br class="hidden lg:block"> dan legalitas bisnis anda
+                    Rancang <span class="p-2 bg-primary">konsep desain</span> <br class="hidden lg:block">
+                    bangunan anda, dengan tenaga <br class="hidden lg:block">
+                    ahli professional
                 @endif
 
             </h1>
@@ -49,32 +51,47 @@
                     @if (app()->getLocale() == 'en')
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            about Function-worthy Certificate
+                            About DED
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            What is Function-worthy Certificate (SLF)?
+                            What is the Working Details / Detail Engineering Design (DED)?
                         </h2>
+                        <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                            Working drawings are technical drawings used in the construction, architecture, and
+                            Engineering to describe in detail various aspects of a project or construction.
+                            Working drawings function as a guide for professionals such as architects, engineers, craftsmen,
+                            and contractors to carry out the project accurately and in accordance with the desired design.
+                        </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            SLF is a Certificate of Functioning. An official document issued by the government or relevant
-                            authority to show that a building or property has met the requirements and standards set for use
-                            in accordance with its function.
+                            Detail Engineering Design (DED) or Detailed Engineering Design is the stage in the engineering
+                            process
+                            or design where the design concept is more abstract or commonly developed into a plan
+                            very detailed technical and ready to be implemented.DED generally occurs after
+                            Conceptual Planning Stage and Basic Planning.
                         </div>
                     @else
                         <div
                             class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                            Tentang SLF
+                            Tentang DED
                         </div>
                         <div class="w-10 h-1 mb-5 bg-secondary"></div>
                         <h2
                             class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
-                            Apa itu Sertifikat Laik Fungsi (SLF)?
+                            Apa itu Gambar Kerja / Detail Engineering Design (DED) ?
                         </h2>
+                        <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                            Gambar kerja adalah gambar teknis yang digunakan dalam industri konstruksi, arsitektur, dan
+                            rekayasa untuk menggambarkan dengan detail berbagai aspek dari suatu proyek atau konstruksi.
+                            Gambar kerja berfungsi sebagai panduan bagi para profesional seperti arsitek, insinyur, tukang,
+                            dan kontraktor untuk melaksanakan proyek dengan akurat dan sesuai dengan desain yang diinginkan.
+                        </div>
                         <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                            SLF adalah Sertifikat Laik Fungsi. Dokumen resmi yang dikeluarkan oleh pemerintah atau otoritas
-                            terkait untuk menunjukkan bahwa suatu bangunan atau properti telah memenuhi persyaratan dan
-                            standar yang ditetapkan untuk digunakan sesuai dengan fungsinya.
+                            Detail Engineering Design (DED) atau Rancangan Teknik Detil adalah tahap dalam proses rekayasa
+                            atau desain di mana konsep desain yang lebih abstrak atau umum dikembangkan menjadi rencana
+                            teknis yang sangat terperinci dan siap untuk diimplementasikan. DED umumnya terjadi setelah
+                            tahap perencanaan konseptual dan perencanaan dasar.
                         </div>
                     @endif
                 </div>
@@ -86,30 +103,47 @@
         class="relative block lg:hidden bg-[url('../../public/img/general/service-pbg.webp')] bg-no-repeat bg-cover bg-blend-overlay bg-white/60 h-auto">
         <div class="px-6 py-10 md:py-32 md:px-20">
             @if (app()->getLocale() == 'en')
-                <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    about Function-worthy Certificate
+                <div
+                    class="text-xl font-normal capitalize tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
+                    About DED
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
-                <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    What is Function-worthy Certificate (SLF)?
+                <h2
+                    class="mb-10 text-2xl font-bold leading-normal font-poppins 2xl:text-4xl 2xl:leading-normal text-primary">
+                    What is the Working Details / Detail Engineering Design (DED)?
                 </h2>
+                <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                    Working drawings are technical drawings used in the construction, architecture, and
+                    Engineering to describe in detail various aspects of a project or construction.
+                    Working drawings function as a guide for professionals such as architects, engineers, craftsmen,
+                    and contractors to carry out the project accurately and in accordance with the desired design.
+                </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    SLF is a Certificate of Functioning. An official document issued by the government or relevant authority
-                    to show that a building or property has met the requirements and standards set for use in accordance
-                    with its function.
+                    Detail Engineering Design (DED) or Detailed Engineering Design is the stage in the engineering
+                    process
+                    or design where the design concept is more abstract or commonly developed into a plan
+                    very detailed technical and ready to be implemented.DED generally occurs after
+                    Conceptual Planning Stage and Basic Planning.
                 </div>
             @else
                 <div class="text-xl font-normal tracking-wide text-secondary font-poppins 2xl:text-2xl 2xl:tracking-wide">
-                    Tentang SLF
+                    Tentang DED
                 </div>
                 <div class="w-10 h-1 mb-5 bg-secondary"></div>
                 <h2 class="mb-10 text-2xl font-bold font-poppins 2xl:text-4xl text-primary">
-                    Apa itu Sertifikat Laik Fungsi (SLF)?
+                    Apa itu Gambar Kerja / Detail Engineering Design (DED) ?
                 </h2>
+                <div class="text-base text-justify mb-5 lg:text-lg text-paragraph font-poppins">
+                    Gambar kerja adalah gambar teknis yang digunakan dalam industri konstruksi, arsitektur, dan rekayasa
+                    untuk menggambarkan dengan detail berbagai aspek dari suatu proyek atau konstruksi. Gambar kerja
+                    berfungsi sebagai panduan bagi para profesional seperti arsitek, insinyur, tukang, dan kontraktor untuk
+                    melaksanakan proyek dengan akurat dan sesuai dengan desain yang diinginkan.
+                </div>
                 <div class="text-base text-justify lg:text-lg text-paragraph font-poppins">
-                    SLF adalah Sertifikat Laik Fungsi. Dokumen resmi yang dikeluarkan oleh pemerintah atau otoritas terkait
-                    untuk menunjukkan bahwa suatu bangunan atau properti telah memenuhi persyaratan dan standar yang
-                    ditetapkan untuk digunakan sesuai dengan fungsinya.
+                    Detail Engineering Design (DED) atau Rancangan Teknik Detil adalah tahap dalam proses rekayasa atau
+                    desain di mana konsep desain yang lebih abstrak atau umum dikembangkan menjadi rencana teknis yang
+                    sangat terperinci dan siap untuk diimplementasikan. DED umumnya terjadi setelah tahap perencanaan
+                    konseptual dan perencanaan dasar.
                 </div>
             @endif
         </div>
@@ -125,54 +159,65 @@
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Reasons</span>
-                        why slf services are important for
+                        Why DED services are important for
                         <span class="px-1 text-white bg-secondary">your business</span> or <span
                             class="px-1 text-white bg-secondary">property</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                for legality and compliance
+                                Precision in the implementation of construction
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Having an SLF is proof that the business or property is operating legally and complies with
-                                applicable regulations
+                                Detailed working drawings allow contractors and builders to understand
+                                clearly the desired specifications and layout.This reduces the risk of error
+                                or interpretation that can affect the quality and success of construction projects.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                customer trust
+                                Efficiency in the construction process
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Customers will feel more comfortable and confident using services or occupying properties
-                                that have passed the audit process and received official certification.
+                                With the right engineering design details, the construction process can run more smoothly
+                                and efficient.Workers will have a clear guide about the steps
+                                must be taken, the material needed, and the layout that must be followed, so
+                                reduce the possibility of delay and increase productivity.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                safety and comfort
+                                Reduce additional costs
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                A Certificate of Occupancy ensures that a building or property has undergone rigorous
-                                inspection to ensure safety and comfort for its occupants.
+                                With a good working image, you can identify potential problems or errors
+                                before construction begins.This makes it possible to make improvements or changes
+                                before becoming a greater problem, which can save possible additional costs
+                                required for later improvement.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                property value
+                                Higher customer satisfaction
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                This certificate shows that the building or property has met high standards in terms of
-                                quality, safety and reliability.
+                                Accurate engineering design details help ensure that the construction project
+                                completed according to customer expectations.By giving what results are in accordance with
+                                what
+                                What customers want, you can strengthen your business reputation and improve
+                                Customer satisfaction, which can lead to re -purchase or recommendations to people
+                                other.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Legal and licensing requirements
+                                Conformity with regulations and standards
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Without a valid SLF, a business or property can face serious legal and administrative
-                                consequences, including sanctions or use bans.
+                                Complete and detailed working drawings ensure that your construction project complies with
+                                All rules, standards, and building codes that apply.This is not only important for
+                                safety and building quality, but also to ensure that you are not subject to sanctions
+                                or legal issues due to regulation violations.
                             </p>
                         </li>
                     </ul>
@@ -180,54 +225,64 @@
                     <div
                         class="mb-10 text-xl font-bold text-center uppercase md:text-left text-primary font-inter lg:text-2xl lg:leading-normal 2xl:text-4xl 2xl:leading-normal">
                         <span class="px-1 text-white bg-secondary">5 Alasan</span>
-                        Mengapa Jasa SLF penting untuk
+                        Mengapa Jasa DED penting untuk
                         <span class="px-1 text-white bg-secondary">bisnis</span> atau <span
                             class="px-1 text-white bg-secondary">properti anda</span> ?
                     </div>
                     <ul class="pl-5 font-bold list-decimal text-paragraph font-poppins">
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                untuk legalitas dan kepatuhan
+                                Presisi dalam Pelaksanaan Konstruksi
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Memiliki SLF merupakan bukti bahwa bisnis atau properti tersebut beroperasi secara sah dan
-                                mematuhi peraturan yang berlaku
+                                Gambar kerja yang terperinci memungkinkan para kontraktor dan pembangun untuk memahami
+                                dengan jelas spesifikasi dan tata letak yang diinginkan. Hal ini mengurangi risiko kesalahan
+                                atau penafsiran yang dapat mempengaruhi kualitas dan keberhasilan proyek konstruksi.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                kepercayaan pelanggan
+                                Efisiensi dalam Proses Konstruksi
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Pelanggan akan merasa lebih nyaman dan yakin menggunakan layanan atau menghuni properti yang
-                                telah melewati proses audit dan mendapatkan sertifikasi resmi
+                                Dengan Detail Engineering Design yang tepat, proses konstruksi dapat berjalan lebih lancar
+                                dan efisien. Para pekerja akan memiliki panduan yang jelas tentang langkah-langkah yang
+                                harus diambil, material yang diperlukan, dan tata letak yang harus diikuti, sehingga
+                                mengurangi kemungkinan penundaan dan meningkatkan produktivitas.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                keamanan dan kenyamanan
+                                Mengurangi Biaya Tambahan
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Sertifikat Laik Fungsi memastikan bahwa bangunan atau properti telah melalui pemeriksaan
-                                yang ketat untuk memastikan keamanan dan kenyamanan bagi penghuninya.
+                                Dengan gambar kerja yang baik, Anda dapat mengidentifikasi potensi masalah atau kesalahan
+                                sebelum konstruksi dimulai. Hal ini memungkinkan untuk melakukan perbaikan atau perubahan
+                                sebelum menjadi masalah yang lebih besar, yang dapat menghemat biaya tambahan yang mungkin
+                                diperlukan untuk perbaikan di kemudian hari.
                             </p>
                         </li>
                         <li class="pl-2 mb-5 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                Nilai properti
+                                Kepuasan Pelanggan yang Lebih Tinggi
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Sertifikat ini menunjukkan bahwa bangunan atau properti telah memenuhi standar yang tinggi
-                                dalam hal kualitas, keamanan, dan keandalan.
+                                Detail Engineering Design yang akurat membantu memastikan bahwa proyek konstruksi
+                                diselesaikan sesuai dengan harapan pelanggan. Dengan memberikan hasil yang sesuai dengan apa
+                                yang diinginkan pelanggan, Anda dapat memperkuat reputasi bisnis Anda dan meningkatkan
+                                kepuasan pelanggan, yang dapat berujung pada pembelian ulang atau rekomendasi kepada orang
+                                lain.
                             </p>
                         </li>
                         <li class="pl-2 md:pl-10">
                             <h4 class="mb-4 text-xl italic capitalize">
-                                persyaratan hukum dan perizinan
+                                Kesesuaian dengan Peraturan dan Standar
                             </h4>
                             <p class="font-normal leading-normal text-justify">
-                                Tanpa SLF yang valid, bisnis atau properti dapat menghadapi konsekuensi hukum dan
-                                administratif yang serius, termasuk sanksi atau larangan penggunaan.
+                                Gambar kerja yang lengkap dan terperinci memastikan bahwa proyek konstruksi Anda mematuhi
+                                semua peraturan, standar, dan kode bangunan yang berlaku. Ini tidak hanya penting untuk
+                                keamanan dan kualitas bangunan, tetapi juga untuk memastikan bahwa Anda tidak terkena sanksi
+                                atau masalah hukum karena pelanggaran regulasi.
                             </p>
                         </li>
                     </ul>
@@ -243,9 +298,9 @@
             <div class="text-center">
                 <h2 class="mb-10 text-2xl font-bold uppercase text-primary md:text-4xl font-poppins">
                     @if (app()->getLocale() == 'en')
-                        SLF Submission Requirements
+                        Requirements for submitting DED
                     @else
-                        Syarat Pengajuan SLF
+                        Syarat Pengajuan DED
                     @endif
                 </h2>
             </div>
@@ -265,47 +320,46 @@
                         <ul class="space-y-2 list-disc text-paragraph font-poppins">
                             @if (app()->getLocale() == 'en')
                                 <li>
-                                    Copy of applicant's KTP and KK
+                                    DED request letter addressed to the authorized authorities, such as
+                                    related agencies or project owners.
                                 </li>
                                 <li>
-                                    Copy of the latest Land and Building Tax Notification Letter (SPPT PBB)
+                                    Power of Attorney (if represented by someone else)
                                 </li>
                                 <li>
-                                    Copy of physical land tenure statement (SHM, SHGB, AJB, etc.)
+                                    Photocopy of the applicant's KTP/SIM
                                 </li>
                                 <li>
-                                    Copy of Building Construction Permit (IMB)
+                                    Photocopy of Petitioner's NPWP
                                 </li>
                                 <li>
-                                    Copy of statement letter of completion of construction
+                                    Trading Business License (SIUP) and Company Registration Certificate (TDP) for the
+                                    company
+                                    Consultants who make DED
                                 </li>
                                 <li>
-                                    A statement of ability to comply with the requirements of functional feasibility
-                                </li>
-                                <li>
-                                    Copy of NPWP (optional)
+                                    Proof of payment of registration fee (if any)
                                 </li>
                             @else
                                 <li>
-                                    Fotokopi KTP dan KK pemohon
+                                    Surat permohonan DED yang ditujukan kepada pihak berwenang yang berkepentingan, seperti
+                                    dinas terkait atau pemilik proyek.
                                 </li>
                                 <li>
-                                    Fotokopi Surat Pemberitahuan Pajak Terhutang Pajak Bumi dan Bangunan (SPPT PBB) terbaru
+                                    Surat kuasa (jika diwakilkan oleh orang lain)
                                 </li>
                                 <li>
-                                    Fotokopi Surat pernyataan penguasaan fisik bidang tanah (SHM, SHGB, AJB, dll.)
+                                    Fotokopi KTP/SIM pemohon
                                 </li>
                                 <li>
-                                    Fotokopi Izin Mendirikan Bangunan (IMB)
+                                    Fotokopi NPWP pemohon
                                 </li>
                                 <li>
-                                    Fotokopi Surat pernyataan telah menyelesaikan pembangunan
+                                    Surat Izin Usaha Perdagangan (SIUP) dan Tanda Daftar Perusahaan (TDP) bagi perusahaan
+                                    konsultan yang membuat DED
                                 </li>
                                 <li>
-                                    Surat pernyataan kesanggupan untuk mentaati persyaratan laik fungsi
-                                </li>
-                                <li>
-                                    Fotokopi NPWP (opsional)
+                                    Bukti pembayaran biaya pendaftaran (jika ada)
                                 </li>
                             @endif
                         </ul>
@@ -325,36 +379,41 @@
                         <ul class="space-y-2 list-disc text-paragraph font-poppins">
                             @if (app()->getLocale() == 'en')
                                 <li>
-                                    Building technical plan drawings
+                                    Images of building plans that have been approved by relevant agencies, such as the Tata
+                                    Office
+                                    ruang atau dinas perizinan.
                                 </li>
                                 <li>
-                                    Results of testing the feasibility of building functions from a team of experts
+                                    Laporan Detail Engineering Design (DED) yang memuat:Penjelasan mengenai proyek Deskripsi
+                                    desain Analisis struktur dan fondasi Analisis instalasi mekanikal dan elektrikal Rencana
+                                    Cost Budget (RAB) Project Implementation Schedule
                                 </li>
                                 <li>
-                                    Technical recommendtaion from the Fire Department
+                                    Complete and detailed working drawings, including: image plans.
+                                    Detailed Pictures of Building Materials Specifications
                                 </li>
                                 <li>
-                                    Technical recommendation from the Health Office
-                                </li>
-                                <li>
-                                    Certificate of operation (SLO) for certain buildings (e.g. elevator, generator set,
-                                    etc.)
+                                    A statement letter from the planning consultant stating that DED has been made
+                                    accordingly
+                                    with applicable provisions.
                                 </li>
                             @else
                                 <li>
-                                    Gambar rencana teknis bangunan
+                                    Gambar rencana bangunan yang telah disetujui oleh instansi terkait, seperti dinas tata
+                                    ruang atau dinas perizinan.
                                 </li>
                                 <li>
-                                    Hasil pengujian kelaikan fungsi bangunan dari tim ahli
+                                    Laporan Detail Engineering Design (DED) yang memuat:Penjelasan mengenai proyek Deskripsi
+                                    desain Analisis struktur dan fondasi Analisis instalasi mekanikal dan elektrikal Rencana
+                                    anggaran biaya (RAB) Jadwal pelaksanaan proyek
                                 </li>
                                 <li>
-                                    Rekomendasi teknis dari Dinas Pemadam Kebakaran
+                                    Gambar kerja yang lengkap dan detail, meliputi:Gambar denah Gambar tampak Gambar
+                                    potongan Gambar detail Spesifikasi bahan bangunan
                                 </li>
                                 <li>
-                                    Rekomendasi teknis dari Dinas Kesehatan
-                                </li>
-                                <li>
-                                    Sertifikat laik operasi (SLO) untuk bangunan tertentu (misalnya, lift, genset, dll.)
+                                    Surat pernyataan dari konsultan perencana yang menyatakan bahwa DED telah dibuat sesuai
+                                    dengan ketentuan yang berlaku.
                                 </li>
                             @endif
                         </ul>
@@ -373,19 +432,18 @@
                     @if (app()->getLocale() == 'en')
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            Consult your business to get a functional certificate now!
+                            Immediately consult your energy audit now!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Find publishing solutions with our professional, optimistic, thorough and solutive services.
+                            Find a choice of building drawings concept according to your dreams!
                         </div>
                     @else
                         <div
                             class="mb-2 text-xl font-bold leading-normal uppercase lg:leading-normal lg:text-3xl text-secondary font-poppins">
-                            segera konsultasikan bisnis anda untuk mendapatkan sertifikat laik fungsi sekarang!
+                            Segera konsultasikan audit energi Anda sekarang!
                         </div>
                         <div class="mb-5 font-semibold font-poppins">
-                            Temukan solusi penerbitan dengan layanan yang profesional, optimis, tuntas dan solutif dari
-                            kami.
+                            Temukan Pilihan Konsep Gambar Kerja Bangunan Sesuai Impian Anda!
                         </div>
                     @endif
                     <div class="flex w-full">
@@ -430,9 +488,9 @@
             <h2
                 class="mb-4 text-xl font-extrabold leading-relaxed tracking-normal text-center lg:text-left font-poppins text-primary md:text-2xl md:leading-relaxed 2xl:pl-32 2xl:text-4xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
-                    SLF Acquisition Process
+                    DED acquisition process
                 @else
-                    Proses Perolehan SLF
+                    Proses Perolehan DED
                 @endif
             </h2>
             <div class="w-full lg:w-1/2 text-paragraph font-poppins 2xl:pl-32 2xl:w-3/4 2xl:text-xl">
@@ -445,7 +503,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. application submission</span>
+                                <span class="capitalize">1. Pre-contract</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -455,14 +513,10 @@
                         </h2>
                         <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        The applicant submits the SLF application to the local Public Works Office (PU) or
-                                        Building and Spatial Planning Office (PRB).
-                                    </li>
-                                    <li>
-                                        The application is submitted in writing and completed with the specified
-                                        requirements.
+                                        Consultant selection: Project owner or related agency selects a consultant
+                                        Planners who are experienced and have qualifications to make DED.
                                     </li>
                                 </ul>
                             </div>
@@ -473,7 +527,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. Application Examination</span>
+                                <span class="capitalize">2. data collection</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -483,14 +537,11 @@
                         </h2>
                         <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Officers from the PU/PRB Office will check the completeness and validity of the
-                                        requirements.
-                                    </li>
-                                    <li>
-                                        The officer will also conduct a field inspection to ensure that the building meets
-                                        the requirements.
+                                        Planning Consultants Conduct data collection needed for making DEDs,
+                                        such as project location data, land conditions data, applicable regulatory data, and
+                                        Other data.
                                     </li>
                                 </ul>
                             </div>
@@ -501,7 +552,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. Verification and inspection</span>
+                                <span class="capitalize">3. DED Making</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -511,14 +562,14 @@
                         </h2>
                         <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Officers from the PUPR Office will verify the completeness and validity of the
-                                        requirements submitted.
-                                    </li>
-                                    <li>
-                                        The Technical Team from the PUPR Office will conduct a field inspection to ensure
-                                        the building has met the requirements for a proper function.
+                                        Planning Consultants make DED containing: explanation of the description project
+                                        design of structural analysis and foundation of mechanical and electrical
+                                        installation analysis
+                                        Cost Budget Plan (RAB) Complete and Complete Working Drawing Project Implementation
+                                        Schedule
+                                        Details
                                     </li>
                                 </ul>
                             </div>
@@ -529,7 +580,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. technical team session</span>
+                                <span class="capitalize">4. DED Review and Approval</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -539,14 +590,11 @@
                         </h2>
                         <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Hasil pemeriksaan lapangan dan dokumen permohonan akan dibahas dalam sidang Tim
-                                        Teknis.
-                                    </li>
-                                    <li>
-                                        The Technical Team will provide a recommendation whether the building is fit for
-                                        function or not.
+                                        The DED that has been made by the planner consultant is reviewed by the appointed
+                                        expert team
+                                        by the project owner or related agency.
                                     </li>
                                 </ul>
                             </div>
@@ -557,7 +605,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                                 aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. SLF Issuance</span>
+                                <span class="capitalize">5. DED submission</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -567,36 +615,10 @@
                         </h2>
                         <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        If the building is declared fit for function, the PUPR Office will issue the SLF.
-                                    </li>
-                                    <li>
-                                        The SLF can be printed and signed by an authorized official.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-
-                        <h2 id="accordion-color-heading-6">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-6" aria-expanded="false"
-                                aria-controls="accordion-color-body-6">
-                                <span class="capitalize">6. Retribution Payment</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
-                                    <li>
-                                        The applicant pays the SLF issuance retribution.
+                                        The planner consultant submits the DED final to the project owner or agency
+                                        related.
                                     </li>
                                 </ul>
                             </div>
@@ -611,7 +633,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                                 aria-controls="accordion-color-body-1">
-                                <span class="capitalize">1. Pengajuan Permohonan</span>
+                                <span class="capitalize">1. pra-kontrak</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -621,14 +643,10 @@
                         </h2>
                         <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Pemohon mengajukan permohonan SLF ke Dinas Pekerjaan Umum (PU) atau Dinas Penataan
-                                        Ruang dan Bangunan (PRB) setempat.
-                                    </li>
-                                    <li>
-                                        Permohonan diajukan secara tertulis dan dilengkapi dengan persyaratan yang telah
-                                        ditentukan.
+                                        Pemilihan konsultan: Pemilik proyek atau instansi terkait memilih konsultan
+                                        perencana yang berpengalaman dan memiliki kualifikasi untuk membuat DED.
                                     </li>
                                 </ul>
                             </div>
@@ -639,7 +657,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                                 aria-controls="accordion-color-body-2">
-                                <span class="capitalize">2. Pemeriksaan Permohonan</span>
+                                <span class="capitalize">2. pengumpulan data</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -649,13 +667,11 @@
                         </h2>
                         <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Petugas dari Dinas PU/PRB akan memeriksa kelengkapan dan keabsahan persyaratan.
-                                    </li>
-                                    <li>
-                                        Petugas juga akan melakukan pemeriksaan lapangan untuk memastikan bangunan telah
-                                        memenuhi persyaratan laik fungsi.
+                                        Konsultan perencana melakukan pengumpulan data yang diperlukan untuk pembuatan DED,
+                                        seperti data lokasi proyek, data kondisi tanah, data peraturan yang berlaku, dan
+                                        data lainnya.
                                     </li>
                                 </ul>
                             </div>
@@ -666,7 +682,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                                 aria-controls="accordion-color-body-3">
-                                <span class="capitalize">3. Verifikasi dan Pemeriksaan</span>
+                                <span class="capitalize">3. pembuatan DED</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -676,14 +692,12 @@
                         </h2>
                         <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Petugas Dinas PUPR akan melakukan verifikasi terhadap kelengkapan dan keabsahan
-                                        persyaratan yang diajukan.
-                                    </li>
-                                    <li>
-                                        Tim Teknis dari Dinas PUPR akan melakukan pemeriksaan lapangan untuk memastikan
-                                        bangunan telah memenuhi persyaratan laik fungsi.
+                                        Konsultan perencana membuat DED yang memuat:Penjelasan mengenai proyek Deskripsi
+                                        desain Analisis struktur dan fondasi Analisis instalasi mekanikal dan elektrikal
+                                        Rencana anggaran biaya (RAB) Jadwal pelaksanaan proyek Gambar kerja yang lengkap dan
+                                        detail
                                     </li>
                                 </ul>
                             </div>
@@ -694,7 +708,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                                 aria-controls="accordion-color-body-4">
-                                <span class="capitalize">4. Sidang Tim Teknis</span>
+                                <span class="capitalize">4. review dan persetujuan DED</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -704,13 +718,10 @@
                         </h2>
                         <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Hasil pemeriksaan lapangan dan dokumen permohonan akan dibahas dalam sidang Tim
-                                        Teknis.
-                                    </li>
-                                    <li>
-                                        Tim Teknis akan memberikan rekomendasi apakah bangunan layak fungsi atau tidak.
+                                        DED yang telah dibuat oleh konsultan perencana direview oleh tim ahli yang ditunjuk
+                                        oleh pemilik proyek atau instansi terkait.
                                     </li>
                                 </ul>
                             </div>
@@ -721,7 +732,7 @@
                                 class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
                                 data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                                 aria-controls="accordion-color-body-5">
-                                <span class="capitalize">5. Penerbitan SLF</span>
+                                <span class="capitalize">5. penyerahan DED</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -731,36 +742,10 @@
                         </h2>
                         <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
                             <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
+                                <ul class="px-5 space-y-3 text-justify text-paragraph font-poppin">
                                     <li>
-                                        Jika bangunan dinyatakan laik fungsi, Dinas PUPR akan menerbitkan SLF.
-                                    </li>
-                                    <li>
-                                        SLF dapat dicetak dan ditandatangani oleh pejabat berwenang.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- batas --}}
-
-                        <h2 id="accordion-color-heading-6">
-                            <button type="button"
-                                class="flex items-center justify-between w-full gap-3 p-5 font-bold text-paragraph rtl:text-right rounded-t-xl hover:bg-secondary hover:text-white"
-                                data-accordion-target="#accordion-color-body-6" aria-expanded="false"
-                                aria-controls="accordion-color-body-6">
-                                <span class="capitalize">6. Pembayaran Retribusi</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
-                            <div class="p-5 border-2 border-t-0 rounded-b-xl border-secondary">
-                                <ul class="px-5 space-y-3 text-justify list-disc text-paragraph font-poppin">
-                                    <li>
-                                        Pemohon membayar retribusi penerbitan SLF.
+                                        Konsultan perencana menyerahkan DED final kepada pemilik proyek atau instansi
+                                        terkait.
                                     </li>
                                 </ul>
                             </div>

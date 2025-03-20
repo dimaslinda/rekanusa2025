@@ -4,54 +4,63 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
+use Filament\Forms\Set;
 use Filament\Forms\Form;
-use App\Models\Testimoni;
+use App\Models\Portofolio;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
+use Filament\Support\Enums\FontWeight;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Forms\Components\RichEditor;
+use Filament\Tables\Columns\ToggleColumn;
 use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\TestimoniResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\PortofolioResource\Pages;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
-use App\Filament\Resources\TestimoniResource\RelationManagers;
-use Filament\Notifications\Notification;
+use App\Filament\Resources\PortofolioResource\RelationManagers;
 
-class TestimoniResource extends Resource
+class PortofolioResource extends Resource
 {
-    protected static ?string $model = Testimoni::class;
+    protected static ?string $model = Portofolio::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-left-right';
+    protected static ?string $navigationIcon = 'heroicon-o-photo';
 
     protected static ?string $navigationGroup = 'Porfotolio Management';
 
-    protected static ?string $navigationLabel = 'Data Testimoni';
-
-    public static function shouldRegisterNavigation(): bool
-    {
-        return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
-    }
+    protected static ?string $navigationLabel = 'Data Portofolio';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Section::make('Informasi Testimoni')
+                Section::make('Informasi Portofolio')
                     ->schema([
                         Grid::make(2)
                             ->schema([
-                                TextInput::make('nama_project')
-                                    ->required()
-                                    ->placeholder('input name project')
+                                TextInput::make('judul')
                                     ->autocapitalize('words')
-                                    ->label('Nama Project')
-                                    ->maxLength(255),
+                                    ->required()
+                                    ->live(debounce: 500)
+                                    ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state)))
+                                    ->placeholder('Judul Portofolio')
+                                    ->label('Judul Portofolio'),
+                                TextInput::make('slug')
+                                    ->label('Slug Portofolio')
+                                    ->placeholder('Slug Portofolio')
+                                    ->required()
+                                    ->unique(ignorable: fn($record) => $record)
+                                    ->readOnly(),
                                 Select::make('kategoris')
                                     ->multiple()
                                     ->placeholder('input kategori project')
@@ -59,41 +68,51 @@ class TestimoniResource extends Resource
                                     ->relationship('Kategoris', 'name')
                                     ->required()
                                     ->label('Kategori project'),
-                                TextInput::make('nama')
-                                    ->required()
-                                    ->placeholder('input name')
-                                    ->label('Nama')
-                                    ->maxLength(255),
-                                TextInput::make('jabatan')
-                                    ->placeholder('input jabatan')
-                                    ->required()
-                                    ->label('Jabatan')
-                                    ->maxLength(255),
+                                Toggle::make('publish')
+                                    ->label('Publish')
+                                    ->inline()
+                                    ->onColor('success')
+                                    ->offColor('danger'),
                             ]),
-                        RichEditor::make('testimoni')
+                        RichEditor::make('alamat')
                             ->required()
-                            ->placeholder('input testimoni')
+                            ->placeholder('input alamat')
                             ->toolbarButtons([
                                 'bold',
-                                'h2',
-                                'h3',
-                                'italic',
-                                'link',
                                 'redo',
                                 'undo',
-                                'strike',
-                                'underline',
                             ])
                             ->columnSpanFull(),
                     ]),
-                Section::make('Foto Testimoni')
+                Section::make('Foto Portofolio')
                     ->schema([
-                        SpatieMediaLibraryFileUpload::make('foto')
-                            ->collection('testimoni')
-                            ->disk('gcs')
-                            ->label('Foto Testimoni')
+                        SpatieMediaLibraryFileUpload::make('portofolio')
+                            ->collection('portofolio')
+                            ->label('Foto Depan Portofolio')
                             ->image()
-                            ->directory('testimoni')
+                            ->disk('gcs')
+                            ->directory('portofolios')
+                            ->imageEditor()
+                            ->imageEditorAspectRatios([
+                                '16:9',
+                                '4:3',
+                                '1:1',
+                            ])
+                            ->maxSize(10024)
+                            ->hint('Ukuran Maksimal 10 MB')
+                            ->hintIcon('heroicon-o-information-circle')
+                            ->hintColor('warning')
+                            ->acceptedFileTypes(['image/png', 'image/jpg', 'image/jpeg', 'image/webp'])
+                            ->required(),
+                        SpatieMediaLibraryFileUpload::make('another_portofolio')
+                            ->collection('another_portofolio')
+                            ->label('Foto Lainnya')
+                            ->image()
+                            ->disk('gcs')
+                            ->multiple()
+                            ->maxFiles(6)
+                            ->reorderable()
+                            ->directory('portofolios')
                             ->imageEditor()
                             ->imageEditorAspectRatios([
                                 '16:9',
@@ -114,6 +133,20 @@ class TestimoniResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('judul')
+                    ->label('Judul Portofolio')
+                    ->searchable()
+                    ->alignCenter()
+                    ->weight(FontWeight::Bold)
+                    ->limit(20)
+                    ->tooltip(function (TextColumn $column): ?string {
+                        $state = $column->getState();
+
+                        if (strlen($state) <= $column->getCharacterLimit()) {
+                            return null;
+                        }
+                        return $state;
+                    }),
                 BadgeColumn::make('kategoris.name')
                     ->label('Kategori Project')
                     ->alignCenter()
@@ -129,65 +162,36 @@ class TestimoniResource extends Resource
                         }
                         return $state ?? '-';
                     }), // Batasan tampilan
-
-                TextColumn::make('nama_project')
-                    ->label('Nama Project')
-                    ->searchable()
-                    ->sortable(),
-                TextColumn::make('nama')
-                    ->label('Nama')
-                    ->searchable()
-                    ->sortable(),
-                TextColumn::make('jabatan')
-                    ->label('Jabatan')
-                    ->alignCenter()
-                    ->limit(50)
-                    ->wrap()
-                    ->tooltip(function (TextColumn $column): ?string {
-                        $state = $column->getState();
-
-                        if (strlen($state) <= $column->getCharacterLimit()) {
-                            return null;
-                        }
-
-                        // Only render the tooltip if the column content exceeds the length limit.
-                        return $state;
-                    })
-                    ->searchable()
-                    ->sortable(),
-                TextColumn::make('testimoni')
-                    ->label('Testimoni')
-                    ->html()
-                    ->limit(50)
-                    ->wrap()
-                    ->tooltip(function (TextColumn $column): ?string {
-                        $state = $column->getState();
-
-                        if (strlen($state) <= $column->getCharacterLimit()) {
-                            return null;
-                        }
-
-                        // Only render the tooltip if the column content exceeds the length limit.
-                        return $state;
-                    })
-                    ->searchable()
-                    ->sortable(),
-                SpatieMediaLibraryImageColumn::make('foto')
-                    ->collection('testimoni')
-                    ->label('Foto Testimoni')
-                    ->searchable()
+                SpatieMediaLibraryImageColumn::make('portofolio')
+                    ->label('Foto Depan Portofolio')
+                    ->collection('portofolio')
                     ->alignCenter()
                     ->width(100)
-                    ->height(100)
-                    ->sortable(),
+                    ->height(100),
+
+                SpatieMediaLibraryImageColumn::make('another_portofolio')
+                    ->label('Foto Lainnya')
+                    ->collection('another_portofolio')
+                    ->alignCenter()
+                    ->width(50)
+                    ->height(50)
+                    ->circular()
+                    ->stacked()
+                    ->limitedRemainingText(isSeparate: true)
+                    ->limit(3),
+                ToggleColumn::make('publish')
+                    ->label('Publish')
+                    ->alignCenter()
+                    ->onColor('success') // Warna jika aktif
+                    ->offColor('danger') // Warna jika tidak aktif
+                    ->action(function ($record, $state) {
+                        $record->publish = $state;
+                        $record->save();
+                    }),
+
             ])
             ->filters([
-                Tables\Filters\SelectFilter::make('kategoris')
-                    ->relationship('Kategoris', 'name')
-                    ->multiple()
-                    ->preload()
-                    ->label('Filter Kategori')
-                    ->placeholder('Pilih Kategori'),
+                //
             ])
             ->actions([
                 Tables\Actions\EditAction::make()
@@ -196,7 +200,7 @@ class TestimoniResource extends Resource
                         Notification::make()
                             ->title('Updated')
                             ->color('success')
-                            ->body("Data Testimoni {$record->nama_project} berhasil diubah!")
+                            ->body("Data Portofolio {$record->judul} berhasil diubah!")
                             ->success()
                             ->duration(3000)
                             ->send();
@@ -209,7 +213,7 @@ class TestimoniResource extends Resource
                             ->color('danger')
                             ->icon('heroicon-s-trash')
                             ->iconColor('danger')
-                            ->body("Data Testimoni {$record->nama_project} berhasil dihapus!")
+                            ->body("Data Portofolio {$record->judul} berhasil dihapus!")
                             ->success()
                             ->duration(3000)
                             ->send();
@@ -225,7 +229,7 @@ class TestimoniResource extends Resource
                                 ->color('danger')
                                 ->icon('heroicon-s-trash')
                                 ->iconColor('danger')
-                                ->body('Data Testimoni berhasil dihapus secara massal!')
+                                ->body('Data Portofolio berhasil dihapus secara massal!')
                                 ->success()
                                 ->duration(3000)
                                 ->send();
@@ -237,20 +241,7 @@ class TestimoniResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManageTestimonis::route('/'),
-        ];
-    }
-
-    public static function getPermissions(): array
-    {
-        return [
-            'viewAny',
-            'view',
-            'create',
-            'update',
-            'delete',
-            'restore',
-            'forceDelete',
+            'index' => Pages\ManagePortofolios::route('/'),
         ];
     }
 }
