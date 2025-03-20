@@ -2,22 +2,34 @@
 
 namespace App\Providers\Filament;
 
-use Filament\Http\Middleware\Authenticate;
-use Filament\Http\Middleware\AuthenticateSession;
-use Filament\Http\Middleware\DisableBladeIconComponents;
-use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Pages;
 use Filament\Panel;
+use Filament\Widgets;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
-use Filament\Widgets;
-use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
-use Illuminate\Cookie\Middleware\EncryptCookies;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
-use Illuminate\Routing\Middleware\SubstituteBindings;
+use Filament\Http\Middleware\Authenticate;
 use Illuminate\Session\Middleware\StartSession;
-use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Illuminate\Cookie\Middleware\EncryptCookies;
+use Filament\Http\Middleware\AuthenticateSession;
 use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
+use Illuminate\Routing\Middleware\SubstituteBindings;
+use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Filament\Http\Middleware\DisableBladeIconComponents;
+use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\SessionsWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\VisitorsWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\PageViewsWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\FilamentGoogleAnalyticsPlugin;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\MostVisitedPagesWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\SessionsByDeviceWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\SessionsDurationWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\TopReferrersListWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\ActiveUsersOneDayWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\SessionsByCountryWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\ActiveUsersSevenDayWidget;
+use BezhanSalleh\FilamentGoogleAnalytics\Widgets\ActiveUsersTwentyEightDayWidget;
 
 class SecretPanelProvider extends PanelProvider
 {
@@ -38,8 +50,17 @@ class SecretPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: \app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                PageViewsWidget::class,
+                VisitorsWidget::class,
+                ActiveUsersOneDayWidget::class,
+                ActiveUsersSevenDayWidget::class,
+                ActiveUsersTwentyEightDayWidget::class,
+                SessionsWidget::class,
+                SessionsDurationWidget::class,
+                SessionsByCountryWidget::class,
+                SessionsByDeviceWidget::class,
+                MostVisitedPagesWidget::class,
+                TopReferrersListWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -57,6 +78,7 @@ class SecretPanelProvider extends PanelProvider
             ])
             ->plugins([
                 FilamentShieldPlugin::make(),
-                    ]);
+                FilamentGoogleAnalyticsPlugin::make()
+            ]);
     }
 }
