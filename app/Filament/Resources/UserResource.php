@@ -9,12 +9,15 @@ use Filament\Forms\Form;
 use Filament\Pages\Page;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Resources\Pages\CreateRecord;
 use App\Filament\Resources\UserResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\UserResource\RelationManagers;
-use Filament\Notifications\Notification;
 
 class UserResource extends Resource
 {
@@ -30,36 +33,36 @@ class UserResource extends Resource
      * Add required permissions to the resource.
      */
     public static function shouldRegisterNavigation(): bool
-{
-    return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
-}
+    {
+        return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
+    }
 
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
+                TextInput::make('name')
                     ->required()
                     ->placeholder('input name')
                     ->maxLength(255),
 
-                Forms\Components\TextInput::make('email')
+                TextInput::make('email')
                     ->email()
                     ->placeholder('input email')
                     ->required()
                     ->maxLength(255),
 
-                Forms\Components\TextInput::make('password')
+                TextInput::make('password')
                     ->password()
                     ->placeholder('input password')
                     ->revealable()
-                    ->dehydrateStateUsing(fn ($state): string => bcrypt($state))
-                    ->dehydrated(fn ($state) => filled($state))
-                    ->required(fn (Page $livewire): bool => $livewire instanceof CreateRecord)
+                    ->dehydrateStateUsing(fn($state): string => bcrypt($state))
+                    ->dehydrated(fn($state) => filled($state))
+                    ->required(fn(Page $livewire): bool => $livewire instanceof CreateRecord)
                     ->minLength(8),
 
-                Forms\Components\Select::make('roles')
+                Select::make('roles')
                     ->relationship('roles', 'name')
                     ->placeholder('input roles')
                     ->multiple() // Allows assigning multiple roles
@@ -72,15 +75,15 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
+                TextColumn::make('name')
                     ->sortable()
                     ->searchable(),
 
-                Tables\Columns\TextColumn::make('email')
+                TextColumn::make('email')
                     ->sortable()
                     ->searchable(),
 
-                Tables\Columns\TextColumn::make('roles.name') // Show user roles
+                TextColumn::make('roles.name') // Show user roles
                     ->label('Roles')
                     ->sortable()
                     ->searchable(),
