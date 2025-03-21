@@ -30,9 +30,19 @@ class RegazineResource extends Resource
     protected static ?string $navigationLabel = 'Data Regazine';
 
     public static function shouldRegisterNavigation(): bool
-{
-    return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
-}
+    {
+        return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
+    public static function getNavigationBadgeTooltip(): ?string
+    {
+        return 'Total Jumlah Regazine';
+    }
 
     public static function form(Form $form): Form
     {
@@ -42,7 +52,7 @@ class RegazineResource extends Resource
                 TextInput::make('judul')
                     ->placeholder('Judul Regazine')
                     ->live('bounce')
-                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state)))
+                    ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state)))
                     ->required(),
 
                 // Slug Field

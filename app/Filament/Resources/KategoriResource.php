@@ -27,12 +27,22 @@ class KategoriResource extends Resource
 
     protected static ?string $navigationGroup = 'Porfotolio Management';
 
-    protected static ?string $navigationLabel = 'Kategori Testimoni';
+    protected static ?string $navigationLabel = 'Kategori';
 
     public static function shouldRegisterNavigation(): bool
-{
-    return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
-}
+    {
+        return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
+    public static function getNavigationBadgeTooltip(): ?string
+    {
+        return 'Total Jumlah Kategori';
+    }
 
     public static function form(Form $form): Form
     {
@@ -41,14 +51,14 @@ class KategoriResource extends Resource
                 TextInput::make('name')
                     ->required()
                     ->placeholder('input name kategori Testimoni')
-                    ->live(debounce:500)
+                    ->live(debounce: 500)
                     ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state)))
                     ->label('Nama Kategori Layanan')
                     ->maxLength(255),
                 TextInput::make('slug')
                     ->placeholder('input slug')
                     ->required()
-                    ->unique(ignorable: fn ($record) => $record)
+                    ->unique(ignorable: fn($record) => $record)
                     ->label('Slug')
                     ->readOnly()
                     ->maxLength(255),
@@ -60,50 +70,50 @@ class KategoriResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
-                ->label('Kategori Layanan')
-                ->alignCenter()
-                ->searchable(),
+                    ->label('Kategori Layanan')
+                    ->alignCenter()
+                    ->searchable(),
                 TextColumn::make('created_at')
-                ->searchable()
-                ->sortable()
-                ->alignCenter()
-                ->dateTime('d M, Y')
-                ->label('Dibuat Pada'),
+                    ->searchable()
+                    ->sortable()
+                    ->alignCenter()
+                    ->dateTime('d M, Y')
+                    ->label('Dibuat Pada'),
                 TextColumn::make('updated_at')
-                ->searchable()
-                ->sortable()
-                ->alignCenter()
-                ->date('d M, Y')
-                ->label('Diubah Pada'),
+                    ->searchable()
+                    ->sortable()
+                    ->alignCenter()
+                    ->date('d M, Y')
+                    ->label('Diubah Pada'),
             ])
             ->filters([
                 Filter::make('created_at')
-                ->form([
-                    Forms\Components\DatePicker::make('created_from')
-                        ->label('Dari Tanggal'),
-                    Forms\Components\DatePicker::make('created_until')
-                        ->label('Sampai Tanggal'),
-                ])
-                ->indicateUsing(function (array $data): array {
-                    $indicators = [];
+                    ->form([
+                        Forms\Components\DatePicker::make('created_from')
+                            ->label('Dari Tanggal'),
+                        Forms\Components\DatePicker::make('created_until')
+                            ->label('Sampai Tanggal'),
+                    ])
+                    ->indicateUsing(function (array $data): array {
+                        $indicators = [];
 
-                    if ($data['created_from'] && $data['created_until']) {
-                        $indicators[] = 'Created between ' . $data['created_from'] . ' and ' . $data['created_until'];
-                    }
+                        if ($data['created_from'] && $data['created_until']) {
+                            $indicators[] = 'Created between ' . $data['created_from'] . ' and ' . $data['created_until'];
+                        }
 
-                    return $indicators;
-                })
-                ->query(function (Builder $query, array $data): Builder {
-                    return $query
-                    ->when(
-                        $data['created_from'],
-                        fn (Builder $query, $date): Builder => $query->whereDate('created_at', '>=', $date),
-                    )
-                    ->when(
-                        $data['created_until'],
-                        fn (Builder $query, $date): Builder => $query->whereDate('created_at', '<=', $date),
-                    );
-                })
+                        return $indicators;
+                    })
+                    ->query(function (Builder $query, array $data): Builder {
+                        return $query
+                            ->when(
+                                $data['created_from'],
+                                fn(Builder $query, $date): Builder => $query->whereDate('created_at', '>=', $date),
+                            )
+                            ->when(
+                                $data['created_until'],
+                                fn(Builder $query, $date): Builder => $query->whereDate('created_at', '<=', $date),
+                            );
+                    })
             ])
             ->actions([
                 Tables\Actions\EditAction::make()

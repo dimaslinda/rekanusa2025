@@ -40,6 +40,21 @@ class PortofolioResource extends Resource
 
     protected static ?string $navigationLabel = 'Data Portofolio';
 
+    public static function shouldRegisterNavigation(): bool
+    {
+        return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
+    public static function getNavigationBadgeTooltip(): ?string
+    {
+        return 'Total Jumlah Portofolio';
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -242,6 +257,19 @@ class PortofolioResource extends Resource
     {
         return [
             'index' => Pages\ManagePortofolios::route('/'),
+        ];
+    }
+
+    public static function getPermissions(): array
+    {
+        return [
+            'viewAny',
+            'view',
+            'create',
+            'update',
+            'delete',
+            'restore',
+            'forceDelete',
         ];
     }
 }

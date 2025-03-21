@@ -17,20 +17,20 @@ class ManageKategoris extends ManageRecords
             Actions\CreateAction::make()
                 ->label('Tambah Kategori')
                 ->successNotification(null)
-                    ->after(function ($record) {
-                        Notification::make()
-                            ->title('Saved')
-                            ->color('success')
-                            ->body("Kategori {$record->name} berhasil ditambahkan!")
-                            ->success()
-                            ->duration(3000)
-                            ->send();
-                    }),
+                ->after(function ($record) {
+                    Notification::make()
+                        ->title('Saved')
+                        ->color('success')
+                        ->body("Kategori {$record->name} berhasil ditambahkan!")
+                        ->success()
+                        ->duration(3000)
+                        ->send();
+                }),
         ];
     }
 
     public function getTitle(): string
     {
-        return 'Data Kategori Testimoni';
+        return 'Data Kategori';
     }
 }

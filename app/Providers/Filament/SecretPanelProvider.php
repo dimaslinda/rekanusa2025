@@ -40,8 +40,14 @@ class SecretPanelProvider extends PanelProvider
             ->id('secret')
             ->path('secret')
             ->login()
+            ->spa()
+            ->brandLogoHeight(50)
+            ->font('poppins')
+            ->brandName('Rekanusa CMS')
+            ->sidebarCollapsibleOnDesktop()
+            ->collapsibleNavigationGroups()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => '#39b54a',
             ])
             ->discoverResources(in: \app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: \app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -78,7 +84,7 @@ class SecretPanelProvider extends PanelProvider
             ])
             ->plugins([
                 FilamentShieldPlugin::make(),
-                FilamentGoogleAnalyticsPlugin::make()
+                FilamentGoogleAnalyticsPlugin::make(),
             ]);
     }
 }
