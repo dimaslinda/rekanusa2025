@@ -159,7 +159,9 @@ class GeneralControllers extends Controller
 
     public function portofolio()
     {
-        $portofolio = Portofolio::with(['media', 'kategoris'])->paginate(8);
+        $portofolio = Portofolio::with(['media', 'kategoris'])
+            ->paginate(8)
+            ->where('publish', 1); // Tambahkan kondisi untuk hanya menampilkan yang sudah dipublish
         $kategori = Kategori::all();
         return view('portofolio', compact('portofolio', 'kategori'));
     }

@@ -77,7 +77,7 @@
             <img src="{{ asset('img/logo/property.webp') }}"
                 class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
                 alt="logo telkom property">
-            <img src="{{ asset('img/logo/shoetown.webp') }}"
+            <img src="{{ asset('img/logo/Sshoetown.webp') }}"
                 class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo Shoetown">
             <img src="{{ asset('img/logo/bpjs.webp') }}"
                 class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo jmo">
