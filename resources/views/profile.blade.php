@@ -282,7 +282,7 @@
     <section id="visimisi" class="relative block lg:hidden">
         <div class="relative flex flex-col min-h-52">
             <div
-                class="overflow-hidden bg-[url('../../public/img/general/bg-portofolio.webp')] bg-cover bg-no-repeat bg-center">
+                class="overflow-hidden bg-[url('../../public/img/general/bg-visi-mobile.webp')] bg-cover bg-no-repeat bg-center">
                 <img src="{{ asset('img/general/person-3.webp') }}" class="w-full h-full object-contain" loading="lazy"
                     alt="profile rekanusa">
             </div>

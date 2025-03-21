@@ -38,6 +38,16 @@ class TestimoniResource extends Resource
         return static::can('viewAny'); // Ensure this respects permissions with Filament Shield
     }
 
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
+    public static function getNavigationBadgeTooltip(): ?string
+    {
+        return 'Total Jumlah Testimoni';
+    }
+
     public static function form(Form $form): Form
     {
         return $form
