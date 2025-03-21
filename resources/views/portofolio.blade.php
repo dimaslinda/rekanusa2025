@@ -35,7 +35,7 @@
     <section
         class="lg:hidden h-auto bg-[url('../../public/img/general/banner-portofolio.webp')] bg-cover bg-no-repeat bg-center mt-24">
 
-        <div class="h-full bg-[url('../../public/img/general/portofolio-hijau.png')]">
+        <div class="h-full">
             <div class="font-bold text-center text-white uppercase font-league">
                 <div id="myBtnContainer" class="flex flex-wrap gap-6 justify-center items-center py-4 md:py-8">
                     @if ($kategori->count() > 0)
@@ -102,7 +102,7 @@
                                 </button>
                                 <!-- Modal body -->
                                 <div class="space-y-5 lg:space-y-0">
-                                    <div id="mySwiper-1"
+                                    <div id="mySwiper-{{ $item->id }}"
                                         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
                                         class="swiper mySwiper2">
                                         <div class="swiper-wrapper">
@@ -154,7 +154,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="mySwipers-1" thumbsSlider="" class="swiper mySwipers mt-5 max-w-[900px]">
+                                    <div id="mySwipers-{{ $item->id }}" thumbsSlider=""
+                                        class="swiper mySwipers mt-5 max-w-[900px]">
                                         <div class="pb-5 swiper-wrapper">
                                             @foreach ($collection as $nav)
                                                 <div class="swiper-slide">
@@ -227,7 +228,7 @@
                 <img src="{{ asset('img/logo/property.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
                     alt="logo telkom property">
-                <img src="{{ asset('img/logo/shoetown.webp') }}"
+                <img src="{{ asset('img/logo/Shoetown.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
                     alt="logo Shoetown">
                 <img src="{{ asset('img/logo/bpjs.webp') }}"

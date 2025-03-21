@@ -31,8 +31,8 @@
                                 <ul class="text-gray-600 dark:text-gray-400">
                                     <li class="mb-2">
                                         <div class="text-white">
-                                            <i class="mr-1 fa fa-map-marker-alt"></i> Ruko Palem Ganda Asri No.13,
-                                            RT.01/RW.07, Meruyung, Kec. Limo, Depok 16532
+                                            <i class="mr-1 fa fa-map-marker-alt"></i> Jl. Meruyung Raya Jl. Tupai Raya
+                                            PGA No.01, RT.01/RW.07, Meruyung, Kec. Limo, Kota Depok, Jawa Barat 16532
                                         </div>
                                     </li>
                                     <li class="mb-2">

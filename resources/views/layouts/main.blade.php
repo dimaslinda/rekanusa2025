@@ -31,34 +31,6 @@
     <meta property="og:type" content="website">
     <meta property="keyword" content="slf, konsultan slf, audit struktur, sertifikat laik fungsi, slf bangunan">
 
-    {{-- google analytics  --}}
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KPVW3M8');
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169190979-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-169190979-1');
-    </script>
-
     {{-- font family --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,14 +68,14 @@
                             @if (app()->getLocale() == 'en')
                                 <li>
                                     <a href="/"
-                                        class="block py-2 px-3 text-white bg-secondary font-semibold rounded xl:bg-transparent xl:text-secondary xl:p-0
-                                    aria-current="page">
+                                        class="block py-2 px-3 {{ Route('home') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary font-semibold rounded xl:bg-transparent xl:p-0"
+                                        aria-current="page">
                                         home
                                     </a>
                                 </li>
                                 <li>
                                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded cursor-pointer {{ route('profile') == url()->current() || route('direksi') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:bg-transparent xl:p-0">
                                         About Us
                                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -117,13 +89,13 @@
                                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                                             <li>
                                                 <a href="/profile"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('profile') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Company Profile
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/direksi"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('direksi') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Board of Directors
                                                 </a>
                                             </li>
@@ -132,7 +104,7 @@
                                 </li>
                                 <li>
                                     <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
-                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded cursor-pointer {{ route('jasaslf') == url()->current() || route('audit') == url()->current() || route('auditenergy') == url()->current() || route('pbg') == url()->current() || route('bangunan') == url()->current() || route('konstruksi') == url()->current() || route('ded') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:bg-transparent xl:p-0">
                                         Our Services
                                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -146,41 +118,41 @@
                                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                                             <li>
                                                 <a href="/jasaslf"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('jasaslf') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Function-worthy Certificate
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/audit-struktur"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('audit') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Structure Audit
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/audit-energy"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('auditenergy') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Energy Audit
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/pbg"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('pbg') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Building Approval </a>
                                             </li>
                                             <li>
                                                 <a href="/bangunan"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('bangunan') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Building Planning </a>
                                             </li>
                                             <li>
                                                 <a href="/konstruksi"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('konstruksi') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     Construction Management
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/ded"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('ded') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     DED Service
                                                 </a>
                                             </li>
@@ -189,13 +161,13 @@
                                 </li>
                                 <li>
                                     <a href="/portofolio"
-                                        class="block px-3 py-2 font-semibold rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="block py-2 px-3 {{ Route('portofolio') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary font-semibold rounded xl:bg-transparent xl:p-0">
                                         portfolio
                                     </a>
                                 </li>
                                 <li>
                                     <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
-                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded cursor-pointer {{ route('regazine') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:bg-transparent xl:p-0">
                                         Media
                                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -209,7 +181,9 @@
                                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                                             <li>
                                                 <a href="/regazine"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">Regazine</a>
+                                                    class="block px-4 py-2 font-bold {{ Route('regazine') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Regazine
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="https://rekanusa.co.id/artikel/" target="_blank"
@@ -223,14 +197,14 @@
                             @else
                                 <li>
                                     <a href="/"
-                                        class="block py-2 px-3 text-white bg-secondary font-semibold rounded xl:bg-transparent xl:text-secondary xl:p-0
-                                    aria-current="page">
+                                        class="block py-2 px-3 {{ Route('home') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary font-semibold rounded xl:bg-transparent xl:p-0"
+                                        aria-current="page">
                                         beranda
                                     </a>
                                 </li>
                                 <li>
                                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded cursor-pointer {{ route('profile') == url()->current() || route('direksi') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:bg-transparent xl:p-0">
                                         tentang kami
                                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -244,13 +218,13 @@
                                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                                             <li>
                                                 <a href="/profile"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('profile') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     profil perusahaan
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/direksi"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('direksi') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     jajaran direksi
                                                 </a>
                                             </li>
@@ -259,7 +233,7 @@
                                 </li>
                                 <li>
                                     <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
-                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded cursor-pointer {{ route('jasaslf') == url()->current() || route('audit') == url()->current() || route('auditenergy') == url()->current() || route('pbg') == url()->current() || route('bangunan') == url()->current() || route('konstruksi') == url()->current() || route('ded') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:bg-transparent xl:p-0">
                                         layanan kami
                                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -273,43 +247,43 @@
                                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                                             <li>
                                                 <a href="/jasaslf"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('jasaslf') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     jasa slf
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/audit-struktur"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('audit') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     audit struktur
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/audit-energy"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('auditenergy') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     audit energi
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/pbg"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('pbg') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     jasa pbg
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/bangunan"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('bangunan') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     perencanaan bangunan
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/konstruksi"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('konstruksi') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     manajemen konstruksi
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/ded"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">
+                                                    class="block px-4 py-2 font-bold {{ Route('ded') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
                                                     jasa ded
                                                 </a>
                                             </li>
@@ -318,13 +292,13 @@
                                 </li>
                                 <li>
                                     <a href="/portofolio"
-                                        class="block px-3 py-2 font-semibold rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="block py-2 px-3 {{ Route('portofolio') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary font-semibold rounded xl:bg-transparent xl:p-0">
                                         Portofolio
                                     </a>
                                 </li>
                                 <li>
                                     <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
-                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded text-primary hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:p-0">
+                                        class="flex items-center justify-between w-full px-3 py-2 font-semibold uppercase rounded cursor-pointer {{ route('regazine') == url()->current() ? 'text-white bg-secondary xl:text-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-secondary xl:bg-transparent xl:p-0">
                                         Media
                                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -338,7 +312,9 @@
                                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                                             <li>
                                                 <a href="/regazine"
-                                                    class="block px-4 py-2 font-bold text-primary hover:bg-secondary hover:text-white hover:font-bold">Regazine</a>
+                                                    class="block px-4 py-2 font-bold {{ Route('regazine') == url()->current() ? 'text-white bg-secondary' : 'text-primary' }} hover:bg-secondary hover:text-white hover:font-bold">
+                                                    Regazine
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="https://rekanusa.co.id/artikel/" target="_blank"

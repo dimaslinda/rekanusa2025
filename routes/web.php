@@ -10,7 +10,7 @@ Route::get('locale/{locale}', function ($locale) {
     return redirect()->back();
 });
 
-Route::get('/', [GeneralControllers::class, 'index'])->name('index');
+Route::get('/', [GeneralControllers::class, 'index'])->name('home');
 Route::get('/profile', [GeneralControllers::class, 'profile'])->name('profile');
 Route::get('/direksi', [GeneralControllers::class, 'direksi'])->name('direksi');
 Route::get('/jasaslf', [GeneralControllers::class, 'jasaslf'])->name('jasaslf');
