@@ -263,6 +263,20 @@
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo hwi">
                 <img src="{{ asset('img/logo/sg.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo advance">
+                <img src="{{ asset('img/logo/bp.webp') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo bp">
+                <img src="{{ asset('img/logo/argha.webp') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo argha">
+                <img src="{{ asset('img/logo/gs.webp') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo gs">
+                <img src="{{ asset('img/logo/margautama.webp') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
+                    alt="logo margautama">
+                <img src="{{ asset('img/logo/maxresdefault.webp') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
+                    alt="logo maxresdefault">
+                <img src="{{ asset('img/logo/maybank.webp') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo maybank">
             </div>
         </div>
     </section>
