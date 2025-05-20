@@ -5,31 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PT. Kinarya Kompegriti Rekanusa</title>
+    <title>{{ $title ?? 'PT. Kinarya Kompegriti Rekanusa' }}</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 
     <meta name="description"
-        content="jasa Konsultan teknik yang melingkupi pekerjaan konsultasi perencana struktur sipil,mewujudkan bangunan yang memiliki legalitas sertifikat laik fungsi (SLF).">
+        content="{{ $description ?? 'jasa Konsultan teknik yang melingkupi pekerjaan konsultasi perencana struktur sipil,mewujudkan bangunan yang memiliki legalitas sertifikat laik fungsi (SLF).' }}">
     <meta name="author" content="Konsultan Teknik Sipil | PT. Kinarya Kompegriti Rekanusa">
     <meta name="keywords"
-        content="slf, konsultan slf, audit struktur, sertifikat laik fungsi, PBG, Audit Struktur Bangunan, Audit Bangunan, Jasa Konsultan Bangunan, Jasa Konsultan Audit Bangunan, Jasa Audit Struktur">
+        content="{{ $keyword ?? 'slf, konsultan slf, audit struktur, sertifikat laik fungsi, PBG, Audit Struktur Bangunan, Audit Bangunan, Jasa Konsultan Bangunan, Jasa Konsultan Audit Bangunan, Jasa Audit Struktur' }}">
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://rekanusa.co.id/" />
+    <link rel="canonical" href="{{ $url ?? 'https://rekanusa.co.id/' }}" />
     <meta name="google-site-verification" content="uifCysCiuZlf3A3tfy-NV8jMAQiyV-ZYDC3zyFIn3MA" />
-    <meta property="og:site_name" content="PT. Kinarya Kompegriti Rekanusa"> <!-- website name -->
-    <meta property="og:site" content="PT. Kinarya Kompegriti Rekanusa" /> <!-- website link -->
-    <meta property="og:title" content="https://rekanusa.co.id/konsultan-sipil" />
+    <meta property="og:site_name" content="{{ $title ?? 'PT. Kinarya Kompegriti Rekanusa' }}"> <!-- website name -->
+    <meta property="og:site" content="{{ $title ?? 'PT. Kinarya Kompegriti Rekanusa' }}" /> <!-- website link -->
+    <meta property="og:title" content="{{ $title ?? 'PT. Kinarya Kompegriti Rekanusa' }}" />
     <!-- title shown in the actual     shared post -->
     <meta property="og:description"
-        content="jasa Konsultan teknik yang melingkupi pekerjaan konsultasi perencana struktur sipil,mewujudkan bangunan yang memiliki legalitas sertifikat laik fungsi (SLF).">
+        content="{{ $description ?? 'jasa Konsultan teknik yang melingkupi pekerjaan konsultasi perencana struktur sipil,mewujudkan bangunan yang memiliki legalitas sertifikat laik fungsi (SLF).' }}">
     <!--    description shown in the actual shared post -->
     <meta property="og:image" content="http://www.rekanusa.co.id/images/peview.jpg">
     <!-- image link, make sure     it's jpg -->
-    <meta property="og:url" content="http://www.rekanusa.co.id"> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="website">
-    <meta property="keyword" content="slf, konsultan slf, audit struktur, sertifikat laik fungsi, slf bangunan">
+    <meta property="og:url" content="{{ $url ?? 'https://rekanusa.co.id/' }}">
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="{{ $type ?? 'website' }}">
+    <meta property="og:keyword"
+        content="{{ $keyword ?? 'slf, konsultan slf, audit struktur, sertifikat laik fungsi, PBG, Audit Struktur Bangunan, Audit Bangunan, Jasa Konsultan Bangunan, Jasa Konsultan Audit Bangunan, Jasa Audit Struktur' }}">
 
     {{-- font family --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
