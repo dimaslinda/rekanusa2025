@@ -120,8 +120,15 @@ class GeneralControllers extends Controller
      */
     public function audit()
     {
+        $title = 'PT. Kinarya Kompegriti Rekanusa | Audit Struktur';
+        $keyword = 'audit bangunan egedung, audit bangunan, audit konstruksi bangunan, jasa konsultan struktur, audit struktur bangunan, konsultan struktur terbaik di indonesia, ahli struktur bangunan, jasa audit bangunan, pemeriksaan bangunan, konsultan struktur bangunan, jasa audit struktur gedung, jasa perhitungan struktur, jasa struktur bangunan, konsultan struktur, audit bangunan pasca gempa, jasa audit struktur bangunan, inspeksi bangunan, audit struktur';
+        $description = 'Rekanusa adalah konsultan teknik profesional yang menyediakan layanan audit struktur untuk menilai kelayakan dan keamanan bangunan, serta memberikan solusi perbaikan dan perkuatan demi masa layanan yang optimal.';
+        $type = 'website';
+        $url = 'https://rekanusa.co.id/audit-struktur';
+        $locale = 'id_ID';
+
         $testimoni = $this->getTestimoniByKategori(2);
-        return view('audit', compact('testimoni'));
+        return view('audit', compact('testimoni', 'title', 'keyword', 'description', 'type', 'url', 'locale'));
     }
 
     /**
@@ -131,8 +138,15 @@ class GeneralControllers extends Controller
      */
     public function auditenergy()
     {
+        $title = 'PT. Kinarya Kompegriti Rekanusa | Audit Energy';
+        $keyword = 'jasa audit energi bangunan, konsultan audit energi, jasa audit energi industri, audit energi gedung perkantoran, jasa efisiensi energi, audit energi untuk penghematan listrik, audit energi pabrik dan fasilitas industri, konsultan efisiensi energi profesional, layanan audit energi bersertifikat, jasa audit energi untuk ISO 50001';
+        $description = 'Jasa audit energi untuk gedung dan industri. Hemat biaya listrik, tingkatkan efisiensi, dan patuhi regulasi. Konsultasi dengan ahli bersertifikat!';
+        $type = 'website';
+        $url = 'https://rekanusa.co.id/audit-energy';
+        $locale = 'id_ID';
+
         $testimoni = $this->getTestimoniByKategori(3);
-        return view('energy', compact('testimoni'));
+        return view('energy', compact('testimoni', 'title', 'keyword', 'description', 'type', 'url', 'locale'));
     }
 
     /**
@@ -142,8 +156,15 @@ class GeneralControllers extends Controller
      */
     public function pbg()
     {
+        $title = 'PT. Kinarya Kompegriti Rekanusa | PBG';
+        $keyword = 'jasa pengurusan PBG, konsultan PBG terpercaya, pengurusan PBG cepat dan mudah, jasa perizinan bangunan gedung (PBG), pengganti IMB terbaru (PBG), jasa PBG untuk rumah tinggal, jasa PBG bangunan komersial, layanan PBG melalui SIMBG, pengurusan PBG dan SLF';
+        $description = 'Jasa pengurusan PBG (Persetujuan Bangunan Gedung) resmi dan cepat. Proses mudah melalui SIMBG. Konsultasi perizinan bangunan oleh ahli.';
+        $type = 'website';
+        $url = 'https://rekanusa.co.id/pbg';
+        $locale = 'id_ID';
+
         $testimoni = $this->getTestimoniByKategori(4);
-        return view('pbg', compact('testimoni'));
+        return view('pbg', compact('testimoni', 'title', 'keyword', 'description', 'type', 'url', 'locale'));
     }
 
     /**
@@ -156,8 +177,15 @@ class GeneralControllers extends Controller
      */
     public function bangunan()
     {
+        $title = 'PT. Kinarya Kompegriti Rekanusa | Perencanaan Bangunan';
+        $keyword = 'jasa konsultan arsitektur, jasa desain struktur, jasa desain bangunan, engineering design documentation, jasa masterplan kawasan, jasa gambar perencanaan, jasa desain gambar bangunan, jasa gambar kerja, jasa drafter, jasa design and build, jasa pembuatan ded, gambar proyek bangunan, jasa as built drawing, engineering design, jasa konsultan teknik sipil, jasa desain kawasan, jasa konstruksi';
+        $description = 'Jasa DED (Detail Engineering Design) akurat & profesional. Gambar kerja lengkap, sesuai standar teknis & regulasi. Cocok untuk proyek konstruksi Anda.';
+        $type = 'website';
+        $url = 'https://rekanusa.co.id/bangunan';
+        $locale = 'id_ID';
+
         $testimoni = $this->getTestimoniByKategori(5);
-        return view('bangunan', compact('testimoni'));
+        return view('bangunan', compact('testimoni', 'title', 'keyword', 'description', 'type', 'url', 'locale'));
     }
 
     /**
