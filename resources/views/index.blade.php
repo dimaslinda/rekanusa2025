@@ -2,19 +2,57 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        .bannerSwiper {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .bannerSwiper .swiper-slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 @endsection
 @section('content')
     {{-- banner --}}
     <section id="banner" class="overflow-hidden relative uppercase font-monserrat">
-        <div>
-            <div class="object-cover absolute inset-0 w-full h-full">
-                <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                    src="{{ asset('img/general/bg-banner.webp') }}" alt="banner rekanusa">
+        <!-- Swiper -->
+        <div class="swiper bannerSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="object-cover absolute inset-0 w-full h-full">
+                        <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
+                            src="{{ asset('img/general/bg-banner1.webp') }}" alt="banner rekanusa 1">
+                    </div>
+                    <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
+                        src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                </div>
+                <div class="swiper-slide">
+                    <div class="object-cover absolute inset-0 w-full h-full">
+                        <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
+                            src="{{ asset('img/general/bg-banner2.webp') }}" alt="banner bangunan rekanusa">
+                    </div>
+                    <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
+                        src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                </div>
+                <div class="swiper-slide">
+                    <div class="object-cover absolute inset-0 w-full h-full">
+                        <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
+                            src="{{ asset('img/general/bg-banner3.webp') }}" alt="banner konstruksi rekanusa">
+                    </div>
+                    <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
+                        src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                </div>
             </div>
-            <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
         </div>
-        <div class="container relative px-4 py-24 mx-auto text-center max-w-screen lg:pl-20 lg:text-left md:py-52 lg:py-56">
+        <div
+            class="container relative z-10 px-4 py-24 mx-auto text-center max-w-screen lg:pl-20 lg:text-left md:py-52 lg:py-56">
             <h1
                 class="mb-4 text-xl font-extrabold tracking-normal leading-relaxed text-white md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed 2xl:text-6xl 2xl:leading-relaxed">
                 @if (app()->getLocale() == 'en')
@@ -78,17 +116,20 @@
                 <img src="{{ asset('img/logo/bpjs.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo jmo">
                 <img src="{{ asset('img/logo/pln.webp') }}"
-                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo Logo_PLN">
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
+                    alt="logo Logo_PLN">
                 <img src="{{ asset('img/logo/logo-telkomsel-baru.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
                     alt="logo logo-telkomsel-baru">
                 <img src="{{ asset('img/logo/askrindo.webp') }}"
-                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo askrindo">
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
+                    alt="logo askrindo">
                 <img src="{{ asset('img/logo/tah sunghung.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
                     alt="logo tahsungsung">
                 <img src="{{ asset('img/logo/tonghong.webp') }}"
-                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo tonghung">
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
+                    alt="logo tonghung">
                 <img src="{{ asset('img/logo/landmark.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
                     alt="logo telkom landmark">
@@ -118,6 +159,10 @@
                     alt="logo maxresdefault">
                 <img src="{{ asset('img/logo/maybank.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo maybank">
+                <img src="{{ asset('img/logo/LG_logo_(2014).svg.png') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo LG">
+                <img src="{{ asset('img/logo/Shopee.svg') }}"
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo Shopee">
             </div>
         </div>
     </section>
@@ -1262,7 +1307,7 @@
     <section class="relative">
 
         <!-- Slider main container -->
-        <div class="relative w-full swiper h-[50vh] lg:h-[80vh] overflow-hidden">
+        <div class="relative w-full testimoniSwiper h-[50vh] lg:h-[80vh] overflow-hidden">
             <div class="absolute top-0 right-0 z-10">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[150px] lg:w-[250px] 2xl:w-[350px]"
                     viewBox="0 0 293 246" fill="none">
@@ -1328,10 +1373,24 @@
 @endsection
 
 @section('kaki')
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-        const swiper = new Swiper('.swiper', {
+        // Banner Swiper
+        const bannerSwiper = new Swiper('.bannerSwiper', {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 1000,
+        });
+
+        // Existing testimonial swiper
+        const testimoniSwiper = new Swiper('.testimoniSwiper', {
             // Optional parameters
             slidesPerView: 1,
             GrabCursor: true,
