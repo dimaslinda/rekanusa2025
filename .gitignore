@@ -9,7 +9,6 @@
 .env
 .env.backup
 .env.production
-credentials.json
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
