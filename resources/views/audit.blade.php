@@ -2,6 +2,118 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan Audit Struktur Bangunan",
+        "description": "Layanan profesional untuk mengoptimalkan keamanan dan kinerja bangunan dengan audit struktur berkualitas. Kami menyediakan layanan audit struktur yang komprehensif untuk memastikan keamanan bangunan Anda.",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service",
+                "availableLanguage": ["Indonesian", "English"]
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "ID",
+                "addressLocality": "Jakarta",
+                "addressRegion": "DKI Jakarta"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan Audit Struktur",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Audit Struktur Bangunan",
+                        "description": "Pemeriksaan dan evaluasi struktur bangunan untuk keamanan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Evaluasi Kinerja Bangunan",
+                        "description": "Penilaian kinerja dan keamanan struktur bangunan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Konsultasi Keamanan Struktur",
+                        "description": "Konsultasi profesional untuk optimalisasi keamanan struktur"
+                    }
+                }
+            ]
+        },
+        "serviceType": "Structural Audit",
+        "category": "Construction Safety Services"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Audit Struktur Professional Services",
+        "description": "Layanan profesional audit struktur untuk mengoptimalkan keamanan dan kinerja bangunan dengan standar kualitas tinggi dan tenaga ahli berpengalaman.",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id"
+        },
+        "areaServed": "Indonesia",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Structural Audit Services Catalog",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "ProfessionalService",
+                        "name": "Building Safety Assessment",
+                        "description": "Penilaian keamanan bangunan profesional"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "ProfessionalService",
+                        "name": "Structural Performance Evaluation",
+                        "description": "Evaluasi kinerja struktur bangunan"
+                    }
+                }
+            ]
+        },
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-6.2088",
+            "longitude": "106.8456"
+        },
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Indonesia"
+        }
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

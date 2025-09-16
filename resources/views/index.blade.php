@@ -18,6 +18,118 @@
             height: 100%;
         }
     </style>
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PT. Kinarya Kompegriti Rekanusa",
+        "alternateName": "Rekanusa",
+        "url": "https://rekanusa.co.id",
+        "logo": "{{ asset('img/general/logo.png') }}",
+        "description": "Jasa Konsultan teknik yang melingkupi pekerjaan konsultasi perencana struktur sipil, mewujudkan bangunan yang memiliki legalitas sertifikat laik fungsi (SLF).",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-813-8080-1113",
+            "contactType": "customer service",
+            "availableLanguage": ["Indonesian", "English"]
+        },
+        "sameAs": [
+            "https://wa.me/6281380801113"
+        ],
+        "foundingDate": "2010",
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 10,
+            "maxValue": 50
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan Konsultan Teknik",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Konsultasi Perencana Struktur Sipil",
+                        "description": "Pekerjaan konsultasi enjiniring untuk perencana Struktur Sipil, Arsitektural, Mekanikal, Elektrikal, Plumbing"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Audit Struktur dan Audit Energy",
+                        "description": "Layanan audit struktur bangunan dan audit energi untuk memastikan keamanan dan efisiensi"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sertifikat Laik Fungsi (SLF)",
+                        "description": "Pekerjaan Perizinan Sertifikat Laik Fungsi (SLF) Bangunan Gedung"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dokumen Pendukung SLF",
+                        "description": "Pekerjaan Perizinan Dokumen Pendukung Pengurusan SLF (KRK, PBG, SLO, RKK Damkar, Dokumen Lingkungan, dll)"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://rekanusa.co.id/#localbusiness",
+        "name": "PT. Kinarya Kompegriti Rekanusa",
+        "image": "{{ asset('img/general/logo.png') }}",
+        "telephone": "+62-813-8080-1113",
+        "url": "https://rekanusa.co.id",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2088,
+            "longitude": 106.8456
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$"
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

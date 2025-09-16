@@ -1,4 +1,84 @@
 @extends('layouts.main')
+@section('kepala')
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PT. Kinarya Kompegriti Rekanusa",
+        "url": "https://rekanusa.co.id",
+        "logo": "{{ asset('img/general/logo.png') }}",
+        "description": "Perusahaan konsultan profesional yang menyediakan layanan konstruksi, bangunan, dan perizinan dengan jajaran direksi berpengalaman.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-813-8080-1113",
+            "contactType": "customer service"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "employee": [
+            {
+                "@type": "Person",
+                "name": "Muhammad Egy Bagus Putra",
+                "jobTitle": "Direktur Utama",
+                "description": "Warga Negara Indonesia, berdomisili di Bogor, Indonesia. Berpengalaman sebagai Sarjana Teknik Sipil.",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "PT. Kinarya Kompegriti Rekanusa"
+                },
+                "hasCredential": {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "educationalLevel": "Bachelor Degree",
+                    "about": "Civil Engineering"
+                }
+            }
+        ],
+        "foundingDate": "2017",
+        "legalName": "PT. Kinarya Kompegriti Rekanusa",
+        "organizationType": "Corporation"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Egy Bagus Putra",
+        "jobTitle": "Direktur Utama",
+        "description": "Direktur Utama PT. Kinarya Kompegriti Rekanusa dengan pengalaman sebagai Sarjana Teknik Sipil dan pemegang saham perusahaan.",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id"
+        },
+        "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "Bachelor Degree",
+            "about": "Civil Engineering"
+        },
+        "nationality": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "homeLocation": {
+            "@type": "Place",
+            "name": "Bogor, Indonesia"
+        },
+        "knowsAbout": [
+            "Civil Engineering",
+            "Construction Management",
+            "Building Permits",
+            "Project Management"
+        ]
+    }
+    </script>
+@endsection
 @section('content')
 {{-- banner --}}
 <section id="banner" class="relative mt-24 uppercase bg-[url('../../public/img/general/banner-profile.webp')] bg-no-repeat bg-cover bg-center">

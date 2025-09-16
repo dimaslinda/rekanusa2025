@@ -2,6 +2,109 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan Persetujuan Bangunan Gedung (PBG)",
+        "description": "Layanan profesional untuk pengurusan Persetujuan Bangunan Gedung (PBG) yang menggantikan IMB, memastikan legalitas dan kepatuhan bangunan terhadap standar teknis yang berlaku.",
+        "url": "https://rekanusa.co.id/pbg",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service"
+            }
+        },
+        "serviceType": "Building Approval Service",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan PBG",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pengurusan Persetujuan Bangunan Gedung",
+                        "description": "Layanan lengkap pengurusan PBG untuk berbagai jenis bangunan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Konsultasi Persyaratan PBG",
+                        "description": "Konsultasi mengenai persyaratan administratif dan teknis PBG"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Perubahan Fungsi Bangunan",
+                        "description": "Layanan untuk perubahan fungsi bangunan sesuai regulasi"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Konsultan PBG PT. Kinarya Kompegriti Rekanusa",
+        "description": "Layanan konsultan profesional untuk Persetujuan Bangunan Gedung (PBG) dengan pengalaman dalam membantu klien memenuhi persyaratan legalitas dan standar teknis bangunan.",
+        "url": "https://rekanusa.co.id/pbg",
+        "telephone": "+62-813-8080-1113",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2088,
+            "longitude": 106.8456
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "knowsAbout": [
+            "Building Approval",
+            "Building Permit",
+            "Construction Regulations",
+            "Building Standards",
+            "Legal Compliance"
+        ]
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

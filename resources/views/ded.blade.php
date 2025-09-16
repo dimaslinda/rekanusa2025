@@ -2,6 +2,102 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan DED (Detail Engineering Design)",
+        "description": "Layanan profesional untuk merancang konsep desain bangunan dengan tenaga ahli professional. Kami menyediakan layanan DED yang komprehensif untuk berbagai jenis proyek konstruksi.",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service",
+                "availableLanguage": ["Indonesian", "English"]
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "ID",
+                "addressLocality": "Jakarta",
+                "addressRegion": "DKI Jakarta"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan DED",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Detail Engineering Design",
+                        "description": "Perancangan detail teknik untuk proyek konstruksi"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Konsep Desain Bangunan",
+                        "description": "Perancangan konsep desain bangunan profesional"
+                    }
+                }
+            ]
+        },
+        "serviceType": "Engineering Design",
+        "category": "Construction Services"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "DED Professional Services",
+        "description": "Layanan profesional Detail Engineering Design dengan tenaga ahli berpengalaman untuk merancang konsep desain bangunan yang berkualitas.",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id"
+        },
+        "areaServed": "Indonesia",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "DED Services Catalog",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "ProfessionalService",
+                        "name": "Building Design Consultation",
+                        "description": "Konsultasi desain bangunan profesional"
+                    }
+                }
+            ]
+        },
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-6.2088",
+            "longitude": "106.8456"
+        },
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Indonesia"
+        }
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

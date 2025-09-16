@@ -2,6 +2,102 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan Konsultasi Konstruksi",
+        "description": "Layanan konsultasi konstruksi profesional yang mencakup perencanaan, pengawasan, dan manajemen proyek konstruksi dengan standar kualitas tinggi.",
+        "url": "https://rekanusa.co.id/konstruksi",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service"
+            }
+        },
+        "serviceType": "Construction Consulting",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan Konstruksi",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Perencanaan Konstruksi",
+                        "description": "Layanan perencanaan konstruksi yang komprehensif dan profesional"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pengawasan Konstruksi",
+                        "description": "Pengawasan konstruksi untuk memastikan kualitas dan keamanan proyek"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Manajemen Proyek Konstruksi",
+                        "description": "Manajemen proyek konstruksi yang efisien dan terorganisir"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Konsultan Konstruksi PT. Kinarya Kompegriti Rekanusa",
+        "description": "Layanan konsultan konstruksi profesional dengan pengalaman bertahun-tahun dalam industri konstruksi Indonesia.",
+        "url": "https://rekanusa.co.id/konstruksi",
+        "telephone": "+62-813-8080-1113",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2088,
+            "longitude": 106.8456
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        }
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

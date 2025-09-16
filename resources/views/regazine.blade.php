@@ -3,6 +3,84 @@
     @php
         use Spatie\MediaLibrary\MediaCollections\Models\Media;
     @endphp
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Regazine PT. Kinarya Kompegriti Rekanusa",
+        "description": "Publikasi digital yang berisi artikel, berita, dan informasi terkini seputar industri konstruksi, audit bangunan, dan konsultasi teknik.",
+        "url": "https://rekanusa.co.id/regazine",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ asset('img/general/logo.png') }}"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service"
+            }
+        },
+        "inLanguage": "id",
+        "genre": [
+            "Construction",
+            "Engineering",
+            "Building Audit",
+            "Technical Consulting"
+        ],
+        "keywords": "regazine, konstruksi, audit bangunan, konsultan teknik, engineering, publikasi",
+        "dateModified": "{{ date('Y-m-d') }}",
+        "about": {
+            "@type": "Thing",
+            "name": "Industri Konstruksi dan Audit Bangunan"
+        }
+    }
+    </script>
+    
+    @if(isset($regazineLast))
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{ $regazineLast->judul ?? 'Regazine Terbaru' }}",
+        "description": "{{ $regazineLast->deskripsi ?? 'Publikasi terbaru dari PT. Kinarya Kompegriti Rekanusa yang berisi informasi dan artikel seputar industri konstruksi dan audit bangunan.' }}",
+        "url": "https://rekanusa.co.id/regazine",
+        "datePublished": "{{ $regazineLast->created_at ? $regazineLast->created_at->format('Y-m-d') : date('Y-m-d') }}",
+        "dateModified": "{{ $regazineLast->updated_at ? $regazineLast->updated_at->format('Y-m-d') : date('Y-m-d') }}",
+        "author": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ asset('img/general/logo.png') }}"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "{{ $regazineLast->getFirstMediaUrl('cover') ?: asset('img/general/logo.png') }}",
+            "width": 800,
+            "height": 600
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://rekanusa.co.id/regazine"
+        },
+        "articleSection": "Construction & Engineering",
+        "keywords": "regazine, konstruksi, audit bangunan, konsultan teknik, publikasi",
+        "inLanguage": "id"
+    }
+    </script>
+    @endif
 @endsection
 @section('content')
     {{-- banner --}}

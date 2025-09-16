@@ -2,6 +2,109 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan Audit Energi",
+        "description": "Layanan audit energi profesional untuk meningkatkan efisiensi energi dan menghemat biaya operasional dengan solusi yang presisi dan berkelanjutan.",
+        "url": "https://rekanusa.co.id/energy",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service"
+            }
+        },
+        "serviceType": "Energy Audit Service",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan Audit Energi",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Audit Energi Bangunan",
+                        "description": "Evaluasi komprehensif penggunaan energi pada bangunan komersial dan industri"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Konsultasi Efisiensi Energi",
+                        "description": "Rekomendasi untuk meningkatkan efisiensi energi dan mengurangi biaya operasional"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sertifikasi Energi",
+                        "description": "Layanan sertifikasi dan compliance audit energi sesuai standar nasional"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Konsultan Audit Energi PT. Kinarya Kompegriti Rekanusa",
+        "description": "Layanan konsultan profesional untuk audit energi dengan fokus pada efisiensi energi, penghematan biaya, dan keberlanjutan lingkungan.",
+        "url": "https://rekanusa.co.id/energy",
+        "telephone": "+62-813-8080-1113",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2088,
+            "longitude": 106.8456
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "knowsAbout": [
+            "Energy Audit",
+            "Energy Efficiency",
+            "Sustainability Consulting",
+            "Energy Management",
+            "Green Building"
+        ]
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

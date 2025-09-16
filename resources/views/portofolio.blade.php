@@ -2,7 +2,81 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    @php
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Portofolio PT. Kinarya Kompegriti Rekanusa",
+        "description": "Galeri portofolio proyek-proyek konstruksi dan audit bangunan yang telah dikerjakan oleh PT. Kinarya Kompegriti Rekanusa.",
+        "url": "https://rekanusa.co.id/portofolio",
+        "creator": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service"
+            }
+        },
+        "about": [
+            "Construction Projects",
+            "Building Audit",
+            "Engineering Consulting",
+            "Structure Assessment"
+        ],
+        "keywords": "portofolio, konstruksi, audit bangunan, konsultan teknik, proyek",
+        "inLanguage": "id",
+        "dateModified": "{{ date('Y-m-d') }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ asset('img/general/logo.png') }}"
+            }
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Portofolio Proyek Konstruksi dan Audit Bangunan",
+        "description": "Kumpulan karya dan proyek yang telah diselesaikan oleh PT. Kinarya Kompegriti Rekanusa dalam bidang konstruksi dan audit bangunan.",
+        "url": "https://rekanusa.co.id/portofolio",
+        "creator": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id"
+        },
+        "dateCreated": "2020-01-01",
+        "dateModified": "{{ date('Y-m-d') }}",
+        "genre": [
+            "Construction",
+            "Engineering",
+            "Building Audit",
+            "Consulting"
+        ],
+        "keywords": "portofolio, konstruksi, audit bangunan, konsultan teknik, engineering",
+        "inLanguage": "id",
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa"
+        },
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "workExample": {
+            "@type": "CreativeWork",
+            "name": "Proyek Konstruksi dan Audit Bangunan",
+            "description": "Berbagai proyek konstruksi dan audit bangunan yang telah berhasil diselesaikan"
+        }
+    }
+    </script>
+@endsection    @php
         use Spatie\MediaLibrary\MediaCollections\Models\Media;
     @endphp
 @endsection

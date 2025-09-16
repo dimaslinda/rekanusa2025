@@ -2,6 +2,109 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan Sertifikat Laik Fungsi (SLF)",
+        "description": "Layanan profesional untuk pengurusan Sertifikat Laik Fungsi (SLF) bangunan yang memastikan keamanan, legalitas, dan kepatuhan terhadap standar yang berlaku.",
+        "url": "https://rekanusa.co.id/jasaslf",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service"
+            }
+        },
+        "serviceType": "Building Certification Service",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan SLF",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pengurusan Sertifikat Laik Fungsi",
+                        "description": "Layanan lengkap pengurusan SLF untuk berbagai jenis bangunan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Konsultasi Persyaratan SLF",
+                        "description": "Konsultasi mengenai persyaratan administratif dan teknis SLF"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Audit Kelayakan Fungsi Bangunan",
+                        "description": "Pemeriksaan dan audit kelayakan fungsi bangunan sesuai standar"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Konsultan SLF PT. Kinarya Kompegriti Rekanusa",
+        "description": "Layanan konsultan profesional untuk Sertifikat Laik Fungsi (SLF) dengan pengalaman dalam membantu klien memenuhi persyaratan legalitas dan keamanan bangunan.",
+        "url": "https://rekanusa.co.id/jasaslf",
+        "telephone": "+62-813-8080-1113",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2088,
+            "longitude": 106.8456
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "knowsAbout": [
+            "Building Certification",
+            "Function Worthiness Certificate",
+            "Building Safety Standards",
+            "Legal Compliance",
+            "Building Audit"
+        ]
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

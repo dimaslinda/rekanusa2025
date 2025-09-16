@@ -2,6 +2,102 @@
 @section('kepala')
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Layanan Audit Struktur Bangunan",
+        "description": "Layanan audit struktur bangunan profesional untuk memastikan keamanan dan kualitas struktur bangunan sesuai standar yang berlaku.",
+        "url": "https://rekanusa.co.id/bangunan",
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service"
+            }
+        },
+        "serviceType": "Building Structure Audit",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan Audit Bangunan",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Audit Struktur Bangunan",
+                        "description": "Pemeriksaan menyeluruh terhadap kondisi struktur bangunan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Evaluasi Keamanan Struktur",
+                        "description": "Evaluasi keamanan struktur bangunan berdasarkan standar teknis"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sertifikasi Laik Fungsi",
+                        "description": "Penerbitan sertifikat laik fungsi untuk bangunan"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Konsultan Audit Bangunan PT. Kinarya Kompegriti Rekanusa",
+        "description": "Layanan konsultan audit bangunan profesional dengan sertifikasi resmi untuk memastikan keamanan dan kualitas struktur bangunan.",
+        "url": "https://rekanusa.co.id/bangunan",
+        "telephone": "+62-813-8080-1113",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2088,
+            "longitude": 106.8456
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        }
+    }
+    </script>
 @endsection
 @section('content')
     {{-- banner --}}

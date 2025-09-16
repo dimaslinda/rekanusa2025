@@ -1,4 +1,66 @@
 @extends('layouts.main')
+@section('kepala')
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Profil Perusahaan - PT. Kinarya Kompegriti Rekanusa",
+        "description": "Profil lengkap PT. Kinarya Kompegriti Rekanusa, perusahaan jasa konsultan teknik yang berpengalaman dalam bidang struktur sipil, audit bangunan, dan perizinan SLF.",
+        "url": "https://rekanusa.co.id/profile",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "PT. Kinarya Kompegriti Rekanusa",
+            "alternateName": "Rekanusa",
+            "description": "Perusahaan jasa Konsultan teknik yang melingkupi pekerjaan konsultasi perencana struktur sipil, audit struktur dan audit energy, perizinan Sertifikat Laik Fungsi (SLF) Bangunan Gedung, dan dokumen pendukung pengurusan SLF.",
+            "foundingDate": "2010",
+            "url": "https://rekanusa.co.id",
+            "logo": "{{ asset('img/general/logo.png') }}",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "ID",
+                "addressLocality": "Jakarta",
+                "addressRegion": "DKI Jakarta"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-813-8080-1113",
+                "contactType": "customer service",
+                "availableLanguage": ["Indonesian", "English"]
+            },
+            "sameAs": [
+                "https://wa.me/6281380801113"
+            ],
+            "knowsAbout": [
+                "Konsultasi Enjiniring Struktur Sipil",
+                "Konsultasi Arsitektural",
+                "Konsultasi Mekanikal",
+                "Konsultasi Elektrikal",
+                "Konsultasi Plumbing",
+                "Audit Struktur Bangunan",
+                "Audit Energy",
+                "Sertifikat Laik Fungsi (SLF)",
+                "Perizinan Bangunan Gedung",
+                "KRK (Kajian Risiko Kebakaran)",
+                "PBG (Persetujuan Bangunan Gedung)",
+                "SLO (Sertifikat Laik Operasi)",
+                "RKK Damkar",
+                "Dokumen Lingkungan"
+            ],
+            "areaServed": {
+                "@type": "Country",
+                "name": "Indonesia"
+            },
+            "numberOfEmployees": {
+                "@type": "QuantitativeValue",
+                "minValue": 10,
+                "maxValue": 50
+            },
+            "slogan": "Mewujudkan bangunan yang memiliki legalitas sertifikat laik fungsi (SLF)"
+        }
+    }
+    </script>
+@endsection
 @section('content')
     {{-- banner --}}
     <section id="banner"
