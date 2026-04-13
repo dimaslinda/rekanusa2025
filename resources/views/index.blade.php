@@ -29,7 +29,6 @@
     </script>
 @endsection
 @section('content')
-    @php($assetV = fn(string $path) => asset($path) . (file_exists(public_path($path)) ? '?v=' . filemtime(public_path($path)) : ''))
     {{-- banner --}}
     <section id="banner" class="overflow-hidden relative uppercase font-monserrat">
         <!-- Swiper -->
@@ -38,34 +37,42 @@
                 <div class="swiper-slide">
                     <div class="object-cover absolute inset-0 w-full h-full">
                         <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                            src="{{ $assetV('img/general/bg-banner1.webp') }}" alt="banner rekanusa 1">
+                            src="{{ asset('img/general/bg-banner1.webp') }}?v={{ file_exists(public_path('img/general/bg-banner1.webp')) ? filemtime(public_path('img/general/bg-banner1.webp')) : '' }}"
+                            alt="banner rekanusa 1">
                     </div>
                     <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                        src="{{ asset('img/general/bg-hijau.png') }}?v={{ file_exists(public_path('img/general/bg-hijau.png')) ? filemtime(public_path('img/general/bg-hijau.png')) : '' }}"
+                        loading="eager" alt="bg hijau rekanusa">
                 </div>
                 <div class="swiper-slide">
                     <div class="object-cover absolute inset-0 w-full h-full">
                         <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                            src="{{ $assetV('img/general/bg-banner2.webp') }}" alt="banner bangunan rekanusa">
+                            src="{{ asset('img/general/bg-banner2.webp') }}?v={{ file_exists(public_path('img/general/bg-banner2.webp')) ? filemtime(public_path('img/general/bg-banner2.webp')) : '' }}"
+                            alt="banner bangunan rekanusa">
                     </div>
                     <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                        src="{{ asset('img/general/bg-hijau.png') }}?v={{ file_exists(public_path('img/general/bg-hijau.png')) ? filemtime(public_path('img/general/bg-hijau.png')) : '' }}"
+                        loading="eager" alt="bg hijau rekanusa">
                 </div>
                 <div class="swiper-slide">
                     <div class="object-cover absolute inset-0 w-full h-full">
                         <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                            src="{{ $assetV('img/general/bg-banner3.webp') }}" alt="banner konstruksi rekanusa">
+                            src="{{ asset('img/general/bg-banner3.webp') }}?v={{ file_exists(public_path('img/general/bg-banner3.webp')) ? filemtime(public_path('img/general/bg-banner3.webp')) : '' }}"
+                            alt="banner konstruksi rekanusa">
                     </div>
                     <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                        src="{{ asset('img/general/bg-hijau.png') }}?v={{ file_exists(public_path('img/general/bg-hijau.png')) ? filemtime(public_path('img/general/bg-hijau.png')) : '' }}"
+                        loading="eager" alt="bg hijau rekanusa">
                 </div>
                 <div class="swiper-slide">
                     <div class="object-cover absolute inset-0 w-full h-full">
                         <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                            src="{{ $assetV('img/general/bg-banner4.webp') }}" alt="banner konstruksi rekanusa">
+                            src="{{ asset('img/general/bg-banner4.webp') }}?v={{ file_exists(public_path('img/general/bg-banner4.webp')) ? filemtime(public_path('img/general/bg-banner4.webp')) : '' }}"
+                            alt="banner konstruksi rekanusa">
                     </div>
                     <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                        src="{{ asset('img/general/bg-hijau.png') }}?v={{ file_exists(public_path('img/general/bg-hijau.png')) ? filemtime(public_path('img/general/bg-hijau.png')) : '' }}"
+                        loading="eager" alt="bg hijau rekanusa">
                 </div>
             </div>
         </div>
