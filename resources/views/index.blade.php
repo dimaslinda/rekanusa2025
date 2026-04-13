@@ -29,6 +29,7 @@
     </script>
 @endsection
 @section('content')
+    @php($assetV = fn(string $path) => asset($path) . (file_exists(public_path($path)) ? '?v=' . filemtime(public_path($path)) : ''))
     {{-- banner --}}
     <section id="banner" class="overflow-hidden relative uppercase font-monserrat">
         <!-- Swiper -->
@@ -37,26 +38,34 @@
                 <div class="swiper-slide">
                     <div class="object-cover absolute inset-0 w-full h-full">
                         <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                            src="{{ asset('img/general/bg-banner1.webp') }}" alt="banner rekanusa 1">
+                            src="{{ $assetV('img/general/bg-banner1.webp') }}" alt="banner rekanusa 1">
                     </div>
                     <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                        src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
                 </div>
                 <div class="swiper-slide">
                     <div class="object-cover absolute inset-0 w-full h-full">
                         <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                            src="{{ asset('img/general/bg-banner2.webp') }}" alt="banner bangunan rekanusa">
+                            src="{{ $assetV('img/general/bg-banner2.webp') }}" alt="banner bangunan rekanusa">
                     </div>
                     <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                        src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
                 </div>
                 <div class="swiper-slide">
                     <div class="object-cover absolute inset-0 w-full h-full">
                         <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
-                            src="{{ asset('img/general/bg-banner3.webp') }}" alt="banner konstruksi rekanusa">
+                            src="{{ $assetV('img/general/bg-banner3.webp') }}" alt="banner konstruksi rekanusa">
                     </div>
                     <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
-                        src="{{ asset('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
+                </div>
+                <div class="swiper-slide">
+                    <div class="object-cover absolute inset-0 w-full h-full">
+                        <img loading="eager" class="object-cover inset-0 w-full h-full" loading="eager"
+                            src="{{ $assetV('img/general/bg-banner4.webp') }}" alt="banner konstruksi rekanusa">
+                    </div>
+                    <img loading="eager" class="object-cover absolute inset-0 w-full h-full mix-blend-normal"
+                        src="{{ $assetV('img/general/bg-hijau.png') }}" loading="eager" alt="bg hijau rekanusa">
                 </div>
             </div>
         </div>
@@ -121,7 +130,8 @@
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
                     alt="logo telkom property">
                 <img src="{{ asset('img/logo/Shoetown.webp') }}"
-                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo Shoetown">
+                    class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy"
+                    alt="logo Shoetown">
                 <img src="{{ asset('img/logo/bpjs.webp') }}"
                     class="w-[30%] lg:w-[18%] 2xl:w-[20%] aspect-video object-contain" loading="lazy" alt="logo jmo">
                 <img src="{{ asset('img/logo/pln.webp') }}"
