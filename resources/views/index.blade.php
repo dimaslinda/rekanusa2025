@@ -403,18 +403,19 @@
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 -left-6 xl:left-24">
-            <img src="{{ asset('img/general/person-2.webp') }}" class="w-[50%] xl:w-[60%] 2xl:w-[70%]" loading="lazy"
+        <div class="absolute bottom-0 left-0 lg:left-6 xl:left-20 2xl:left-32 flex items-end">
+            <img src="{{ asset('img/general/person-2.webp') }}"
+                class="w-72 lg:w-96 xl:w-[500px] 2xl:w-[600px] h-auto object-contain object-bottom" loading="lazy"
                 alt="person">
         </div>
     </section>
     <section id="kami" class="block lg:hidden">
         <div class="flex flex-col">
-            <div class="relative flex flex-col min-h-52">
+            <div class="relative flex flex-col">
                 <div
-                    class="overflow-hidden bg-[url('../../public/img/general/bg-tech.webp')] bg-cover bg-no-repeat bg-center">
-                    <img src="{{ asset('img/general/person-2.webp') }}" class="w-full h-full object-contain pt-32"
-                        loading="lazy" alt="profile rekanusa">
+                    class="overflow-hidden bg-[url('../../public/img/general/bg-tech.webp')] bg-cover bg-no-repeat bg-center pt-8 pb-20 sm:pb-24">
+                    <img src="{{ asset('img/general/person-2.webp') }}"
+                        class="w-full h-52 sm:h-72 object-contain mx-auto" loading="lazy" alt="profile rekanusa">
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="absolute -bottom-1" viewBox="0 0 1440 320">
                     <path fill="#ffff" fill-opacity="1" d="M0,192L1440,0L1440,320L0,320Z"></path>
